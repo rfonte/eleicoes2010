@@ -1,0 +1,28 @@
+<h1>Listing zonas</h1>
+
+<table>
+  <tr>
+    <th>Cod zona</th>
+    <th>Cod munic</th>
+    <th>Cod est</th>
+    <th>Nome zona</th>
+  </tr>
+
+<% for zona in @zonas %>
+  <tr>
+    <td><%=h zona.cod_zona %></td>
+    <td><%=h zona.cod_munic %></td>
+    <td><%=h zona.cod_est %></td>
+    <td><%=h zona.nome_zona %></td>
+    <td><%= link_to 'Show', zona %></td>
+    <td><%= link_to 'Edit', edit_zona_path(zona) %></td>
+    <td><%= link_to 'Destroy', zona, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New zona', new_zona_path %>
+<%= link_to 'HOME', home_index_path %>
+

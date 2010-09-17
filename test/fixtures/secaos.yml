@@ -1,0 +1,17 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  cod_secao: 1
+  cod_zona: 1
+  cod_munic: 1
+  cod_est: 1
+  cod_urna: 1
+  sala: 
+
+two:
+  cod_secao: 1
+  cod_zona: 1
+  cod_munic: 1
+  cod_est: 1
+  cod_urna: 1
+  sala: 

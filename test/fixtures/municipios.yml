@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  cod_munic: 1
+  cod_est: 1
+  nome_munic: MyString
+
+two:
+  cod_munic: 1
+  cod_est: 1
+  nome_munic: MyString

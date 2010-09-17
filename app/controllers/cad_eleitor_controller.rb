@@ -1,0 +1,2 @@
+class CadEleitorController < ApplicationController
+end

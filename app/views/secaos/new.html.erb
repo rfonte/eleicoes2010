@@ -1,0 +1,35 @@
+<h1>New secao</h1>
+
+<% form_for(@secao) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :cod_secao %><br />
+    <%= f.text_field :cod_secao %>
+  </p>
+  <p>
+    <%= f.label :cod_zona %><br />
+    <%= f.text_field :cod_zona %>
+  </p>
+  <p>
+    <%= f.label :cod_munic %><br />
+    <%= f.text_field :cod_munic %>
+  </p>
+  <p>
+    <%= f.label :cod_est %><br />
+    <%= f.text_field :cod_est %>
+  </p>
+  <p>
+    <%= f.label :cod_urna %><br />
+    <%= f.text_field :cod_urna %>
+  </p>
+  <p>
+    <%= f.label :sala %><br />
+    <%= f.text_field :sala %>
+  </p>
+  <p>
+    <%= f.submit "Create" %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', secaos_path %>

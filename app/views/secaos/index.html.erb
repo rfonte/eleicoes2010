@@ -1,0 +1,32 @@
+<h1>Listing secaos</h1>
+
+<table>
+  <tr>
+    <th>Cod secao</th>
+    <th>Cod zona</th>
+    <th>Cod munic</th>
+    <th>Cod est</th>
+    <th>Cod urna</th>
+    <th>Sala</th>
+  </tr>
+
+<% for secao in @secaos %>
+  <tr>
+    <td><%=h secao.cod_secao %></td>
+    <td><%=h secao.cod_zona %></td>
+    <td><%=h secao.cod_munic %></td>
+    <td><%=h secao.cod_est %></td>
+    <td><%=h secao.cod_urna %></td>
+    <td><%=h secao.sala %></td>
+    <td><%= link_to 'Show', secao %></td>
+    <td><%= link_to 'Edit', edit_secao_path(secao) %></td>
+    <td><%= link_to 'Destroy', secao, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New secao', new_secao_path %>
+<%= link_to 'HOME', home_index_path %>
+
