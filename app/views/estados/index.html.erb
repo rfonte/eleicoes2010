@@ -8,7 +8,7 @@
 
 <% for estado in @estados %>
   <tr>
-    <td><%=h estado.cod_est %></td>
+    <td><%=h estado.id %></td>
     <td><%=h estado.nome_est %></td>
     <td><%= link_to 'Exibir', estado %></td>
     <td><%= link_to 'Editar', edit_estado_path(estado) %></td>
