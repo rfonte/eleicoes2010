@@ -1,0 +1,59 @@
+<p>
+  <b>Cod candidato:</b>
+  <%=h @candidato.cod_candidato %>
+</p>
+
+<p>
+  <b>Nome urna:</b>
+  <%=h @candidato.nome_urna %>
+</p>
+
+<p>
+  <b>Cpf:</b>
+  <%=h @candidato.cpf %>
+</p>
+
+<p>
+  <b>Nome completo:</b>
+  <%=h @candidato.nome_completo %>
+</p>
+
+<p>
+  <b>Data nas:</b>
+  <%=h @candidato.data_nas %>
+</p>
+
+<p>
+  <b>Nacionalidade:</b>
+  <%=h @candidato.nacionalidade %>
+</p>
+
+<p>
+  <b>Grau instr:</b>
+  <%=h @candidato.grau_instr %>
+</p>
+
+<p>
+  <b>Sexo:</b>
+  <%=h @candidato.sexo %>
+</p>
+
+<p>
+  <b>Estado civil:</b>
+  <%=h @candidato.estado_civil %>
+</p>
+
+<p>
+  <b>Naturalidade:</b>
+  <%=h @candidato.naturalidade %>
+</p>
+
+<p>
+  <b>Ocupacao:</b>
+  <%=h @candidato.ocupacao %>
+</p>
+
+
+<%= link_to 'Editar', edit_candidato_path(@candidato) %> |
+<%= link_to 'Voltar', candidatos_path %>
+

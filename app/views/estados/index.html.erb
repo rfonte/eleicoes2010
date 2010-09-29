@@ -1,24 +1,24 @@
-<h1>Listing estados</h1>
+<h1>Lista de Estados</h1>
 
 <table>
   <tr>
-    <th>Cod est</th>
-    <th>Nome est</th>
+    <th>Código do Estado</th>
+    <th>Nome do Estado</th>
   </tr>
 
 <% for estado in @estados %>
   <tr>
     <td><%=h estado.cod_est %></td>
     <td><%=h estado.nome_est %></td>
-    <td><%= link_to 'Show', estado %></td>
-    <td><%= link_to 'Edit', edit_estado_path(estado) %></td>
-    <td><%= link_to 'Destroy', estado, :confirm => 'Are you sure?', :method => :delete %></td>
+    <td><%= link_to 'Exibir', estado %></td>
+    <td><%= link_to 'Editar', edit_estado_path(estado) %></td>
+    <td><%= link_to 'Excluir', estado, :confirm => 'Are you sure?', :method => :delete %></td>
   </tr>
 <% end %>
 </table>
 
 <br />
 
-<%= link_to 'New estado', new_estado_path %>
+<%= link_to 'Novo Estado', new_estado_path %>
 <%= link_to 'HOME', home_index_path %>
 

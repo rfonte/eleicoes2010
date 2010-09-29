@@ -1,0 +1,39 @@
+<p>
+  <b>Título de Eleitor:</b>
+  <%=h @eleitor.tit_eleitor %>
+</p>
+
+<p>
+  <b>Código da Seção:</b>
+  <%=h @eleitor.cod_secao %>
+</p>
+
+<p>
+  <b>Código do Func:</b>
+  <%=h @eleitor.cod_func %>
+</p>
+
+<p>
+  <b>Nome:</b>
+  <%=h @eleitor.nome %>
+</p>
+
+<p>
+  <b>Cpf:</b>
+  <%=h @eleitor.cpf %>
+</p>
+
+<p>
+  <b>Rg:</b>
+  <%=h @eleitor.rg %>
+</p>
+
+<p>
+  <b>Cod bio:</b>
+  <%=h @eleitor.cod_bio %>
+</p>
+
+
+<%= link_to 'Editar', edit_eleitor_path(@eleitor) %> |
+<%= link_to 'Voltar', eleitors_path %>
+

@@ -1,0 +1,56 @@
+<h1>Novo Candidato</h1>
+
+<% form_for(@candidato) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    Código do Candidato:<br />
+    <%= f.text_field :cod_candidato %>
+  </p>
+  <p>
+    Nome na Urna:<br />
+    <%= f.text_field :nome_urna %>
+  </p>
+  <p>
+    <%= f.label :cpf %><br />
+    <%= f.text_field :cpf %>
+  </p>
+  <p>
+    <%= f.label :nome_completo %><br />
+    <%= f.text_field :nome_completo %>
+  </p>
+  <p>
+    <%= f.label :data_nas %><br />
+    <%= f.datetime_select :data_nas %>
+  </p>
+  <p>
+    <%= f.label :nacionalidade %><br />
+    <%= f.text_field :nacionalidade %>
+  </p>
+  <p>
+    <%= f.label :grau_instr %><br />
+    <%= f.text_field :grau_instr %>
+  </p>
+  <p>
+    <%= f.label :sexo %><br />
+    <%= f.text_field :sexo %>
+  </p>
+  <p>
+    <%= f.label :estado_civil %><br />
+    <%= f.text_field :estado_civil %>
+  </p>
+  <p>
+    <%= f.label :naturalidade %><br />
+    <%= f.text_field :naturalidade %>
+  </p>
+  <p>
+    <%= f.label :ocupacao %><br />
+    <%= f.text_field :ocupacao %>
+  </p>
+  <p>
+    <%= f.submit "Criar" %>
+  </p>
+<% end %>
+
+<%= link_to 'Voltar', candidatos_path %>
+

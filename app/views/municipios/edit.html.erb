@@ -1,24 +1,25 @@
-<h1>Editing municipio</h1>
+<h1>Edição de Municípios</h1>
 
 <% form_for(@municipio) do |f| %>
   <%= f.error_messages %>
 
   <p>
-    <%= f.label :cod_munic %><br />
+    Código do Município<br />
     <%= f.text_field :cod_munic %>
   </p>
   <p>
-    <%= f.label :cod_est %><br />
+    Código do Estado<br />
     <%= f.text_field :cod_est %>
   </p>
   <p>
-    <%= f.label :nome_munic %><br />
+    Nome do Município<br />
     <%= f.text_field :nome_munic %>
   </p>
   <p>
-    <%= f.submit "Update" %>
+    <%= f.submit "Atualizar" %>
   </p>
 <% end %>
 
-<%= link_to 'Show', @municipio %> |
-<%= link_to 'Back', municipios_path %>
+<%= link_to 'Exibir', @municipio %> |
+<%= link_to 'Voltar', municipios_path %>
+

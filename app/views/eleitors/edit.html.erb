@@ -1,0 +1,41 @@
+<h1>Edição de Eleitor</h1>
+
+<% form_for(@eleitor) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    Título de Eleitor<br />
+    <%= f.text_field :tit_eleitor %>
+  </p>
+  <p>
+    Código da Seção<br />
+    <%= f.text_field :cod_secao %>
+  </p>
+  <p>
+    Código do Funcionário<br />
+    <%= f.text_field :cod_func %>
+  </p>
+  <p>
+    <%= f.label :nome %><br />
+    <%= f.text_field :nome %>
+  </p>
+  <p>
+    <%= f.label :cpf %><br />
+    <%= f.text_field :cpf %>
+  </p>
+  <p>
+    <%= f.label :rg %><br />
+    <%= f.text_field :rg %>
+  </p>
+  <p>
+    <%= f.label :cod_bio %><br />
+    <%= f.text_field :cod_bio %>
+  </p>
+  <p>
+    <%= f.submit "Atualizar" %>
+  </p>
+<% end %>
+
+<%= link_to 'Ver', @eleitor %> |
+<%= link_to 'Voltar', eleitors_path %>
+

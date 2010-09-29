@@ -1,0 +1,43 @@
+<p>
+  <b>Cod partido:</b>
+  <%=h @partido.cod_partido %>
+</p>
+
+<p>
+  <b>Nome partido:</b>
+  <%=h @partido.nome_partido %>
+</p>
+
+<p>
+  <b>Endereco:</b>
+  <%=h @partido.endereco %>
+</p>
+
+<p>
+  <b>Telefone:</b>
+  <%=h @partido.telefone %>
+</p>
+
+<p>
+  <b>End internet:</b>
+  <%=h @partido.end_internet %>
+</p>
+
+<p>
+  <b>Sigla:</b>
+  <%=h @partido.sigla %>
+</p>
+
+<p>
+  <b>Comp colig:</b>
+  <%=h @partido.comp_colig %>
+</p>
+
+<p>
+  <b>Coligacao:</b>
+  <%=h @partido.coligacao %>
+</p>
+
+
+<%= link_to 'Edit', edit_partido_path(@partido) %> |
+<%= link_to 'Back', partidos_path %>

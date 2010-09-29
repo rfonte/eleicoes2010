@@ -1,0 +1,48 @@
+<h1>Novo eleitor</h1>
+
+<% form_for(@eleitor) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    Número do Título<br />
+    <%= f.text_field :tit_eleitor %>
+  </p>
+  <p>
+    Código da Seção<br />
+    <%= f.text_field :cod_secao %>
+  </p>
+  <p>
+    <%= f.label :cod_func %><br />
+    <%= f.text_field :cod_func %>
+  </p>
+  <p>
+    <%= f.label :nome %><br />
+    <%= f.text_field :nome %>
+  </p>
+  <p>
+    <%= f.label :cpf %><br />
+    <%= f.text_field :cpf %>
+  </p>
+  <p>
+    <%= f.label :rg %><br />
+    <%= f.text_field :rg %>
+  </p>
+  <select>
+  <%debugger%>
+    <option></option>
+    <% @estado = Estado.find(:all)
+       @estado.each do |estado| %>
+       <option value='<%= estado.nome_est%>'><%= estado.nome_est%></option>
+    <% end %>
+  </select>
+  <p>
+    <%= f.label :cod_bio %><br />
+    <%= f.text_field :cod_bio %>
+  </p>
+  <p>
+    <%= f.submit "Criar" %>
+  </p>
+<% end %>
+
+<%= link_to 'Voltar', eleitors_path %>
+

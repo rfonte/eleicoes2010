@@ -1,0 +1,44 @@
+<h1>Editing partido</h1>
+
+<% form_for(@partido) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :cod_partido %><br />
+    <%= f.text_field :cod_partido %>
+  </p>
+  <p>
+    <%= f.label :nome_partido %><br />
+    <%= f.text_field :nome_partido %>
+  </p>
+  <p>
+    <%= f.label :endereco %><br />
+    <%= f.text_field :endereco %>
+  </p>
+  <p>
+    <%= f.label :telefone %><br />
+    <%= f.text_field :telefone %>
+  </p>
+  <p>
+    <%= f.label :end_internet %><br />
+    <%= f.text_field :end_internet %>
+  </p>
+  <p>
+    <%= f.label :sigla %><br />
+    <%= f.text_field :sigla %>
+  </p>
+  <p>
+    <%= f.label :comp_colig %><br />
+    <%= f.text_field :comp_colig %>
+  </p>
+  <p>
+    <%= f.label :coligacao %><br />
+    <%= f.text_field :coligacao %>
+  </p>
+  <p>
+    <%= f.submit "Update" %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @partido %> |
+<%= link_to 'Back', partidos_path %>

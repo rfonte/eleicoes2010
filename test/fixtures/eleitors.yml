@@ -1,0 +1,19 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  tit_eleitor: 1
+  cod_secao: 1
+  cod_func: 1
+  nome: MyString
+  cpf: 1
+  rg: 1
+  cod_bio: MyString
+
+two:
+  tit_eleitor: 1
+  cod_secao: 1
+  cod_func: 1
+  nome: MyString
+  cpf: 1
+  rg: 1
+  cod_bio: MyString

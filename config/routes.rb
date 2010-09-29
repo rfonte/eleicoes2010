@@ -1,4 +1,10 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :candidatos
+
+  map.resources :eleitors
+
+  map.resources :partidos
+
   map.resources :secaos
 
   map.resources :zonas
@@ -12,5 +18,6 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :home
 
   map.root :controller => "home"
+
 end
 

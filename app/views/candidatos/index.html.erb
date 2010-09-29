@@ -1,0 +1,42 @@
+<h1>Listagem de Candidatos</h1>
+
+<table>
+  <tr>
+    <th>Cod candidato</th>
+    <th>Nome urna</th>
+    <th>Cpf</th>
+    <th>Nome completo</th>
+    <th>Data nas</th>
+    <th>Nacionalidade</th>
+    <th>Grau instr</th>
+    <th>Sexo</th>
+    <th>Estado civil</th>
+    <th>Naturalidade</th>
+    <th>Ocupacao</th>
+  </tr>
+
+<% for candidato in @candidatos %>
+  <tr>
+    <td><%=h candidato.cod_candidato %></td>
+    <td><%=h candidato.nome_urna %></td>
+    <td><%=h candidato.cpf %></td>
+    <td><%=h candidato.nome_completo %></td>
+    <td><%=h candidato.data_nas %></td>
+    <td><%=h candidato.nacionalidade %></td>
+    <td><%=h candidato.grau_instr %></td>
+    <td><%=h candidato.sexo %></td>
+    <td><%=h candidato.estado_civil %></td>
+    <td><%=h candidato.naturalidade %></td>
+    <td><%=h candidato.ocupacao %></td>
+    <td><%= link_to 'Ver', candidato %></td>
+    <td><%= link_to 'Editar', edit_candidato_path(candidato) %></td>
+    <td><%= link_to 'Excluir', candidato, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'Novo Candidato', new_candidato_path %>
+<%= link_to 'HOME', home_index_path %>
+

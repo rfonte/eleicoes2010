@@ -1,0 +1,21 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  cod_partido: 1
+  nome_partido: MyString
+  endereco: MyString
+  telefone: 1
+  end_internet: MyString
+  sigla: MyString
+  comp_colig: MyString
+  coligacao: MyString
+
+two:
+  cod_partido: 1
+  nome_partido: MyString
+  endereco: MyString
+  telefone: 1
+  end_internet: MyString
+  sigla: MyString
+  comp_colig: MyString
+  coligacao: MyString

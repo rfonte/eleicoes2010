@@ -1,14 +1,14 @@
-<h1>Editing estado</h1>
+<h1>Edição de Estado</h1>
 
 <% form_for(@estado) do |f| %>
   <%= f.error_messages %>
 
   <p>
-    <%= f.label :cod_est %><br />
+    Código do Estado<br />
     <%= f.text_field :cod_est %>
   </p>
   <p>
-    <%= f.label :nome_est %><br />
+    Nome do Estado<br />
     <%= f.text_field :nome_est %>
   </p>
   <p>
@@ -16,5 +16,6 @@
   </p>
 <% end %>
 
-<%= link_to 'Show', @estado %> |
-<%= link_to 'Back', estados_path %>
+<%= link_to 'Exibir', @estado %> |
+<%= link_to 'Voltar', estados_path %>
+
