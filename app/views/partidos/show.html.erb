@@ -1,15 +1,15 @@
 <p>
-  <b>Cod partido:</b>
+  <b>Código do Partido:</b>
   <%=h @partido.cod_partido %>
 </p>
 
 <p>
-  <b>Nome partido:</b>
+  <b>Nome do Partido:</b>
   <%=h @partido.nome_partido %>
 </p>
 
 <p>
-  <b>Endereco:</b>
+  <b>Endereço:</b>
   <%=h @partido.endereco %>
 </p>
 
@@ -39,5 +39,6 @@
 </p>
 
 
-<%= link_to 'Edit', edit_partido_path(@partido) %> |
-<%= link_to 'Back', partidos_path %>
+<%= link_to 'Editar', edit_partido_path(@partido) %> |
+<%= link_to 'Voltar', partidos_path %>
+

@@ -1,14 +1,14 @@
-<h1>Editing partido</h1>
+<h1>Edição de Partido</h1>
 
 <% form_for(@partido) do |f| %>
   <%= f.error_messages %>
 
   <p>
-    <%= f.label :cod_partido %><br />
+    Código do Partido<br />
     <%= f.text_field :cod_partido %>
   </p>
   <p>
-    <%= f.label :nome_partido %><br />
+    Nome do Partido<br />
     <%= f.text_field :nome_partido %>
   </p>
   <p>
@@ -36,9 +36,10 @@
     <%= f.text_field :coligacao %>
   </p>
   <p>
-    <%= f.submit "Update" %>
+    <%= f.submit "Atualizar" %>
   </p>
 <% end %>
 
-<%= link_to 'Show', @partido %> |
-<%= link_to 'Back', partidos_path %>
+<%= link_to 'Ver', @partido %> |
+<%= link_to 'Voltar', partidos_path %>
+

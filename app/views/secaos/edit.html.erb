@@ -1,26 +1,26 @@
-<h1>Editing secao</h1>
+<h1>Edição de Seção</h1>
 
 <% form_for(@secao) do |f| %>
   <%= f.error_messages %>
 
   <p>
-    <%= f.label :cod_secao %><br />
+    Código da Seção<br />
     <%= f.text_field :cod_secao %>
   </p>
   <p>
-    <%= f.label :cod_zona %><br />
+    Código da Zona<br />
     <%= f.text_field :cod_zona %>
   </p>
   <p>
-    <%= f.label :cod_munic %><br />
+    Código do Município<br />
     <%= f.text_field :cod_munic %>
   </p>
   <p>
-    <%= f.label :cod_est %><br />
+    Código do Estado<br />
     <%= f.text_field :cod_est %>
   </p>
   <p>
-    <%= f.label :cod_urna %><br />
+    Código da Urna<br />
     <%= f.text_field :cod_urna %>
   </p>
   <p>
@@ -28,9 +28,10 @@
     <%= f.text_field :sala %>
   </p>
   <p>
-    <%= f.submit "Update" %>
+    <%= f.submit "Atualizar" %>
   </p>
 <% end %>
 
-<%= link_to 'Show', @secao %> |
-<%= link_to 'Back', secaos_path %>
+<%= link_to 'Ver', @secao %> |
+<%= link_to 'Voltar', secaos_path %>
+

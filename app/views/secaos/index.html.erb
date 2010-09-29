@@ -1,4 +1,4 @@
-<h1>Listing secaos</h1>
+<h1>Listagen de Seções</h1>
 
 <table>
   <tr>
@@ -18,15 +18,15 @@
     <td><%=h secao.cod_est %></td>
     <td><%=h secao.cod_urna %></td>
     <td><%=h secao.sala %></td>
-    <td><%= link_to 'Show', secao %></td>
-    <td><%= link_to 'Edit', edit_secao_path(secao) %></td>
-    <td><%= link_to 'Destroy', secao, :confirm => 'Are you sure?', :method => :delete %></td>
+    <td><%= link_to 'Ver', secao %></td>
+    <td><%= link_to 'Editar', edit_secao_path(secao) %></td>
+    <td><%= link_to 'Excluir', secao, :confirm => 'Are you sure?', :method => :delete %></td>
   </tr>
 <% end %>
 </table>
 
 <br />
 
-<%= link_to 'New secao', new_secao_path %>
+<%= link_to 'Nova Seção', new_secao_path %>
 <%= link_to 'HOME', home_index_path %>
 

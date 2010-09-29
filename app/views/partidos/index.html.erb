@@ -1,4 +1,4 @@
-<h1>Listing partidos</h1>
+<h1>Listagem de Partidos</h1>
 
 <table>
   <tr>
@@ -22,15 +22,15 @@
     <td><%=h partido.sigla %></td>
     <td><%=h partido.comp_colig %></td>
     <td><%=h partido.coligacao %></td>
-    <td><%= link_to 'Show', partido %></td>
-    <td><%= link_to 'Edit', edit_partido_path(partido) %></td>
-    <td><%= link_to 'Destroy', partido, :confirm => 'Are you sure?', :method => :delete %></td>
+    <td><%= link_to 'Ver', partido %></td>
+    <td><%= link_to 'Editar', edit_partido_path(partido) %></td>
+    <td><%= link_to 'Excluir', partido, :confirm => 'Are you sure?', :method => :delete %></td>
   </tr>
 <% end %>
 </table>
 
 <br />
 
-<%= link_to 'New partido', new_partido_path %>
+<%= link_to 'Novo Partido', new_partido_path %>
 <%= link_to 'HOME', home_index_path %>
 
