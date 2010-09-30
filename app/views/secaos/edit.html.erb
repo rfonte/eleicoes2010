@@ -3,50 +3,21 @@
 <% form_for(@secao) do |f| %>
   <%= f.error_messages %>
 
-  <p>
+<p>
     Zona<br />
-    <select name="zona_select">
-      <option></option>
-      <% @zona = Zona.find(:all)
-         @zona.each do |zona| %>
-         <option value='<%= zona.id %>'><%= zona.id%> - <%= zona.nome_zona %></option>
-      <% end %>
-    </select>
-    <%= f.text_field :zona_id %>
+    <%= collection_select(:secao, :zona_id, Zona.all, :id, :nome_zona) %>
   </p>
   <p>
     Município<br />
-    <select name="municipio_select">
-      <option></option>
-      <% @municipio = Municipio.find(:all)
-         @municipio.each do |municipio| %>
-         <option value='<%= municipio.id %>'><%= municipio.id%> - <%= municipio.nome_munic %></option>
-      <% end %>
-    </select>
-    <%= f.text_field :municipio_id %>
+    <%= collection_select(:secao, :municipio_id, Municipio.all, :id, :nome_munic) %>
   </p>
   <p>
     Estado<br />
-    <select name="estado_select">
-      <option></option>
-      <% @estado = Estado.find(:all)
-         @estado.each do |estado| %>
-         <option value='<%= estado.id%>'><%= estado.id%> - <%= estado.nome_est %></option>
-      <% end %>
-    </select>
-    <%= f.text_field :estado_id %>
+    <%= collection_select(:secao, :estado_id, Estado.all, :id, :nome_est) %>
   </p>
   <p>
-    <!--Arumaaaarrrr está com erro-->
     Urna<br />
-    <select name="urna_select">
-      <option></option>
-      <% @urna = Urna.find(:all)
-         @urna.each do |urna| %>
-         <option value='<%= urna.id%>'><%= urna.id%></option>
-      <% end %>
-    </select>
-    <%= f.text_field :urna_id %>
+    <%= collection_select(:secao, :urna_id, Urna.all, :id, :id) %>
   </p>
   <p>
     <%= f.label :sala %><br />

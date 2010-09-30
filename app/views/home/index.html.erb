@@ -6,11 +6,13 @@
         <li><%= link_to 'Cadastrar Zonas - OK', zonas_path %></li>
         <li><%= link_to 'Cadastrar Seções - OK', secaos_path %></li>
         <li><%= link_to 'Cadastrar Partidos - OK', partidos_path %></li>
-        <li><%= link_to 'Cadastrar Candidatos - OK', candidatos_path %></li>
+        <li><%= link_to 'Cadastrar Candidatos', candidatos_path %></li>
         <li><%= link_to 'Exibir Histórico', home_index_path %></li>
         <li><%= link_to 'Efetuar Votação', home_index_path %></li>
         <li><%= link_to 'Cadastrar Justificativa', home_index_path %></li>
       <ul>
       <%= link_to 'HOME', home_index_path %>
 </div>
+
+<!--%= collection_select(:onde_salva, :campo, Estado.all, :valor_salva, :valor_exibe) %-->
 

@@ -5,25 +5,11 @@
 
   <p>
     Município<br />
-    <select name="municipio_select">
-      <option></option>
-      <% @municipio = Municipio.find(:all)
-         @municipio.each do |municipio| %>
-         <option value='<%= municipio.id%>'><%= municipio.id%> - <%= municipio.nome_munic %></option>
-      <% end %>
-    </select>
-    <%= f.text_field :municipio_id %>
+    <%= collection_select(:zona, :municipio_id, Municipio.all, :id, :nome_munic) %>
   </p>
   <p>
-    Código do Estado<br />
-    <select name="estado_select">
-      <option></option>
-      <% @estado = Estado.find(:all)
-         @estado.each do |estado| %>
-         <option value='<%= estado.id%>'><%= estado.id%> - <%= estado.nome_est %></option>
-      <% end %>
-    </select>
-    <%= f.text_field :estado_id %>
+    Estado<br />
+    <%= collection_select(:zona, :estado_id, Estado.all, :id, :nome_est) %>
   </p>
   <p>
     Nome da Zona<br />

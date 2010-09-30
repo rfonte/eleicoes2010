@@ -5,14 +5,7 @@
 
   <p>
     Estado<br />
-    <select name="estado_select">
-      <option></option>
-      <% @estado = Estado.find(:all)
-         @estado.each do |estado| %>
-         <option value='<%= estado.id%>'><%= estado.id%> - <%= estado.nome_est %></option>
-      <% end %>
-    </select>
-    <%= f.text_field :estado_id %>
+    <%= collection_select(:municipio, :estado_id, Estado.all, :id, :nome_est) %>
   </p>
   <p>
     Nome do Município<br />
