@@ -8837,3 +8837,53 @@ Migrating to AjusteZona (20100930144619)
   [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW FIELDS FROM `zonas`[0m
   [4;35;1mSQL (0.4ms)[0m   [0mdescribe `zonas`[0m
   [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `zonas`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateCadEleitors (20100917193407)
+Migrating to CreateEstados (20100921112201)
+Migrating to CreateMunicipios (20100921114054)
+Migrating to CreateZonas (20100921120657)
+Migrating to CreateSecaos (20100921134547)
+Migrating to CreatePartidos (20100923111427)
+Migrating to CreateEleitors (20100923111743)
+Migrating to CreateCandidatos (20100923112500)
+Migrating to EstadoDeleteCodEst (20100929233553)
+Migrating to MunicipiosAjustes (20100930002327)
+Migrating to AjusteZona (20100930144619)
+Migrating to AjusteColunasZona (20100930144929)
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW FIELDS FROM `zonas`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW COLUMNS FROM `zonas` LIKE 'cod_munic'[0m
+  [4;36;1mSQL (138.2ms)[0m   [0;1mALTER TABLE `zonas` CHANGE `cod_munic` `municipio_id` int(11) DEFAULT NULL[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mSHOW FIELDS FROM `zonas`[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW COLUMNS FROM `zonas` LIKE 'cod_est'[0m
+  [4;35;1mSQL (91.4ms)[0m   [0mALTER TABLE `zonas` CHANGE `cod_est` `estado_id` int(11) DEFAULT NULL[0m
+  [4;36;1mSQL (45.3ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100930144929')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW FIELDS FROM `cad_eleitors`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mdescribe `cad_eleitors`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `cad_eleitors`[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSHOW FIELDS FROM `candidatos`[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mdescribe `candidatos`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `candidatos`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW FIELDS FROM `eleitors`[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mdescribe `eleitors`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `eleitors`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW FIELDS FROM `estados`[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mdescribe `estados`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `estados`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW FIELDS FROM `municipios`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mdescribe `municipios`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `municipios`[0m
+  [4;35;1mSQL (39.9ms)[0m   [0mSHOW FIELDS FROM `partidos`[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mdescribe `partidos`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `partidos`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW FIELDS FROM `secaos`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mdescribe `secaos`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `secaos`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW FIELDS FROM `zonas`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mdescribe `zonas`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `zonas`[0m
