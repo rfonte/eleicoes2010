@@ -4,16 +4,26 @@
   <%= f.error_messages %>
 
   <p>
-    Código da Zona<br />
-    <%= f.text_field :cod_zona %>
+    Município<br />
+    <select name="municipio_select">
+      <option></option>
+      <% @municipio = Municipio.find(:all)
+         @municipio.each do |municipio| %>
+         <option value='<%= municipio.id %>'><%= municipio.id%> - <%= municipio.nome_munic %></option>
+      <% end %>
+    </select>
+    <%= f.text_field :municipio_id %>
   </p>
   <p>
-    Código do Município<br />
-    <%= f.text_field :cod_munic %>
-  </p>
-  <p>
-    Código do Estado<br />
-    <%= f.text_field :cod_est %>
+    Estado<br />
+    <select name="estado_select">
+      <option></option>
+      <% @estado = Estado.find(:all)
+         @estado.each do |estado| %>
+         <option value='<%= estado.id%>'><%= estado.id%> - <%= estado.nome_est %></option>
+      <% end %>
+    </select>
+    <%= f.text_field :estado_id %>
   </p>
   <p>
     Nome da Zona<br />

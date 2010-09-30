@@ -11,8 +11,8 @@
 <% for zona in @zonas %>
   <tr>
     <td><%=h zona.id %></td>
-    <td><%=h zona.cod_munic %></td>
-    <td><%=h zona.cod_est %></td>
+    <td><%=h zona.municipio_id %></td>
+    <td><%=h zona.estado_id %></td>
     <td><%=h zona.nome_zona %></td>
     <td><%= link_to 'Ver', zona %></td>
     <td><%= link_to 'Editar', edit_zona_path(zona) %></td>

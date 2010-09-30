@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100930144929) do
+ActiveRecord::Schema.define(:version => 20100930150931) do
 
   create_table "cad_eleitors", :force => true do |t|
     t.datetime "created_at"
@@ -71,11 +71,10 @@ ActiveRecord::Schema.define(:version => 20100930144929) do
   end
 
   create_table "secaos", :force => true do |t|
-    t.integer  "cod_secao"
-    t.integer  "cod_zona"
-    t.integer  "cod_munic"
-    t.integer  "cod_est"
-    t.integer  "cod_urna"
+    t.integer  "zona_id"
+    t.integer  "municipio_id"
+    t.integer  "estado_id"
+    t.integer  "urna_id"
     t.string   "sala"
     t.datetime "created_at"
     t.datetime "updated_at"
