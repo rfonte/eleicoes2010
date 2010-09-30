@@ -7,6 +7,7 @@
     <th>Endereco</th>
     <th>Telefone</th>
     <th>End internet</th>
+    <th>Presidente Nacional</th>
     <th>Sigla</th>
     <th>Comp colig</th>
     <th>Coligacao</th>
@@ -14,12 +15,13 @@
 
 <% for partido in @partidos %>
   <tr>
-    <td><%=h partido.cod_partido %></td>
+    <td><%=h partido.id %></td>
     <td><%=h partido.nome_partido %></td>
     <td><%=h partido.endereco %></td>
     <td><%=h partido.telefone %></td>
     <td><%=h partido.end_internet %></td>
     <td><%=h partido.sigla %></td>
+    <td><%=h partido.pres_nacional %></td>
     <td><%=h partido.comp_colig %></td>
     <td><%=h partido.coligacao %></td>
     <td><%= link_to 'Ver', partido %></td>

@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100930215207) do
+ActiveRecord::Schema.define(:version => 20100930221112) do
 
   create_table "cad_eleitors", :force => true do |t|
     t.datetime "created_at"
@@ -58,7 +58,6 @@ ActiveRecord::Schema.define(:version => 20100930215207) do
   end
 
   create_table "partidos", :force => true do |t|
-    t.integer  "cod_partido"
     t.string   "nome_partido"
     t.string   "endereco"
     t.integer  "telefone"
@@ -68,6 +67,7 @@ ActiveRecord::Schema.define(:version => 20100930215207) do
     t.string   "coligacao"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "pres_naconal"
   end
 
   create_table "secaos", :force => true do |t|
