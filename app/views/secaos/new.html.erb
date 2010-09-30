@@ -1,27 +1,51 @@
-<h1>Noca Seção</h1>
+<h1>Nova Seção</h1>
 
 <% form_for(@secao) do |f| %>
   <%= f.error_messages %>
 
   <p>
-    Código da Seção<br />
-    <%= f.text_field :cod_secao %>
+    Zona<br />
+    <select name="zona_select">
+      <option></option>
+      <% @zona = Zona.find(:all)
+         @zona.each do |zona| %>
+         <option value='<%= zona.id %>'><%= zona.id%> - <%= zona.nome_zona %></option>
+      <% end %>
+    </select>
+    <%= f.text_field :zona_id %>
   </p>
   <p>
-    Código da Zona<br />
-    <%= f.text_field :cod_zona %>
+    Município<br />
+    <select name="municipio_select">
+      <option></option>
+      <% @municipio = Municipio.find(:all)
+         @municipio.each do |municipio| %>
+         <option value='<%= municipio.id %>'><%= municipio.id%> - <%= municipio.nome_munic %></option>
+      <% end %>
+    </select>
+    <%= f.text_field :municipio_id %>
   </p>
   <p>
-    Código do Município<br />
-    <%= f.text_field :cod_munic %>
+    Estado<br />
+    <select name="estado_select">
+      <option></option>
+      <% @estado = Estado.find(:all)
+         @estado.each do |estado| %>
+         <option value='<%= estado.id%>'><%= estado.id%> - <%= estado.nome_est %></option>
+      <% end %>
+    </select>
+    <%= f.text_field :estado_id %>
   </p>
   <p>
-    Código do Estado<br />
-    <%= f.text_field :cod_est %>
-  </p>
-  <p>
-    Código da Urna<br />
-    <%= f.text_field :cod_urna %>
+    Urna<br />
+    <select name="urna_select">
+      <option></option>
+      <% @urna = Urna.find(:all)
+         @urna.each do |urna| %>
+         <option value='<%= urna.id%>'><%= urna.id%></option>
+      <% end %>
+    </select>
+    <%= f.text_field :urna_id %>
   </p>
   <p>
     <%= f.label :sala %><br />

@@ -12,11 +12,11 @@
 
 <% for secao in @secaos %>
   <tr>
-    <td><%=h secao.cod_secao %></td>
-    <td><%=h secao.cod_zona %></td>
-    <td><%=h secao.cod_munic %></td>
-    <td><%=h secao.cod_est %></td>
-    <td><%=h secao.cod_urna %></td>
+    <td><%=h secao.id %></td>
+    <td><%=h secao.zona_id %></td>
+    <td><%=h secao.municipio_id %></td>
+    <td><%=h secao.estado_id %></td>
+    <td><%=h secao.urna_id %></td>
     <td><%=h secao.sala %></td>
     <td><%= link_to 'Ver', secao %></td>
     <td><%= link_to 'Editar', edit_secao_path(secao) %></td>
