@@ -4,7 +4,7 @@ class EstadoDeleteCodEst < ActiveRecord::Migration
   end
 
   def self.down
-    add_column(:estados, :cod_est)
+    add_column(:estados, :cod_est, :integer)
   end
 end
 

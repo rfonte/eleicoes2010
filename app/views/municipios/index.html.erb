@@ -9,8 +9,8 @@
 
 <% for municipio in @municipios %>
   <tr>
-    <td><%=h municipio.cod_munic %></td>
-    <td><%=h municipio.cod_est %></td>
+    <td><%=h municipio.id %></td>
+    <td><%=h municipio.estado_id %></td>
     <td><%=h municipio.nome_munic %></td>
     <td><%= link_to 'Exibir', municipio %></td>
     <td><%= link_to 'Editar', edit_municipio_path(municipio) %></td>
