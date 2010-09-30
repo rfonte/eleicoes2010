@@ -8237,3 +8237,603 @@ Migrating to MunicipiosAjustes (20100930002327)
   [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW FIELDS FROM `zonas`[0m
   [4;35;1mSQL (0.4ms)[0m   [0mdescribe `zonas`[0m
   [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `zonas`[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-09-30 11:31:04) [GET]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+Rendering home/index
+Completed in 6ms (View: 3, DB: 0) | 200 OK [http://localhost/home]
+
+
+Processing MunicipiosController#index (for 127.0.0.1 at 2010-09-30 11:31:06) [GET]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mMunicipio Load (0.1ms)[0m   [0mSELECT * FROM `municipios` [0m
+Rendering template within layouts/municipios
+Rendering municipios/index
+  [4;36;1mMunicipio Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `municipios`[0m
+Completed in 92ms (View: 83, DB: 1) | 200 OK [http://localhost/municipios]
+
+
+Processing MunicipiosController#new (for 127.0.0.1 at 2010-09-30 11:31:09) [GET]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mMunicipio Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `municipios`[0m
+Rendering template within layouts/municipios
+Rendering municipios/new
+  [4;36;1mMunicipio Load (0.1ms)[0m   [0;1mSELECT * FROM `municipios` [0m
+Completed in 19ms (View: 9, DB: 1) | 200 OK [http://localhost/municipios/new]
+
+
+Processing MunicipiosController#new (for 127.0.0.1 at 2010-09-30 11:31:37) [GET]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mMunicipio Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `municipios`[0m
+Rendering template within layouts/municipios
+Rendering municipios/new
+  [4;36;1mMunicipio Load (0.1ms)[0m   [0;1mSELECT * FROM `municipios` [0m
+
+
+ActionView::TemplateError (undefined local variable or method `estado' for #<ActionView::Base:0xb66d7c00>) on line #12 of app/views/municipios/new.html.erb:
+9:       <option></option>
+10:       <% @municipio = Municipio.find(:all)
+11:          @municipio.each do |municipio| %>
+12:          <option value='<%= estado.nome_est%>'><%= estado.nome_est%></option>
+13:       <% end %>
+14:     </select>
+15:     <%= f.text_field :estado_id %>
+
+    app/views/municipios/new.html.erb:12
+    app/views/municipios/new.html.erb:11:in `each'
+    app/views/municipios/new.html.erb:11
+    vendor/rails/actionpack/lib/action_view/helpers/form_helper.rb:313:in `fields_for'
+    vendor/rails/actionpack/lib/action_view/helpers/form_helper.rb:253:in `form_for'
+    app/views/municipios/new.html.erb:3
+    vendor/rails/actionpack/lib/action_view/renderable.rb:39:in `send'
+    vendor/rails/actionpack/lib/action_view/renderable.rb:39:in `render'
+    vendor/rails/actionpack/lib/action_view/template.rb:73:in `render_template'
+    vendor/rails/actionpack/lib/action_view/base.rb:256:in `render'
+    vendor/rails/actionpack/lib/action_view/base.rb:369:in `_render_with_layout'
+    vendor/rails/actionpack/lib/action_view/base.rb:254:in `render'
+    vendor/rails/actionpack/lib/action_controller/base.rb:1177:in `render_for_file'
+    vendor/rails/actionpack/lib/action_controller/base.rb:905:in `render_without_benchmark'
+    vendor/rails/actionpack/lib/action_controller/benchmarking.rb:51:in `render'
+    vendor/rails/activesupport/lib/active_support/core_ext/benchmark.rb:8:in `realtime'
+    vendor/rails/actionpack/lib/action_controller/benchmarking.rb:51:in `render'
+    vendor/rails/actionpack/lib/action_controller/mime_responds.rb:135:in `send'
+    vendor/rails/actionpack/lib/action_controller/mime_responds.rb:135
+    vendor/rails/actionpack/lib/action_controller/mime_responds.rb:164:in `call'
+    vendor/rails/actionpack/lib/action_controller/mime_responds.rb:164:in `respond'
+    vendor/rails/actionpack/lib/action_controller/mime_responds.rb:158:in `each'
+    vendor/rails/actionpack/lib/action_controller/mime_responds.rb:158:in `respond'
+    vendor/rails/actionpack/lib/action_controller/mime_responds.rb:107:in `respond_to'
+    app/controllers/municipios_controller.rb:29:in `new'
+    vendor/rails/actionpack/lib/action_controller/base.rb:1256:in `send'
+    vendor/rails/actionpack/lib/action_controller/base.rb:1256:in `perform_action_without_filters'
+    vendor/rails/actionpack/lib/action_controller/filters.rb:617:in `call_filters'
+    vendor/rails/actionpack/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+    vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    vendor/rails/actionpack/lib/action_controller/rescue.rb:136:in `perform_action_without_caching'
+    vendor/rails/actionpack/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+    vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+    vendor/rails/activerecord/lib/active_record/query_cache.rb:8:in `cache'
+    vendor/rails/actionpack/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+    vendor/rails/actionpack/lib/action_controller/base.rb:524:in `send'
+    vendor/rails/actionpack/lib/action_controller/base.rb:524:in `process_without_filters'
+    vendor/rails/actionpack/lib/action_controller/filters.rb:606:in `process_without_session_management_support'
+    vendor/rails/actionpack/lib/action_controller/session_management.rb:134:in `process'
+    vendor/rails/actionpack/lib/action_controller/base.rb:392:in `process'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:184:in `handle_request'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:112:in `dispatch_unlocked'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:125:in `dispatch'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:124:in `synchronize'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:124:in `dispatch'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:134:in `dispatch_cgi'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:41:in `dispatch'
+    /usr/lib/ruby/1.8/mongrel/rails.rb:76:in `process'
+    /usr/lib/ruby/1.8/mongrel/rails.rb:74:in `synchronize'
+    /usr/lib/ruby/1.8/mongrel/rails.rb:74:in `process'
+    /usr/lib/ruby/1.8/mongrel.rb:159:in `process_client'
+    /usr/lib/ruby/1.8/mongrel.rb:158:in `each'
+    /usr/lib/ruby/1.8/mongrel.rb:158:in `process_client'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `initialize'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `new'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `initialize'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `new'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `run'
+    /usr/lib/ruby/1.8/mongrel/configurator.rb:282:in `run'
+    /usr/lib/ruby/1.8/mongrel/configurator.rb:281:in `each'
+    /usr/lib/ruby/1.8/mongrel/configurator.rb:281:in `run'
+    /usr/lib/ruby/1.8/mongrel_rails:129:in `run'
+    /usr/lib/ruby/1.8/mongrel/command.rb:212:in `run'
+    /usr/lib/ruby/1.8/mongrel_rails:282
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:142:in `load_without_new_constant_marking'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:142:in `load'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:142:in `load'
+    vendor/rails/railties/lib/commands/servers/mongrel.rb:64
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:153:in `require'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:153:in `require'
+    vendor/rails/railties/lib/commands/server.rb:49
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+Rendered /home/rodrigo/projects/eleicoes2010/vendor/rails/actionpack/lib/action_controller/templates/rescues/_trace (33.1ms)
+Rendered /home/rodrigo/projects/eleicoes2010/vendor/rails/actionpack/lib/action_controller/templates/rescues/_request_and_response (0.8ms)
+Rendering /home/rodrigo/projects/eleicoes2010/vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing MunicipiosController#new (for 127.0.0.1 at 2010-09-30 11:32:52) [GET]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mMunicipio Columns (3.6ms)[0m   [0mSHOW FIELDS FROM `municipios`[0m
+Rendering template within layouts/municipios
+Rendering municipios/new
+  [4;36;1mEstado Load (0.6ms)[0m   [0;1mSELECT * FROM `estados` [0m
+  [4;35;1mEstado Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `estados`[0m
+Completed in 62ms (View: 46, DB: 6) | 200 OK [http://localhost/municipios/new]
+
+
+Processing MunicipiosController#index (for 127.0.0.1 at 2010-09-30 11:35:28) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mMunicipio Load (0.1ms)[0m   [0;1mSELECT * FROM `municipios` [0m
+Rendering template within layouts/municipios
+Rendering municipios/index
+  [4;35;1mMunicipio Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `municipios`[0m
+Completed in 25ms (View: 15, DB: 1) | 200 OK [http://localhost/municipios]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-09-30 11:35:30) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Rendering home/index
+Completed in 6ms (View: 3, DB: 0) | 200 OK [http://localhost/home]
+
+
+Processing EstadosController#index (for 127.0.0.1 at 2010-09-30 11:35:32) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mEstado Load (0.1ms)[0m   [0;1mSELECT * FROM `estados` [0m
+Rendering template within layouts/estados
+Rendering estados/index
+  [4;35;1mEstado Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `estados`[0m
+Completed in 56ms (View: 45, DB: 1) | 200 OK [http://localhost/estados]
+
+
+Processing EstadosController#new (for 127.0.0.1 at 2010-09-30 11:35:34) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mEstado Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `estados`[0m
+Rendering template within layouts/estados
+Rendering estados/new
+Completed in 37ms (View: 28, DB: 1) | 200 OK [http://localhost/estados/new]
+
+
+Processing EstadosController#create (for 127.0.0.1 at 2010-09-30 11:35:47) [POST]
+  Parameters: {"commit"=>"Criar", "authenticity_token"=>"b4ae9541f76e7cd82a9ce4198cab705750344abf", "estado"=>{"nome_est"=>"Minas Gerais"}}
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mEstado Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `estados`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mEstado Create (0.2ms)[0m   [0mINSERT INTO `estados` (`created_at`, `nome_est`, `updated_at`) VALUES('2010-09-30 14:35:47', 'Minas Gerais', '2010-09-30 14:35:47')[0m
+  [4;36;1mSQL (53.3ms)[0m   [0;1mCOMMIT[0m
+Redirected to #<Estado:0xb6877344>
+Completed in 144ms (DB: 55) | 302 Found [http://localhost/estados]
+
+
+Processing EstadosController#show (for 127.0.0.1 at 2010-09-30 11:35:47) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mEstado Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `estados`[0m
+  [4;36;1mEstado Load (0.2ms)[0m   [0;1mSELECT * FROM `estados` WHERE (`estados`.`id` = 5) [0m
+Rendering template within layouts/estados
+Rendering estados/show
+Completed in 24ms (View: 13, DB: 1) | 200 OK [http://localhost/estados/5]
+
+
+Processing EstadosController#index (for 127.0.0.1 at 2010-09-30 11:35:49) [GET]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mEstado Load (0.3ms)[0m   [0mSELECT * FROM `estados` [0m
+Rendering template within layouts/estados
+Rendering estados/index
+  [4;36;1mEstado Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `estados`[0m
+Completed in 32ms (View: 23, DB: 1) | 200 OK [http://localhost/estados]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-09-30 11:35:53) [GET]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+Rendering home/index
+Completed in 6ms (View: 3, DB: 0) | 200 OK [http://localhost/home]
+
+
+Processing MunicipiosController#index (for 127.0.0.1 at 2010-09-30 11:35:55) [GET]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mMunicipio Load (0.1ms)[0m   [0mSELECT * FROM `municipios` [0m
+Rendering template within layouts/municipios
+Rendering municipios/index
+  [4;36;1mMunicipio Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `municipios`[0m
+Completed in 26ms (View: 17, DB: 1) | 200 OK [http://localhost/municipios]
+
+
+Processing MunicipiosController#new (for 127.0.0.1 at 2010-09-30 11:35:57) [GET]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mMunicipio Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `municipios`[0m
+Rendering template within layouts/municipios
+Rendering municipios/new
+  [4;36;1mEstado Load (0.1ms)[0m   [0;1mSELECT * FROM `estados` [0m
+  [4;35;1mEstado Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `estados`[0m
+Completed in 24ms (View: 14, DB: 2) | 200 OK [http://localhost/municipios/new]
+
+
+Processing MunicipiosController#index (for 127.0.0.1 at 2010-09-30 11:36:43) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mMunicipio Load (0.1ms)[0m   [0;1mSELECT * FROM `municipios` [0m
+Rendering template within layouts/municipios
+Rendering municipios/index
+  [4;35;1mMunicipio Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `municipios`[0m
+Completed in 25ms (View: 15, DB: 1) | 200 OK [http://localhost/municipios]
+
+
+Processing MunicipiosController#edit (for 127.0.0.1 at 2010-09-30 11:36:46) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mMunicipio Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `municipios`[0m
+  [4;35;1mMunicipio Load (0.3ms)[0m   [0mSELECT * FROM `municipios` WHERE (`municipios`.`id` = 1) [0m
+Rendering template within layouts/municipios
+Rendering municipios/edit
+Completed in 19ms (View: 9, DB: 1) | 200 OK [http://localhost/municipios/1/edit]
+
+
+Processing MunicipiosController#edit (for 127.0.0.1 at 2010-09-30 11:37:20) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mMunicipio Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `municipios`[0m
+  [4;35;1mMunicipio Load (0.1ms)[0m   [0mSELECT * FROM `municipios` WHERE (`municipios`.`id` = 1) [0m
+Rendering template within layouts/municipios
+Rendering municipios/edit
+  [4;36;1mEstado Load (0.1ms)[0m   [0;1mSELECT * FROM `estados` [0m
+  [4;35;1mEstado Columns (0.5ms)[0m   [0mSHOW FIELDS FROM `estados`[0m
+Completed in 28ms (View: 18, DB: 1) | 200 OK [http://localhost/municipios/1/edit]
+
+
+Processing MunicipiosController#index (for 127.0.0.1 at 2010-09-30 11:38:27) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mMunicipio Load (0.1ms)[0m   [0;1mSELECT * FROM `municipios` [0m
+Rendering template within layouts/municipios
+Rendering municipios/index
+  [4;35;1mMunicipio Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `municipios`[0m
+Completed in 24ms (View: 15, DB: 1) | 200 OK [http://localhost/municipios]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-09-30 11:38:29) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Rendering home/index
+Completed in 6ms (View: 3, DB: 0) | 200 OK [http://localhost/home]
+
+
+Processing ZonasController#index (for 127.0.0.1 at 2010-09-30 11:38:33) [GET]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mZona Load (0.6ms)[0m   [0;1mSELECT * FROM `zonas` [0m
+Rendering template within layouts/zonas
+Rendering zonas/index
+  [4;35;1mZona Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `zonas`[0m
+Completed in 66ms (View: 37, DB: 2) | 200 OK [http://localhost/zonas]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-09-30 11:38:43) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Rendering home/index
+Completed in 6ms (View: 3, DB: 0) | 200 OK [http://localhost/home]
+
+
+Processing EstadosController#index (for 127.0.0.1 at 2010-09-30 11:38:48) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mEstado Load (0.1ms)[0m   [0;1mSELECT * FROM `estados` [0m
+Rendering template within layouts/estados
+Rendering estados/index
+  [4;35;1mEstado Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `estados`[0m
+Completed in 31ms (View: 23, DB: 1) | 200 OK [http://localhost/estados]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-09-30 11:38:51) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Rendering home/index
+Completed in 6ms (View: 3, DB: 0) | 200 OK [http://localhost/home]
+
+
+Processing MunicipiosController#index (for 127.0.0.1 at 2010-09-30 11:38:52) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mMunicipio Load (0.1ms)[0m   [0;1mSELECT * FROM `municipios` [0m
+Rendering template within layouts/municipios
+Rendering municipios/index
+  [4;35;1mMunicipio Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `municipios`[0m
+Completed in 23ms (View: 14, DB: 1) | 200 OK [http://localhost/municipios]
+
+
+Processing MunicipiosController#index (for 127.0.0.1 at 2010-09-30 11:42:06) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mMunicipio Load (0.1ms)[0m   [0;1mSELECT * FROM `municipios` [0m
+  [4;35;1mEstado Load (0.1ms)[0m   [0mSELECT * FROM `estados` [0m
+Rendering template within layouts/municipios
+Rendering municipios/index
+  [4;36;1mMunicipio Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `municipios`[0m
+  [4;35;1mEstado Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `estados`[0m
+
+
+ActionView::TemplateError (undefined local variable or method `estado' for #<ActionView::Base:0xb63e34a4>) on line #13 of app/views/municipios/index.html.erb:
+10: <% for municipio in @municipios %>
+11:   <tr>
+12:     <td><%=h municipio.id %></td>
+13:     <td><%=h estado.nome_est %></td>
+14:     <td><%=h municipio.nome_munic %></td>
+15:     <td><%= link_to 'Exibir', municipio %></td>
+16:     <td><%= link_to 'Editar', edit_municipio_path(municipio) %></td>
+
+    app/views/municipios/index.html.erb:13
+    app/views/municipios/index.html.erb:10:in `each'
+    app/views/municipios/index.html.erb:10
+    vendor/rails/actionpack/lib/action_view/renderable.rb:39:in `send'
+    vendor/rails/actionpack/lib/action_view/renderable.rb:39:in `render'
+    vendor/rails/actionpack/lib/action_view/template.rb:73:in `render_template'
+    vendor/rails/actionpack/lib/action_view/base.rb:256:in `render'
+    vendor/rails/actionpack/lib/action_view/base.rb:369:in `_render_with_layout'
+    vendor/rails/actionpack/lib/action_view/base.rb:254:in `render'
+    vendor/rails/actionpack/lib/action_controller/base.rb:1177:in `render_for_file'
+    vendor/rails/actionpack/lib/action_controller/base.rb:905:in `render_without_benchmark'
+    vendor/rails/actionpack/lib/action_controller/benchmarking.rb:51:in `render'
+    vendor/rails/activesupport/lib/active_support/core_ext/benchmark.rb:8:in `realtime'
+    vendor/rails/actionpack/lib/action_controller/benchmarking.rb:51:in `render'
+    vendor/rails/actionpack/lib/action_controller/mime_responds.rb:135:in `send'
+    vendor/rails/actionpack/lib/action_controller/mime_responds.rb:135
+    vendor/rails/actionpack/lib/action_controller/mime_responds.rb:164:in `call'
+    vendor/rails/actionpack/lib/action_controller/mime_responds.rb:164:in `respond'
+    vendor/rails/actionpack/lib/action_controller/mime_responds.rb:158:in `each'
+    vendor/rails/actionpack/lib/action_controller/mime_responds.rb:158:in `respond'
+    vendor/rails/actionpack/lib/action_controller/mime_responds.rb:107:in `respond_to'
+    app/controllers/municipios_controller.rb:8:in `index'
+    vendor/rails/actionpack/lib/action_controller/base.rb:1256:in `send'
+    vendor/rails/actionpack/lib/action_controller/base.rb:1256:in `perform_action_without_filters'
+    vendor/rails/actionpack/lib/action_controller/filters.rb:617:in `call_filters'
+    vendor/rails/actionpack/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+    vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    vendor/rails/actionpack/lib/action_controller/rescue.rb:136:in `perform_action_without_caching'
+    vendor/rails/actionpack/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+    vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+    vendor/rails/activerecord/lib/active_record/query_cache.rb:8:in `cache'
+    vendor/rails/actionpack/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+    vendor/rails/actionpack/lib/action_controller/base.rb:524:in `send'
+    vendor/rails/actionpack/lib/action_controller/base.rb:524:in `process_without_filters'
+    vendor/rails/actionpack/lib/action_controller/filters.rb:606:in `process_without_session_management_support'
+    vendor/rails/actionpack/lib/action_controller/session_management.rb:134:in `process'
+    vendor/rails/actionpack/lib/action_controller/base.rb:392:in `process'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:184:in `handle_request'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:112:in `dispatch_unlocked'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:125:in `dispatch'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:124:in `synchronize'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:124:in `dispatch'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:134:in `dispatch_cgi'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:41:in `dispatch'
+    /usr/lib/ruby/1.8/mongrel/rails.rb:76:in `process'
+    /usr/lib/ruby/1.8/mongrel/rails.rb:74:in `synchronize'
+    /usr/lib/ruby/1.8/mongrel/rails.rb:74:in `process'
+    /usr/lib/ruby/1.8/mongrel.rb:159:in `process_client'
+    /usr/lib/ruby/1.8/mongrel.rb:158:in `each'
+    /usr/lib/ruby/1.8/mongrel.rb:158:in `process_client'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `initialize'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `new'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `initialize'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `new'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `run'
+    /usr/lib/ruby/1.8/mongrel/configurator.rb:282:in `run'
+    /usr/lib/ruby/1.8/mongrel/configurator.rb:281:in `each'
+    /usr/lib/ruby/1.8/mongrel/configurator.rb:281:in `run'
+    /usr/lib/ruby/1.8/mongrel_rails:129:in `run'
+    /usr/lib/ruby/1.8/mongrel/command.rb:212:in `run'
+    /usr/lib/ruby/1.8/mongrel_rails:282
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:142:in `load_without_new_constant_marking'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:142:in `load'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:142:in `load'
+    vendor/rails/railties/lib/commands/servers/mongrel.rb:64
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:153:in `require'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:153:in `require'
+    vendor/rails/railties/lib/commands/server.rb:49
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+Rendered /home/rodrigo/projects/eleicoes2010/vendor/rails/actionpack/lib/action_controller/templates/rescues/_trace (33.5ms)
+Rendered /home/rodrigo/projects/eleicoes2010/vendor/rails/actionpack/lib/action_controller/templates/rescues/_request_and_response (0.9ms)
+Rendering /home/rodrigo/projects/eleicoes2010/vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing MunicipiosController#index (for 127.0.0.1 at 2010-09-30 11:42:53) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mMunicipio Load (0.2ms)[0m   [0;1mSELECT * FROM `municipios` [0m
+  [4;35;1mEstado Load (0.1ms)[0m   [0mSELECT * FROM `estados` [0m
+Rendering template within layouts/municipios
+Rendering municipios/index
+  [4;36;1mMunicipio Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `municipios`[0m
+  [4;35;1mEstado Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `estados`[0m
+
+
+ActionView::TemplateError (undefined local variable or method `estado' for #<ActionView::Base:0xb65c4070>) on line #13 of app/views/municipios/index.html.erb:
+10: <% for municipio in @municipios %>
+11:   <tr>
+12:     <td><%=h municipio.id %></td>
+13:     <td><%=h estado.nome_est %></td>
+14:     <td><%=h municipio.nome_munic %></td>
+15:     <td><%= link_to 'Exibir', municipio %></td>
+16:     <td><%= link_to 'Editar', edit_municipio_path(municipio) %></td>
+
+    app/views/municipios/index.html.erb:13
+    app/views/municipios/index.html.erb:10:in `each'
+    app/views/municipios/index.html.erb:10
+    vendor/rails/actionpack/lib/action_view/renderable.rb:39:in `send'
+    vendor/rails/actionpack/lib/action_view/renderable.rb:39:in `render'
+    vendor/rails/actionpack/lib/action_view/template.rb:73:in `render_template'
+    vendor/rails/actionpack/lib/action_view/base.rb:256:in `render'
+    vendor/rails/actionpack/lib/action_view/base.rb:369:in `_render_with_layout'
+    vendor/rails/actionpack/lib/action_view/base.rb:254:in `render'
+    vendor/rails/actionpack/lib/action_controller/base.rb:1177:in `render_for_file'
+    vendor/rails/actionpack/lib/action_controller/base.rb:905:in `render_without_benchmark'
+    vendor/rails/actionpack/lib/action_controller/benchmarking.rb:51:in `render'
+    vendor/rails/activesupport/lib/active_support/core_ext/benchmark.rb:8:in `realtime'
+    vendor/rails/actionpack/lib/action_controller/benchmarking.rb:51:in `render'
+    vendor/rails/actionpack/lib/action_controller/mime_responds.rb:135:in `send'
+    vendor/rails/actionpack/lib/action_controller/mime_responds.rb:135
+    vendor/rails/actionpack/lib/action_controller/mime_responds.rb:164:in `call'
+    vendor/rails/actionpack/lib/action_controller/mime_responds.rb:164:in `respond'
+    vendor/rails/actionpack/lib/action_controller/mime_responds.rb:158:in `each'
+    vendor/rails/actionpack/lib/action_controller/mime_responds.rb:158:in `respond'
+    vendor/rails/actionpack/lib/action_controller/mime_responds.rb:107:in `respond_to'
+    app/controllers/municipios_controller.rb:8:in `index'
+    vendor/rails/actionpack/lib/action_controller/base.rb:1256:in `send'
+    vendor/rails/actionpack/lib/action_controller/base.rb:1256:in `perform_action_without_filters'
+    vendor/rails/actionpack/lib/action_controller/filters.rb:617:in `call_filters'
+    vendor/rails/actionpack/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+    vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    vendor/rails/actionpack/lib/action_controller/rescue.rb:136:in `perform_action_without_caching'
+    vendor/rails/actionpack/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+    vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+    vendor/rails/activerecord/lib/active_record/query_cache.rb:8:in `cache'
+    vendor/rails/actionpack/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+    vendor/rails/actionpack/lib/action_controller/base.rb:524:in `send'
+    vendor/rails/actionpack/lib/action_controller/base.rb:524:in `process_without_filters'
+    vendor/rails/actionpack/lib/action_controller/filters.rb:606:in `process_without_session_management_support'
+    vendor/rails/actionpack/lib/action_controller/session_management.rb:134:in `process'
+    vendor/rails/actionpack/lib/action_controller/base.rb:392:in `process'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:184:in `handle_request'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:112:in `dispatch_unlocked'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:125:in `dispatch'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:124:in `synchronize'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:124:in `dispatch'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:134:in `dispatch_cgi'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:41:in `dispatch'
+    /usr/lib/ruby/1.8/mongrel/rails.rb:76:in `process'
+    /usr/lib/ruby/1.8/mongrel/rails.rb:74:in `synchronize'
+    /usr/lib/ruby/1.8/mongrel/rails.rb:74:in `process'
+    /usr/lib/ruby/1.8/mongrel.rb:159:in `process_client'
+    /usr/lib/ruby/1.8/mongrel.rb:158:in `each'
+    /usr/lib/ruby/1.8/mongrel.rb:158:in `process_client'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `initialize'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `new'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `initialize'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `new'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `run'
+    /usr/lib/ruby/1.8/mongrel/configurator.rb:282:in `run'
+    /usr/lib/ruby/1.8/mongrel/configurator.rb:281:in `each'
+    /usr/lib/ruby/1.8/mongrel/configurator.rb:281:in `run'
+    /usr/lib/ruby/1.8/mongrel_rails:129:in `run'
+    /usr/lib/ruby/1.8/mongrel/command.rb:212:in `run'
+    /usr/lib/ruby/1.8/mongrel_rails:282
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:142:in `load_without_new_constant_marking'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:142:in `load'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:142:in `load'
+    vendor/rails/railties/lib/commands/servers/mongrel.rb:64
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:153:in `require'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:153:in `require'
+    vendor/rails/railties/lib/commands/server.rb:49
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+Rendered /home/rodrigo/projects/eleicoes2010/vendor/rails/actionpack/lib/action_controller/templates/rescues/_trace (35.4ms)
+Rendered /home/rodrigo/projects/eleicoes2010/vendor/rails/actionpack/lib/action_controller/templates/rescues/_request_and_response (1.1ms)
+Rendering /home/rodrigo/projects/eleicoes2010/vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing ZonasController#index (for 127.0.0.1 at 2010-09-30 11:45:39) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mZona Load (0.1ms)[0m   [0;1mSELECT * FROM `zonas` [0m
+Rendering template within layouts/zonas
+Rendering zonas/index
+  [4;35;1mZona Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `zonas`[0m
+Completed in 20ms (View: 11, DB: 1) | 200 OK [http://localhost/zonas]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateCadEleitors (20100917193407)
+Migrating to CreateEstados (20100921112201)
+Migrating to CreateMunicipios (20100921114054)
+Migrating to CreateZonas (20100921120657)
+Migrating to CreateSecaos (20100921134547)
+Migrating to CreatePartidos (20100923111427)
+Migrating to CreateEleitors (20100923111743)
+Migrating to CreateCandidatos (20100923112500)
+Migrating to EstadoDeleteCodEst (20100929233553)
+Migrating to MunicipiosAjustes (20100930002327)
+Migrating to AjusteZona (20100930144619)
+  [4;36;1mSQL (318.7ms)[0m   [0;1mALTER TABLE `zonas` DROP `cod_zona`[0m
+  [4;35;1mSQL (43.5ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100930144619')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW FIELDS FROM `cad_eleitors`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mdescribe `cad_eleitors`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `cad_eleitors`[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSHOW FIELDS FROM `candidatos`[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mdescribe `candidatos`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW KEYS FROM `candidatos`[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSHOW FIELDS FROM `eleitors`[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mdescribe `eleitors`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `eleitors`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW FIELDS FROM `estados`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mdescribe `estados`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `estados`[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSHOW FIELDS FROM `municipios`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mdescribe `municipios`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `municipios`[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW FIELDS FROM `partidos`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mdescribe `partidos`[0m
+  [4;36;1mSQL (36.8ms)[0m   [0;1mSHOW KEYS FROM `partidos`[0m
+  [4;35;1mSQL (5.4ms)[0m   [0mSHOW FIELDS FROM `secaos`[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mdescribe `secaos`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `secaos`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW FIELDS FROM `zonas`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mdescribe `zonas`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `zonas`[0m
