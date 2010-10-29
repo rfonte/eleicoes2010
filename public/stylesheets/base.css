@@ -6,8 +6,8 @@
     font-family: arial,sans-serif;
 }
 body {
-    width: 400px;
-    margin: 10px;
+    background: #000 none repeat scroll 0 0;
+    font-size:14px;
 }
 ul ul {
     display: none;
@@ -19,5 +19,15 @@ ul li {
 }
 #menu li {
     display: inline;
+}
+a:link {color: #000;}
+a:visited {color: #000;}
+a:hover {color: #FFD700;}
+a:active {color: #000;}
+#body {
+    background: none repeat scroll 0 0 white;
+    margin-left: 20%;
+    width: 780px;
+    height: 50px;
 }
 
