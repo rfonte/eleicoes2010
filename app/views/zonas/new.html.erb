@@ -4,12 +4,12 @@
   <%= f.error_messages %>
 
   <p>
-    Município<br />
-    <%= collection_select(:zona, :municipio_id, Municipio.all, :id, :nome_munic) %>
-  </p>
-  <p>
     Estado<br />
     <%= collection_select(:zona, :estado_id, Estado.all, :id, :nome_est) %>
+  </p>
+  <p>
+    Município<br />
+    <%= collection_select(:zona, :municipio_id, Municipio.all, :id, :nome_munic) %>
   </p>
   <p>
     Nome da Zona<br />
