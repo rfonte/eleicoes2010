@@ -20,14 +20,41 @@ ul li {
 #menu li {
     display: inline;
 }
-a:link {color: #000;}
+a:link {color: #FFF;}
 a:visited {color: #000;}
 a:hover {color: #FFD700;}
 a:active {color: #000;}
 #body {
-    background: none repeat scroll 0 0 white;
+    background: none repeat scroll 0 0 #000;
     margin-left: 20%;
     width: 780px;
-    height: 50px;
+    height: 300px;
+}
+#header{
+    background: #FFF url("/images/Banner.png");
+    height: 165px;
+}
+#sep {
+    background: none repeat scroll 0 0 #000;
+    width: 780px;
+    height: 10px;
+}
+#menu1 {
+    background: #778899 none repeat scroll 0 0;
+    height: 40px;
+}
+#youtubeBox {
+    width: 385px;
+    height: 250px;
+    position: fixed;
+}
+#twitterBox {
+    background: #FFF none repeat scroll 0 0;
+    width: 385px;
+    height: 250px;
+    margin: 0px 385px;
+}
+#twitterLogo {
+    background: #FFF url("/images/twitter.png") none repeat scroll 0 0;
 }
 
