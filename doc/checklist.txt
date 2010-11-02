@@ -12,11 +12,6 @@ Zonas
         - Ajustar com os nomes do estado e município
 Seções
 Home
-    Ajustar menu
-    ajustar box twitter
-    ajustar box do video
-    ajustar box do menu
-
 
 - Não esquecer de ajustar arquivo de jquery
 - Ajuste de imagens como link ver, editar e excluir
