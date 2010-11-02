@@ -92,4 +92,8 @@ table th {
 .voltar { background: #000 url("/images/voltar.png") no-repeat scroll 0 0; }
 .view, .edit, .cancel { border: 0px none; }
 .new, .show, .editar { font-size: 13px; }
+#footer {
+    background: #6A6262 none scroll 0 0;
+    height: 30px;
+}
 
