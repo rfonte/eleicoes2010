@@ -1,42 +1,24 @@
-<h1>Edição de Eleitor</h1>
+<br /><h1>Edição de Eleitor</h1><br /><br /><br />
 
 <% form_for(@eleitor) do |f| %>
   <%= f.error_messages %>
 
-  <p>
-    Número do Título*: <%= f.text_field :tit_eleitor %><br />
-  </p>
-  <p>
-    Código da Seção*: <%= f.text_field :cod_secao %><br />
-  </p>
-  <p>
-    Código da Zona*: <%= f.text_field :cod_zona %><br />
-  </p>
-  <!--p>
-    <%= f.label :cod_func %>????<br />
-    <%= f.text_field :cod_func %>
-  </p-->
-  <p>
-    Nome*: <%= f.text_field :nome %><br />
-  </p>
-  <p>
-    Data de Nascimento*: <%= f.text_field :data_nasc %><br />
-  </p>
-  <p>
-    CPF*: <%= f.text_field :cpf %><br />
-  </p>
-  <p>
-    RG*: <%= f.text_field :rg %><br />
-  </p>
-  <p>
-    Código Biométrico: <%= f.text_field :cod_bio %><br />
-  </p>
-  <p>
-    <%= f.submit "Atualizar" %>
-  </p>
+<div class="new">
+  <p> Número do Título*: <%= f.text_field :tit_eleitor %><br /><br /></p>
+  <p> Código da Seção*: <%= f.text_field :cod_secao %><br /><br /></p>
+  <p> Código da Zona*: <%= f.text_field :cod_zona %><br /><br /></p>
+  <!--p><%= f.label :cod_func %><br /><%= f.text_field :cod_func %></p-->
+  <p> Nome*: <%= f.text_field :nome %><br /><br /></p>
+  <p> Data de Nascimento*: <%= f.text_field :data_nasc %><br /><br /></p>
+  <p> CPF*: <%= f.text_field :cpf %><br /><br /></p>
+  <p> RG*: <%= f.text_field :rg %><br /><br /></p>
+  <p> Código Biométrico: <%= f.text_field :cod_bio %><br /><br /></p>
+  <p class="atualizar"><%= f.submit "Atualizar" %></p><br />
 <% end %>
-  <p class="campOb">*Campos Obrigatórios !</p>
-<%= link_to 'Ver', @eleitor %> |
-<%= link_to 'Voltar', eleitors_path %>
-<%= link_to 'HOME', home_index_path %>
+</div>
+
+  <p class="campOb">*Campos Obrigatórios !</p><br />
+  <span class="view"><%= link_to 'Ver', @eleitor %><span>
+  <span class="voltar"><%= link_to 'Voltar', eleitors_path %><span>
+  <span class="home"><%= link_to 'HOME', home_index_path %><span>
 

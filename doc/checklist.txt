@@ -1,16 +1,4 @@
 Eleitores
-    Index
-        Ajustar fontes
-        Colocar imagem de fundo na tabela listada
-        Colocar botão novo
-        Colocar boto home
-        colocar botão de ver
-        colocar botão de editar
-        colocar botão de excluir
-    New
-    Show
-    Edit
-
 Estados
     Model
     Index
@@ -76,4 +64,5 @@ Home
 
 - Não esquecer de ajustar arquivo de json
 - Imagens como link ver, editar e excluir
+- Logo do botão criar, atualizar
 
