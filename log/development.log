@@ -23090,3 +23090,139 @@ Processing CandidatosController#new (for 192.168.2.4 at 2010-11-02 12:39:35) [GE
 Rendering template within layouts/candidatos
 Rendering candidatos/new
 Completed in 37ms (View: 28, DB: 1) | 200 OK [http://192.168.2.2/candidatos/new]
+
+
+Processing CandidatosController#new (for 192.168.2.4 at 2010-11-02 12:40:51) [GET]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mCandidato Columns (12.3ms)[0m   [0mSHOW FIELDS FROM `candidatos`[0m
+Rendering template within layouts/candidatos
+Rendering candidatos/new
+Completed in 52ms (View: 32, DB: 12) | 200 OK [http://192.168.2.2/candidatos/new]
+
+
+Processing CandidatosController#new (for 192.168.2.4 at 2010-11-02 12:42:31) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mCandidato Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `candidatos`[0m
+Rendering template within layouts/candidatos
+Rendering candidatos/new
+Completed in 35ms (View: 27, DB: 1) | 200 OK [http://192.168.2.2/candidatos/new]
+
+
+Processing CandidatosController#new (for 192.168.2.4 at 2010-11-02 12:43:00) [GET]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mCandidato Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `candidatos`[0m
+Rendering template within layouts/candidatos
+Rendering candidatos/new
+Completed in 38ms (View: 29, DB: 1) | 200 OK [http://192.168.2.2/candidatos/new]
+
+
+Processing CandidatosController#new (for 192.168.2.4 at 2010-11-02 12:43:14) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mCandidato Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `candidatos`[0m
+Rendering template within layouts/candidatos
+Rendering candidatos/new
+Completed in 38ms (View: 29, DB: 1) | 200 OK [http://192.168.2.2/candidatos/new]
+
+
+Processing ZonasController#index (for 192.168.2.4 at 2010-11-02 12:43:24) [GET]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mZona Load (0.1ms)[0m   [0mSELECT * FROM `zonas` [0m
+Rendering template within layouts/zonas
+Rendering zonas/index
+  [4;36;1mZona Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `zonas`[0m
+Completed in 23ms (View: 15, DB: 1) | 200 OK [http://192.168.2.2/zonas]
+
+
+Processing CandidatosController#new (for 192.168.2.4 at 2010-11-02 12:44:06) [GET]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mCandidato Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `candidatos`[0m
+Rendering template within layouts/candidatos
+Rendering candidatos/new
+Completed in 35ms (View: 27, DB: 1) | 200 OK [http://192.168.2.2/candidatos/new]
+
+
+Processing CandidatosController#index (for 192.168.2.4 at 2010-11-02 12:44:13) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mCandidato Load (0.1ms)[0m   [0;1mSELECT * FROM `candidatos` [0m
+Rendering template within layouts/candidatos
+Rendering candidatos/index
+Completed in 13ms (View: 5, DB: 0) | 200 OK [http://192.168.2.2/candidatos]
+
+
+Processing CandidatosController#index (for 192.168.2.4 at 2010-11-02 12:44:43) [GET]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mCandidato Load (0.1ms)[0m   [0mSELECT * FROM `candidatos` [0m
+Rendering template within layouts/candidatos
+Rendering candidatos/index
+Completed in 13ms (View: 5, DB: 0) | 200 OK [http://192.168.2.2/candidatos]
+
+
+Processing CandidatosController#new (for 192.168.2.4 at 2010-11-02 12:45:12) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mCandidato Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `candidatos`[0m
+Rendering template within layouts/candidatos
+Rendering candidatos/new
+Completed in 37ms (View: 28, DB: 1) | 200 OK [http://192.168.2.2/candidatos/new]
+
+
+Processing CandidatosController#index (for 192.168.2.4 at 2010-11-02 12:46:39) [GET]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mCandidato Load (0.1ms)[0m   [0mSELECT * FROM `candidatos` [0m
+Rendering template within layouts/candidatos
+Rendering candidatos/index
+Completed in 25ms (View: 5, DB: 0) | 200 OK [http://192.168.2.2/candidatos]
+
+
+Processing CandidatosController#index (for 192.168.2.4 at 2010-11-02 12:47:31) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mCandidato Load (0.1ms)[0m   [0;1mSELECT * FROM `candidatos` [0m
+Rendering template within layouts/candidatos
+Rendering candidatos/index
+Completed in 13ms (View: 5, DB: 0) | 200 OK [http://192.168.2.2/candidatos]
+
+
+Processing CandidatosController#index (for 192.168.2.4 at 2010-11-02 12:47:57) [GET]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mCandidato Load (0.1ms)[0m   [0mSELECT * FROM `candidatos` [0m
+Rendering template within layouts/candidatos
+Rendering candidatos/index
+Completed in 13ms (View: 5, DB: 0) | 200 OK [http://192.168.2.2/candidatos]
+
+
+Processing CandidatosController#index (for 192.168.2.4 at 2010-11-02 12:48:40) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mCandidato Load (0.1ms)[0m   [0;1mSELECT * FROM `candidatos` [0m
+Rendering template within layouts/candidatos
+Rendering candidatos/index
+Completed in 13ms (View: 5, DB: 0) | 200 OK [http://192.168.2.2/candidatos]
+
+
+Processing ZonasController#index (for 192.168.2.4 at 2010-11-02 12:49:12) [GET]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mZona Load (0.1ms)[0m   [0mSELECT * FROM `zonas` [0m
+Rendering template within layouts/zonas
+Rendering zonas/index
+  [4;36;1mZona Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `zonas`[0m
+Completed in 23ms (View: 15, DB: 1) | 200 OK [http://192.168.2.2/zonas]
+
+
+Processing HomeController#index (for 192.168.2.4 at 2010-11-02 12:49:24) [GET]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 8ms (View: 5, DB: 0) | 200 OK [http://192.168.2.2/]
