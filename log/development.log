@@ -22760,3 +22760,333 @@ Processing HomeController#index (for 192.168.2.2 at 2010-11-01 17:01:35) [GET]
 Rendering template within layouts/home
 Rendering home/index
 Completed in 9ms (View: 6, DB: 0) | 200 OK [http://192.168.2.3/]
+
+
+Processing HomeController#index (for 192.168.2.2 at 2010-11-01 18:24:29) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 9ms (View: 6, DB: 0) | 200 OK [http://192.168.2.3/]
+
+
+Processing EleitorsController#index (for 192.168.2.2 at 2010-11-01 18:24:55) [GET]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mEleitor Load (11.1ms)[0m   [0;1mSELECT * FROM `eleitors` [0m
+Rendering template within layouts/eleitors
+Rendering eleitors/index
+Completed in 66ms (View: 33, DB: 11) | 200 OK [http://192.168.2.3/eleitors]
+
+
+Processing HomeController#index (for 192.168.2.4 at 2010-11-02 12:09:15) [GET]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 42ms (View: 35, DB: 1) | 200 OK [http://192.168.2.2/]
+
+
+Processing HomeController#index (for 192.168.2.4 at 2010-11-02 12:11:11) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 9ms (View: 6, DB: 0) | 200 OK [http://192.168.2.2/]
+
+
+Processing HomeController#index (for 192.168.2.4 at 2010-11-02 12:14:19) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://192.168.2.2/]
+
+
+Processing HomeController#index (for 192.168.2.4 at 2010-11-02 12:16:10) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 9ms (View: 6, DB: 0) | 200 OK [http://192.168.2.2/]
+
+
+Processing HomeController#index (for 192.168.2.4 at 2010-11-02 12:17:42) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 8ms (View: 5, DB: 0) | 200 OK [http://192.168.2.2/]
+
+
+Processing HomeController#index (for 192.168.2.4 at 2010-11-02 12:20:33) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 9ms (View: 6, DB: 0) | 200 OK [http://192.168.2.2/]
+
+
+Processing HomeController#index (for 192.168.2.4 at 2010-11-02 12:22:57) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 8ms (View: 5, DB: 0) | 200 OK [http://192.168.2.2/]
+
+
+Processing HomeController#index (for 192.168.2.4 at 2010-11-02 12:23:25) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 9ms (View: 5, DB: 0) | 200 OK [http://192.168.2.2/]
+
+
+Processing HomeController#index (for 192.168.2.4 at 2010-11-02 12:23:36) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 9ms (View: 6, DB: 0) | 200 OK [http://192.168.2.2/]
+
+
+Processing HomeController#index (for 192.168.2.4 at 2010-11-02 12:24:00) [GET]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 9ms (View: 6, DB: 0) | 200 OK [http://192.168.2.2/]
+
+
+Processing HomeController#index (for 192.168.2.4 at 2010-11-02 12:24:25) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 9ms (View: 5, DB: 0) | 200 OK [http://192.168.2.2/]
+
+
+Processing HomeController#index (for 192.168.2.4 at 2010-11-02 12:27:17) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 9ms (View: 6, DB: 0) | 200 OK [http://192.168.2.2/]
+
+
+Processing HomeController#index (for 192.168.2.4 at 2010-11-02 12:27:40) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 9ms (View: 5, DB: 0) | 200 OK [http://192.168.2.2/]
+
+
+Processing HomeController#index (for 192.168.2.4 at 2010-11-02 12:27:54) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 8ms (View: 5, DB: 0) | 200 OK [http://192.168.2.2/]
+
+
+Processing HomeController#index (for 192.168.2.4 at 2010-11-02 12:28:28) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 9ms (View: 6, DB: 0) | 200 OK [http://192.168.2.2/]
+
+
+Processing HomeController#index (for 192.168.2.4 at 2010-11-02 12:29:39) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 53ms (View: 10, DB: 0) | 200 OK [http://192.168.2.2/]
+
+
+Processing HomeController#index (for 192.168.2.4 at 2010-11-02 12:30:44) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 9ms (View: 6, DB: 0) | 200 OK [http://192.168.2.2/]
+
+
+Processing HomeController#index (for 192.168.2.4 at 2010-11-02 12:31:15) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 8ms (View: 5, DB: 0) | 200 OK [http://192.168.2.2/]
+
+
+Processing CandidatosController#index (for 192.168.2.4 at 2010-11-02 12:33:44) [GET]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mCandidato Load (10.0ms)[0m   [0;1mSELECT * FROM `candidatos` [0m
+Rendering template within layouts/candidatos
+Rendering candidatos/index
+Completed in 57ms (View: 18, DB: 10) | 200 OK [http://192.168.2.2/candidatos]
+
+
+Processing CandidatosController#index (for 192.168.2.4 at 2010-11-02 12:34:15) [GET]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mCandidato Load (0.1ms)[0m   [0mSELECT * FROM `candidatos` [0m
+Rendering template within layouts/candidatos
+Rendering candidatos/index
+Completed in 12ms (View: 5, DB: 0) | 200 OK [http://192.168.2.2/candidatos]
+
+
+Processing CandidatosController#index (for 192.168.2.4 at 2010-11-02 12:34:44) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mCandidato Load (0.1ms)[0m   [0;1mSELECT * FROM `candidatos` [0m
+Rendering template within layouts/candidatos
+Rendering candidatos/index
+Completed in 12ms (View: 5, DB: 0) | 200 OK [http://192.168.2.2/candidatos]
+
+
+Processing ApplicationController#index (for 192.168.2.4 at 2010-11-02 12:34:44) [GET]
+
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffoldbase.css" with {:method=>:get}):
+    /vendor/rails/actionpack/lib/action_controller/routing/recognition_optimisation.rb:66:in `recognize_path'
+    /vendor/rails/actionpack/lib/action_controller/routing/route_set.rb:390:in `recognize'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:183:in `handle_request'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:112:in `dispatch_unlocked'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:125:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:124:in `synchronize'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:124:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:134:in `dispatch_cgi'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:41:in `dispatch'
+    /usr/lib/ruby/1.8/mongrel/rails.rb:76:in `process'
+    /usr/lib/ruby/1.8/mongrel/rails.rb:74:in `synchronize'
+    /usr/lib/ruby/1.8/mongrel/rails.rb:74:in `process'
+    /usr/lib/ruby/1.8/mongrel.rb:159:in `process_client'
+    /usr/lib/ruby/1.8/mongrel.rb:158:in `each'
+    /usr/lib/ruby/1.8/mongrel.rb:158:in `process_client'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `initialize'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `new'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `initialize'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `new'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `run'
+    /usr/lib/ruby/1.8/mongrel/configurator.rb:282:in `run'
+    /usr/lib/ruby/1.8/mongrel/configurator.rb:281:in `each'
+    /usr/lib/ruby/1.8/mongrel/configurator.rb:281:in `run'
+    /usr/lib/ruby/1.8/mongrel_rails:129:in `run'
+    /usr/lib/ruby/1.8/mongrel/command.rb:212:in `run'
+    /usr/lib/ruby/1.8/mongrel_rails:282
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:142:in `load_without_new_constant_marking'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:142:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:142:in `load'
+    /vendor/rails/railties/lib/commands/servers/mongrel.rb:64
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:153:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:153:in `require'
+    /vendor/rails/railties/lib/commands/server.rb:49
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+Rendering /home/rodrigo/projects/eleicoes2010/vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing CandidatosController#index (for 192.168.2.4 at 2010-11-02 12:34:52) [GET]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mCandidato Load (10.6ms)[0m   [0mSELECT * FROM `candidatos` [0m
+Rendering template within layouts/candidatos
+Rendering candidatos/index
+Completed in 23ms (View: 5, DB: 11) | 200 OK [http://192.168.2.2/candidatos]
+
+
+Processing CandidatosController#new (for 192.168.2.4 at 2010-11-02 12:36:05) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mCandidato Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `candidatos`[0m
+Rendering template within layouts/candidatos
+Rendering candidatos/new
+Completed in 153ms (View: 144, DB: 1) | 200 OK [http://192.168.2.2/candidatos/new]
+
+
+Processing ZonasController#index (for 192.168.2.4 at 2010-11-02 12:37:44) [GET]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mZona Load (0.3ms)[0m   [0mSELECT * FROM `zonas` [0m
+Rendering template within layouts/zonas
+Rendering zonas/index
+  [4;36;1mZona Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `zonas`[0m
+Completed in 58ms (View: 25, DB: 1) | 200 OK [http://192.168.2.2/zonas]
+
+
+Processing ZonasController#new (for 192.168.2.4 at 2010-11-02 12:37:48) [GET]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mZona Columns (11.5ms)[0m   [0mSHOW FIELDS FROM `zonas`[0m
+Rendering template within layouts/zonas
+Rendering zonas/new
+  [4;36;1mEstado Load (0.6ms)[0m   [0;1mSELECT * FROM `estados` [0m
+  [4;35;1mEstado Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `estados`[0m
+  [4;36;1mMunicipio Load (0.3ms)[0m   [0;1mSELECT * FROM `municipios` [0m
+  [4;35;1mMunicipio Columns (0.5ms)[0m   [0mSHOW FIELDS FROM `municipios`[0m
+Completed in 91ms (View: 70, DB: 14) | 200 OK [http://192.168.2.2/zonas/new]
+
+
+Processing CandidatosController#index (for 192.168.2.4 at 2010-11-02 12:38:08) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mCandidato Load (0.1ms)[0m   [0;1mSELECT * FROM `candidatos` [0m
+Rendering template within layouts/candidatos
+Rendering candidatos/index
+Completed in 13ms (View: 5, DB: 0) | 200 OK [http://192.168.2.2/candidatos]
+
+
+Processing HomeController#index (for 192.168.2.4 at 2010-11-02 12:38:10) [GET]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 8ms (View: 5, DB: 0) | 200 OK [http://192.168.2.2/home]
+
+
+Processing HomeController#index (for 192.168.2.4 at 2010-11-02 12:38:54) [GET]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 9ms (View: 6, DB: 0) | 200 OK [http://192.168.2.2/home]
+
+
+Processing HomeController#index (for 192.168.2.4 at 2010-11-02 12:39:23) [GET]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 9ms (View: 6, DB: 0) | 200 OK [http://192.168.2.2/home]
+
+
+Processing CandidatosController#index (for 192.168.2.4 at 2010-11-02 12:39:32) [GET]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mCandidato Load (0.1ms)[0m   [0mSELECT * FROM `candidatos` [0m
+Rendering template within layouts/candidatos
+Rendering candidatos/index
+Completed in 13ms (View: 5, DB: 0) | 200 OK [http://192.168.2.2/candidatos]
+
+
+Processing CandidatosController#new (for 192.168.2.4 at 2010-11-02 12:39:35) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mCandidato Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `candidatos`[0m
+Rendering template within layouts/candidatos
+Rendering candidatos/new
+Completed in 37ms (View: 28, DB: 1) | 200 OK [http://192.168.2.2/candidatos/new]

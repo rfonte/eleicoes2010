@@ -6,6 +6,7 @@
     font-family: arial,sans-serif;
 }
 body {
+    font-family: verdana, arial, helvetica, sans-serif;
     background: #000 none repeat scroll 0 0;
     font-size:14px;
 }
@@ -25,7 +26,6 @@ a:visited {color: #000;}
 a:hover {color: #FFD700;}
 a:active {color: #000;}
 #body {
-    background: none repeat scroll 0 0 #000;
     margin-left: 20%;
     width: 780px;
     height: 300px;
@@ -46,15 +46,17 @@ a:active {color: #000;}
 #youtubeBox {
     width: 385px;
     height: 250px;
-    position: fixed;
+    position: absolute;
 }
 #twitterBox {
-    background: #FFF none repeat scroll 0 0;
+    background: #000 none repeat scroll 0 0;
     width: 385px;
     height: 250px;
     margin: 0px 385px;
+    text-align: center;
 }
-#twitterLogo {
-    background: #FFF url("/images/twitter.png") none repeat scroll 0 0;
+img {
+    width: 175px;
+    height: 70px;
 }
 
