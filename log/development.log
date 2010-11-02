@@ -23226,3 +23226,1664 @@ Processing HomeController#index (for 192.168.2.4 at 2010-11-02 12:49:24) [GET]
 Rendering template within layouts/home
 Rendering home/index
 Completed in 8ms (View: 5, DB: 0) | 200 OK [http://192.168.2.2/]
+
+
+Processing CandidatosController#index (for 192.168.2.4 at 2010-11-02 13:15:37) [GET]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mCandidato Load (0.1ms)[0m   [0mSELECT * FROM `candidatos` [0m
+Rendering template within layouts/candidatos
+Rendering candidatos/index
+Completed in 13ms (View: 5, DB: 0) | 200 OK [http://192.168.2.2/candidatos]
+
+
+Processing CandidatosController#new (for 192.168.2.4 at 2010-11-02 13:15:42) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mCandidato Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `candidatos`[0m
+Rendering template within layouts/candidatos
+Rendering candidatos/new
+Completed in 37ms (View: 28, DB: 1) | 200 OK [http://192.168.2.2/candidatos/new]
+
+
+Processing CandidatosController#new (for 192.168.2.4 at 2010-11-02 13:16:36) [GET]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mCandidato Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `candidatos`[0m
+Rendering template within layouts/candidatos
+Rendering candidatos/new
+Completed in 36ms (View: 28, DB: 1) | 200 OK [http://192.168.2.2/candidatos/new]
+
+
+Processing HomeController#index (for 192.168.2.4 at 2010-11-02 13:16:40) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 8ms (View: 5, DB: 0) | 200 OK [http://192.168.2.2/]
+
+
+Processing EleitorsController#index (for 192.168.2.4 at 2010-11-02 13:16:47) [GET]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mEleitor Load (0.5ms)[0m   [0;1mSELECT * FROM `eleitors` [0m
+Rendering template within layouts/eleitors
+Rendering eleitors/index
+Completed in 53ms (View: 21, DB: 1) | 200 OK [http://192.168.2.2/eleitors]
+
+
+Processing EleitorsController#new (for 192.168.2.4 at 2010-11-02 13:16:52) [GET]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mEleitor Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `eleitors`[0m
+Rendering template within layouts/eleitors
+Rendering eleitors/new
+  [4;36;1mEstado Load (0.1ms)[0m   [0;1mSELECT * FROM `estados` [0m
+  [4;35;1mEstado Columns (0.5ms)[0m   [0mSHOW FIELDS FROM `estados`[0m
+Completed in 37ms (View: 28, DB: 2) | 200 OK [http://192.168.2.2/eleitors/new]
+
+
+Processing EleitorsController#create (for 192.168.2.4 at 2010-11-02 13:17:03) [POST]
+  Parameters: {"commit"=>"Criar", "authenticity_token"=>"c6b280ff449fdb49ddcef07d58f21fdfddff7db0", "eleitor"=>{"cod_func"=>"", "cod_bio"=>"", "cpf"=>"", "nome"=>"", "tit_eleitor"=>"123", "cod_secao"=>"12", "rg"=>""}}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mEleitor Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `eleitors`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mEleitor Create (0.3ms)[0m   [0;1mINSERT INTO `eleitors` (`created_at`, `cod_func`, `tit_eleitor`, `nome`, `cpf`, `cod_bio`, `updated_at`, `cod_secao`, `rg`) VALUES('2010-11-02 15:17:03', NULL, 123, '', NULL, '', '2010-11-02 15:17:03', 12, NULL)[0m
+  [4;35;1mSQL (64.2ms)[0m   [0mCOMMIT[0m
+Redirected to #<Eleitor:0xb666da80>
+Completed in 79ms (DB: 66) | 302 Found [http://192.168.2.2/eleitors]
+
+
+Processing EleitorsController#show (for 192.168.2.4 at 2010-11-02 13:17:03) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mEleitor Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `eleitors`[0m
+  [4;35;1mEleitor Load (0.3ms)[0m   [0mSELECT * FROM `eleitors` WHERE (`eleitors`.`id` = 1) [0m
+Rendering template within layouts/eleitors
+Rendering eleitors/show
+Completed in 43ms (View: 33, DB: 1) | 200 OK [http://192.168.2.2/eleitors/1]
+
+
+Processing EleitorsController#edit (for 192.168.2.4 at 2010-11-02 13:17:06) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mEleitor Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `eleitors`[0m
+  [4;35;1mEleitor Load (0.1ms)[0m   [0mSELECT * FROM `eleitors` WHERE (`eleitors`.`id` = 1) [0m
+Rendering template within layouts/eleitors
+Rendering eleitors/edit
+Completed in 22ms (View: 13, DB: 1) | 200 OK [http://192.168.2.2/eleitors/1/edit]
+
+
+Processing EleitorsController#update (for 192.168.2.4 at 2010-11-02 13:17:27) [PUT]
+  Parameters: {"commit"=>"Atualizar", "authenticity_token"=>"c6b280ff449fdb49ddcef07d58f21fdfddff7db0", "id"=>"1", "eleitor"=>{"cod_func"=>"123", "cod_bio"=>"213123213", "cpf"=>"12312312321", "nome"=>"Rodrigo", "tit_eleitor"=>"123", "cod_secao"=>"123", "rg"=>"4123123213"}}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mEleitor Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `eleitors`[0m
+  [4;35;1mEleitor Load (0.1ms)[0m   [0mSELECT * FROM `eleitors` WHERE (`eleitors`.`id` = 1) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mEleitor Update (0.4ms)[0m   [0mUPDATE `eleitors` SET `updated_at` = '2010-11-02 15:17:27', `nome` = 'Rodrigo', `cod_func` = 123, `rg` = 4123123213, `cod_bio` = '213123213', `cpf` = 12312312321, `cod_secao` = 123 WHERE `id` = 1[0m
+  [4;36;1mSQL (48.2ms)[0m   [0;1mCOMMIT[0m
+Redirected to #<Eleitor:0xb63f15a4>
+Completed in 63ms (DB: 50) | 302 Found [http://192.168.2.2/eleitors/1]
+
+
+Processing EleitorsController#show (for 192.168.2.4 at 2010-11-02 13:17:27) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mEleitor Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `eleitors`[0m
+  [4;36;1mEleitor Load (0.3ms)[0m   [0;1mSELECT * FROM `eleitors` WHERE (`eleitors`.`id` = 1) [0m
+Rendering template within layouts/eleitors
+Rendering eleitors/show
+Completed in 83ms (View: 7, DB: 1) | 200 OK [http://192.168.2.2/eleitors/1]
+
+
+Processing EleitorsController#index (for 192.168.2.4 at 2010-11-02 13:17:29) [GET]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mEleitor Load (0.3ms)[0m   [0mSELECT * FROM `eleitors` [0m
+Rendering template within layouts/eleitors
+Rendering eleitors/index
+  [4;36;1mEleitor Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `eleitors`[0m
+Completed in 21ms (View: 13, DB: 1) | 200 OK [http://192.168.2.2/eleitors]
+
+
+Processing EleitorsController#new (for 192.168.2.4 at 2010-11-02 13:22:44) [GET]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mEleitor Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `eleitors`[0m
+Rendering template within layouts/eleitors
+Rendering eleitors/new
+  [4;36;1mEstado Load (0.1ms)[0m   [0;1mSELECT * FROM `estados` [0m
+  [4;35;1mEstado Columns (0.5ms)[0m   [0mSHOW FIELDS FROM `estados`[0m
+Completed in 29ms (View: 19, DB: 2) | 200 OK [http://192.168.2.2/eleitors/new]
+
+
+Processing CandidatosController#index (for 192.168.2.4 at 2010-11-02 13:24:15) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mCandidato Load (0.1ms)[0m   [0;1mSELECT * FROM `candidatos` [0m
+Rendering template within layouts/candidatos
+Rendering candidatos/index
+Completed in 12ms (View: 5, DB: 0) | 200 OK [http://192.168.2.2/candidatos]
+
+
+Processing EleitorsController#new (for 192.168.2.4 at 2010-11-02 13:25:31) [GET]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mEleitor Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `eleitors`[0m
+Rendering template within layouts/eleitors
+Rendering eleitors/new
+Completed in 21ms (View: 12, DB: 1) | 200 OK [http://192.168.2.2/eleitors/new]
+
+
+Processing EleitorsController#new (for 192.168.2.4 at 2010-11-02 13:26:22) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mEleitor Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `eleitors`[0m
+Rendering template within layouts/eleitors
+Rendering eleitors/new
+Completed in 23ms (View: 13, DB: 1) | 200 OK [http://192.168.2.2/eleitors/new]
+
+
+Processing EleitorsController#new (for 192.168.2.4 at 2010-11-02 13:28:02) [GET]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mEleitor Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `eleitors`[0m
+Rendering template within layouts/eleitors
+Rendering eleitors/new
+Completed in 21ms (View: 12, DB: 1) | 200 OK [http://192.168.2.2/eleitors/new]
+
+
+Processing EleitorsController#new (for 192.168.2.4 at 2010-11-02 13:28:27) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mEleitor Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `eleitors`[0m
+Rendering template within layouts/eleitors
+Rendering eleitors/new
+Completed in 22ms (View: 13, DB: 1) | 200 OK [http://192.168.2.2/eleitors/new]
+
+
+Processing EleitorsController#new (for 192.168.2.4 at 2010-11-02 13:29:27) [GET]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mEleitor Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `eleitors`[0m
+Rendering template within layouts/eleitors
+Rendering eleitors/new
+Completed in 20ms (View: 11, DB: 1) | 200 OK [http://192.168.2.2/eleitors/new]
+
+
+Processing EleitorsController#new (for 192.168.2.4 at 2010-11-02 13:29:33) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mEleitor Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `eleitors`[0m
+Rendering template within layouts/eleitors
+Rendering eleitors/new
+Completed in 84ms (View: 15, DB: 1) | 200 OK [http://192.168.2.2/eleitors/new]
+
+
+Processing EleitorsController#new (for 192.168.2.4 at 2010-11-02 13:29:33) [GET]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mEleitor Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `eleitors`[0m
+Rendering template within layouts/eleitors
+Rendering eleitors/new
+Completed in 21ms (View: 12, DB: 1) | 200 OK [http://192.168.2.2/eleitors/new]
+
+
+Processing EleitorsController#new (for 192.168.2.4 at 2010-11-02 13:29:33) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mEleitor Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `eleitors`[0m
+Rendering template within layouts/eleitors
+Rendering eleitors/new
+Completed in 21ms (View: 11, DB: 1) | 200 OK [http://192.168.2.2/eleitors/new]
+
+
+Processing EleitorsController#new (for 192.168.2.4 at 2010-11-02 13:29:33) [GET]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mEleitor Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `eleitors`[0m
+Rendering template within layouts/eleitors
+Rendering eleitors/new
+Completed in 20ms (View: 11, DB: 1) | 200 OK [http://192.168.2.2/eleitors/new]
+
+
+Processing EleitorsController#new (for 192.168.2.4 at 2010-11-02 13:32:48) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mEleitor Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `eleitors`[0m
+Rendering template within layouts/eleitors
+Rendering eleitors/new
+Completed in 20ms (View: 11, DB: 1) | 200 OK [http://192.168.2.2/eleitors/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateCadEleitors (20100917193407)
+Migrating to CreateEstados (20100921112201)
+Migrating to CreateMunicipios (20100921114054)
+Migrating to CreateZonas (20100921120657)
+Migrating to CreateSecaos (20100921134547)
+Migrating to CreatePartidos (20100923111427)
+Migrating to CreateEleitors (20100923111743)
+Migrating to CreateCandidatos (20100923112500)
+Migrating to EstadoDeleteCodEst (20100929233553)
+Migrating to MunicipiosAjustes (20100930002327)
+Migrating to AjusteZona (20100930144619)
+Migrating to AjusteColunasZona (20100930144929)
+Migrating to AjusteSecao (20100930150931)
+Migrating to CreateUrnas (20100930215207)
+Migrating to AjustePartidos (20100930221112)
+Migrating to AjusteEleitorZonaENascimento (20101102153822)
+  [4;36;1mSQL (274.8ms)[0m   [0;1mALTER TABLE `eleitors` ADD `cod_zona` int(11)[0m
+  [4;35;1mSQL (263.7ms)[0m   [0mALTER TABLE `eleitors` ADD `data_nasc` int(11)[0m
+  [4;36;1mSQL (55.0ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20101102153822')[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSHOW FIELDS FROM `cad_eleitors`[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mdescribe `cad_eleitors`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW KEYS FROM `cad_eleitors`[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mSHOW FIELDS FROM `candidatos`[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mdescribe `candidatos`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW KEYS FROM `candidatos`[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSHOW FIELDS FROM `eleitors`[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mdescribe `eleitors`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW KEYS FROM `eleitors`[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSHOW FIELDS FROM `estados`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mdescribe `estados`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW KEYS FROM `estados`[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW FIELDS FROM `municipios`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mdescribe `municipios`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `municipios`[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSHOW FIELDS FROM `partidos`[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mdescribe `partidos`[0m
+  [4;35;1mSQL (38.5ms)[0m   [0mSHOW KEYS FROM `partidos`[0m
+  [4;36;1mSQL (5.9ms)[0m   [0;1mSHOW FIELDS FROM `secaos`[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mdescribe `secaos`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `secaos`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW FIELDS FROM `urnas`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mdescribe `urnas`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `urnas`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW FIELDS FROM `zonas`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mdescribe `zonas`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `zonas`[0m
+
+
+Processing EleitorsController#new (for 192.168.2.4 at 2010-11-02 13:45:10) [GET]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mEleitor Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `eleitors`[0m
+Rendering template within layouts/eleitors
+Rendering eleitors/new
+Completed in 23ms (View: 13, DB: 1) | 200 OK [http://192.168.2.2/eleitors/new]
+
+
+Processing EleitorsController#new (for 192.168.2.4 at 2010-11-02 13:45:10) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mEleitor Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `eleitors`[0m
+Rendering template within layouts/eleitors
+Rendering eleitors/new
+Completed in 22ms (View: 13, DB: 1) | 200 OK [http://192.168.2.2/eleitors/new]
+
+
+Processing EleitorsController#new (for 192.168.2.4 at 2010-11-02 13:45:13) [GET]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mEleitor Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `eleitors`[0m
+Rendering template within layouts/eleitors
+Rendering eleitors/new
+Completed in 22ms (View: 13, DB: 1) | 200 OK [http://192.168.2.2/eleitors/new]
+
+
+Processing EleitorsController#index (for 192.168.2.4 at 2010-11-02 13:45:52) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mEleitor Load (0.3ms)[0m   [0;1mSELECT * FROM `eleitors` [0m
+Rendering template within layouts/eleitors
+Rendering eleitors/index
+  [4;35;1mEleitor Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `eleitors`[0m
+Completed in 21ms (View: 12, DB: 1) | 200 OK [http://192.168.2.2/eleitors]
+
+
+Processing EleitorsController#edit (for 192.168.2.4 at 2010-11-02 13:45:55) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mEleitor Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `eleitors`[0m
+  [4;35;1mEleitor Load (0.3ms)[0m   [0mSELECT * FROM `eleitors` WHERE (`eleitors`.`id` = 1) [0m
+Rendering template within layouts/eleitors
+Rendering eleitors/edit
+Completed in 23ms (View: 14, DB: 1) | 200 OK [http://192.168.2.2/eleitors/1/edit]
+
+
+Processing EleitorsController#update (for 192.168.2.4 at 2010-11-02 13:46:00) [PUT]
+  Parameters: {"commit"=>"Atualizar", "authenticity_token"=>"c6b280ff449fdb49ddcef07d58f21fdfddff7db0", "id"=>"1", "eleitor"=>{"data_nasc"=>"", "cod_bio"=>"213123213", "cpf"=>"2147483647", "nome"=>"Rodrigo", "tit_eleitor"=>"123", "cod_zona"=>"", "cod_secao"=>"123", "rg"=>"2147483647"}}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mEleitor Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `eleitors`[0m
+  [4;35;1mEleitor Load (0.1ms)[0m   [0mSELECT * FROM `eleitors` WHERE (`eleitors`.`id` = 1) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mEleitor Exists (0.4ms)[0m   [0mSELECT `eleitors`.id FROM `eleitors` WHERE (`eleitors`.`tit_eleitor` = 123 AND `eleitors`.id <> 1) LIMIT 1[0m
+  [4;36;1mEleitor Exists (0.2ms)[0m   [0;1mSELECT `eleitors`.id FROM `eleitors` WHERE (`eleitors`.`cpf` = 2147483647 AND `eleitors`.id <> 1) LIMIT 1[0m
+  [4;35;1mEleitor Exists (0.2ms)[0m   [0mSELECT `eleitors`.id FROM `eleitors` WHERE (`eleitors`.`rg` = 2147483647 AND `eleitors`.id <> 1) LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+Rendering template within layouts/eleitors
+Rendering eleitors/edit
+Completed in 34ms (View: 13, DB: 2) | 200 OK [http://192.168.2.2/eleitors/1]
+
+
+Processing EleitorsController#index (for 192.168.2.4 at 2010-11-02 13:46:17) [GET]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mEleitor Load (5.5ms)[0m   [0mSELECT * FROM `eleitors` [0m
+Rendering template within layouts/eleitors
+Rendering eleitors/index
+  [4;36;1mEleitor Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `eleitors`[0m
+Completed in 31ms (View: 16, DB: 6) | 200 OK [http://192.168.2.2/eleitors]
+
+
+Processing EleitorsController#edit (for 192.168.2.4 at 2010-11-02 13:46:21) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mEleitor Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `eleitors`[0m
+  [4;36;1mEleitor Load (0.1ms)[0m   [0;1mSELECT * FROM `eleitors` WHERE (`eleitors`.`id` = 1) [0m
+Rendering template within layouts/eleitors
+Rendering eleitors/edit
+Completed in 23ms (View: 14, DB: 1) | 200 OK [http://192.168.2.2/eleitors/1/edit]
+
+
+Processing EleitorsController#index (for 192.168.2.4 at 2010-11-02 13:46:23) [GET]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mEleitor Load (0.1ms)[0m   [0mSELECT * FROM `eleitors` [0m
+Rendering template within layouts/eleitors
+Rendering eleitors/index
+  [4;36;1mEleitor Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `eleitors`[0m
+Completed in 21ms (View: 12, DB: 1) | 200 OK [http://192.168.2.2/eleitors]
+
+
+Processing HomeController#index (for 192.168.2.4 at 2010-11-02 13:48:45) [GET]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 8ms (View: 5, DB: 0) | 200 OK [http://192.168.2.2/home]
+
+
+Processing EleitorsController#index (for 192.168.2.4 at 2010-11-02 13:50:40) [GET]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mEleitor Load (0.1ms)[0m   [0mSELECT * FROM `eleitors` [0m
+Rendering template within layouts/eleitors
+Rendering eleitors/index
+  [4;36;1mEleitor Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `eleitors`[0m
+Completed in 22ms (View: 12, DB: 1) | 200 OK [http://192.168.2.2/eleitors]
+
+
+Processing EleitorsController#new (for 192.168.2.4 at 2010-11-02 13:52:48) [GET]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mEleitor Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `eleitors`[0m
+Rendering template within layouts/eleitors
+Rendering eleitors/new
+Completed in 22ms (View: 13, DB: 1) | 200 OK [http://192.168.2.2/eleitors/new]
+
+
+Processing HomeController#index (for 192.168.2.4 at 2010-11-02 13:56:19) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 8ms (View: 5, DB: 0) | 200 OK [http://192.168.2.2/home]
+
+
+Processing EleitorsController#index (for 192.168.2.4 at 2010-11-02 13:56:22) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mEleitor Load (0.1ms)[0m   [0;1mSELECT * FROM `eleitors` [0m
+Rendering template within layouts/eleitors
+Rendering eleitors/index
+  [4;35;1mEleitor Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `eleitors`[0m
+Completed in 21ms (View: 12, DB: 1) | 200 OK [http://192.168.2.2/eleitors]
+
+
+Processing EleitorsController#edit (for 192.168.2.4 at 2010-11-02 13:56:25) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mEleitor Columns (10.8ms)[0m   [0;1mSHOW FIELDS FROM `eleitors`[0m
+  [4;35;1mEleitor Load (0.1ms)[0m   [0mSELECT * FROM `eleitors` WHERE (`eleitors`.`id` = 1) [0m
+Rendering template within layouts/eleitors
+Rendering eleitors/edit
+Completed in 37ms (View: 18, DB: 11) | 200 OK [http://192.168.2.2/eleitors/1/edit]
+
+
+Processing EleitorsController#update (for 192.168.2.4 at 2010-11-02 13:56:36) [PUT]
+  Parameters: {"commit"=>"Atualizar", "authenticity_token"=>"c6b280ff449fdb49ddcef07d58f21fdfddff7db0", "id"=>"1", "eleitor"=>{"data_nasc"=>"12/10/1988", "cod_bio"=>"213123213", "cpf"=>"2147483647", "nome"=>"Rodrigo", "tit_eleitor"=>"123", "cod_zona"=>"123", "cod_secao"=>"123", "rg"=>"2147483647"}}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mEleitor Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `eleitors`[0m
+  [4;35;1mEleitor Load (0.1ms)[0m   [0mSELECT * FROM `eleitors` WHERE (`eleitors`.`id` = 1) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+
+
+NoMethodError (undefined method `tcod_zona' for #<Eleitor:0xb677b184>):
+    /vendor/rails/activerecord/lib/active_record/attribute_methods.rb:260:in `method_missing'
+    /vendor/rails/activerecord/lib/active_record/validations.rb:398:in `send'
+    /vendor/rails/activerecord/lib/active_record/validations.rb:398
+    /vendor/rails/activerecord/lib/active_record/validations.rb:397:in `each'
+    /vendor/rails/activerecord/lib/active_record/validations.rb:397
+    /vendor/rails/activesupport/lib/active_support/callbacks.rb:182:in `call'
+    /vendor/rails/activesupport/lib/active_support/callbacks.rb:182:in `evaluate_method'
+    /vendor/rails/activesupport/lib/active_support/callbacks.rb:166:in `call'
+    /vendor/rails/activesupport/lib/active_support/callbacks.rb:90:in `run'
+    /vendor/rails/activesupport/lib/active_support/callbacks.rb:90:in `each'
+    /vendor/rails/activesupport/lib/active_support/callbacks.rb:90:in `send'
+    /vendor/rails/activesupport/lib/active_support/callbacks.rb:90:in `run'
+    /vendor/rails/activesupport/lib/active_support/callbacks.rb:277:in `run_callbacks'
+    /vendor/rails/activerecord/lib/active_record/validations.rb:1029:in `valid_without_callbacks?'
+    /vendor/rails/activerecord/lib/active_record/callbacks.rb:286:in `valid?'
+    /vendor/rails/activerecord/lib/active_record/validations.rb:1008:in `save_without_dirty'
+    /vendor/rails/activerecord/lib/active_record/dirty.rb:79:in `save_without_transactions'
+    /vendor/rails/activerecord/lib/active_record/transactions.rb:179:in `send'
+    /vendor/rails/activerecord/lib/active_record/transactions.rb:179:in `with_transaction_returning_status'
+    /vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/database_statements.rb:66:in `transaction'
+    /vendor/rails/activerecord/lib/active_record/transactions.rb:129:in `transaction'
+    /vendor/rails/activerecord/lib/active_record/transactions.rb:178:in `with_transaction_returning_status'
+    /vendor/rails/activerecord/lib/active_record/transactions.rb:146:in `save'
+    /vendor/rails/activerecord/lib/active_record/transactions.rb:158:in `rollback_active_record_state!'
+    /vendor/rails/activerecord/lib/active_record/transactions.rb:146:in `save'
+    /vendor/rails/activerecord/lib/active_record/base.rb:2472:in `update_attributes'
+    /app/controllers/eleitors_controller.rb:63
+    /vendor/rails/actionpack/lib/action_controller/mime_responds.rb:106:in `call'
+    /vendor/rails/actionpack/lib/action_controller/mime_responds.rb:106:in `respond_to'
+    /app/controllers/eleitors_controller.rb:62:in `update'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:1256:in `send'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:1256:in `perform_action_without_filters'
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:617:in `call_filters'
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+    /vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /vendor/rails/actionpack/lib/action_controller/rescue.rb:136:in `perform_action_without_caching'
+    /vendor/rails/actionpack/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+    /vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+    /vendor/rails/activerecord/lib/active_record/query_cache.rb:8:in `cache'
+    /vendor/rails/actionpack/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:524:in `send'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:524:in `process_without_filters'
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:606:in `process_without_session_management_support'
+    /vendor/rails/actionpack/lib/action_controller/session_management.rb:134:in `process'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:392:in `process'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:184:in `handle_request'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:112:in `dispatch_unlocked'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:125:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:124:in `synchronize'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:124:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:134:in `dispatch_cgi'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:41:in `dispatch'
+    /usr/lib/ruby/1.8/mongrel/rails.rb:76:in `process'
+    /usr/lib/ruby/1.8/mongrel/rails.rb:74:in `synchronize'
+    /usr/lib/ruby/1.8/mongrel/rails.rb:74:in `process'
+    /usr/lib/ruby/1.8/mongrel.rb:159:in `process_client'
+    /usr/lib/ruby/1.8/mongrel.rb:158:in `each'
+    /usr/lib/ruby/1.8/mongrel.rb:158:in `process_client'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `initialize'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `new'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `initialize'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `new'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `run'
+    /usr/lib/ruby/1.8/mongrel/configurator.rb:282:in `run'
+    /usr/lib/ruby/1.8/mongrel/configurator.rb:281:in `each'
+    /usr/lib/ruby/1.8/mongrel/configurator.rb:281:in `run'
+    /usr/lib/ruby/1.8/mongrel_rails:129:in `run'
+    /usr/lib/ruby/1.8/mongrel/command.rb:212:in `run'
+    /usr/lib/ruby/1.8/mongrel_rails:282
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:142:in `load_without_new_constant_marking'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:142:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:142:in `load'
+    /vendor/rails/railties/lib/commands/servers/mongrel.rb:64
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:153:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:153:in `require'
+    /vendor/rails/railties/lib/commands/server.rb:49
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+Rendered /home/rodrigo/projects/eleicoes2010/vendor/rails/actionpack/lib/action_controller/templates/rescues/_trace (39.8ms)
+Rendered /home/rodrigo/projects/eleicoes2010/vendor/rails/actionpack/lib/action_controller/templates/rescues/_request_and_response (1.2ms)
+Rendering /home/rodrigo/projects/eleicoes2010/vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing EleitorsController#index (for 192.168.2.4 at 2010-11-02 13:57:23) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mEleitor Load (0.1ms)[0m   [0;1mSELECT * FROM `eleitors` [0m
+Rendering template within layouts/eleitors
+Rendering eleitors/index
+  [4;35;1mEleitor Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `eleitors`[0m
+Completed in 21ms (View: 12, DB: 1) | 200 OK [http://192.168.2.2/eleitors]
+
+
+Processing EleitorsController#new (for 192.168.2.4 at 2010-11-02 13:57:25) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mEleitor Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `eleitors`[0m
+Rendering template within layouts/eleitors
+Rendering eleitors/new
+Completed in 22ms (View: 13, DB: 1) | 200 OK [http://192.168.2.2/eleitors/new]
+
+
+Processing EleitorsController#create (for 192.168.2.4 at 2010-11-02 13:57:48) [POST]
+  Parameters: {"commit"=>"Criar", "authenticity_token"=>"c6b280ff449fdb49ddcef07d58f21fdfddff7db0", "eleitor"=>{"data_nasc"=>"12/10/1988", "cod_bio"=>"", "cpf"=>"12312312321", "nome"=>"rodrigo", "tit_eleitor"=>"123", "cod_zona"=>"123", "cod_secao"=>"123", "rg"=>"12312312321"}}
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mEleitor Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `eleitors`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+
+
+NoMethodError (undefined method `tcod_zona' for #<Eleitor:0xb63bd204>):
+    /vendor/rails/activerecord/lib/active_record/attribute_methods.rb:260:in `method_missing'
+    /vendor/rails/activerecord/lib/active_record/validations.rb:398:in `send'
+    /vendor/rails/activerecord/lib/active_record/validations.rb:398
+    /vendor/rails/activerecord/lib/active_record/validations.rb:397:in `each'
+    /vendor/rails/activerecord/lib/active_record/validations.rb:397
+    /vendor/rails/activesupport/lib/active_support/callbacks.rb:182:in `call'
+    /vendor/rails/activesupport/lib/active_support/callbacks.rb:182:in `evaluate_method'
+    /vendor/rails/activesupport/lib/active_support/callbacks.rb:166:in `call'
+    /vendor/rails/activesupport/lib/active_support/callbacks.rb:90:in `run'
+    /vendor/rails/activesupport/lib/active_support/callbacks.rb:90:in `each'
+    /vendor/rails/activesupport/lib/active_support/callbacks.rb:90:in `send'
+    /vendor/rails/activesupport/lib/active_support/callbacks.rb:90:in `run'
+    /vendor/rails/activesupport/lib/active_support/callbacks.rb:277:in `run_callbacks'
+    /vendor/rails/activerecord/lib/active_record/validations.rb:1029:in `valid_without_callbacks?'
+    /vendor/rails/activerecord/lib/active_record/callbacks.rb:286:in `valid?'
+    /vendor/rails/activerecord/lib/active_record/validations.rb:1008:in `save_without_dirty'
+    /vendor/rails/activerecord/lib/active_record/dirty.rb:79:in `save_without_transactions'
+    /vendor/rails/activerecord/lib/active_record/transactions.rb:179:in `send'
+    /vendor/rails/activerecord/lib/active_record/transactions.rb:179:in `with_transaction_returning_status'
+    /vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/database_statements.rb:66:in `transaction'
+    /vendor/rails/activerecord/lib/active_record/transactions.rb:129:in `transaction'
+    /vendor/rails/activerecord/lib/active_record/transactions.rb:178:in `with_transaction_returning_status'
+    /vendor/rails/activerecord/lib/active_record/transactions.rb:146:in `save'
+    /vendor/rails/activerecord/lib/active_record/transactions.rb:158:in `rollback_active_record_state!'
+    /vendor/rails/activerecord/lib/active_record/transactions.rb:146:in `save'
+    /app/controllers/eleitors_controller.rb:46
+    /vendor/rails/actionpack/lib/action_controller/mime_responds.rb:106:in `call'
+    /vendor/rails/actionpack/lib/action_controller/mime_responds.rb:106:in `respond_to'
+    /app/controllers/eleitors_controller.rb:45:in `create'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:1256:in `send'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:1256:in `perform_action_without_filters'
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:617:in `call_filters'
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+    /vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /vendor/rails/actionpack/lib/action_controller/rescue.rb:136:in `perform_action_without_caching'
+    /vendor/rails/actionpack/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+    /vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+    /vendor/rails/activerecord/lib/active_record/query_cache.rb:8:in `cache'
+    /vendor/rails/actionpack/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:524:in `send'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:524:in `process_without_filters'
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:606:in `process_without_session_management_support'
+    /vendor/rails/actionpack/lib/action_controller/session_management.rb:134:in `process'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:392:in `process'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:184:in `handle_request'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:112:in `dispatch_unlocked'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:125:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:124:in `synchronize'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:124:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:134:in `dispatch_cgi'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:41:in `dispatch'
+    /usr/lib/ruby/1.8/mongrel/rails.rb:76:in `process'
+    /usr/lib/ruby/1.8/mongrel/rails.rb:74:in `synchronize'
+    /usr/lib/ruby/1.8/mongrel/rails.rb:74:in `process'
+    /usr/lib/ruby/1.8/mongrel.rb:159:in `process_client'
+    /usr/lib/ruby/1.8/mongrel.rb:158:in `each'
+    /usr/lib/ruby/1.8/mongrel.rb:158:in `process_client'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `initialize'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `new'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `initialize'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `new'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `run'
+    /usr/lib/ruby/1.8/mongrel/configurator.rb:282:in `run'
+    /usr/lib/ruby/1.8/mongrel/configurator.rb:281:in `each'
+    /usr/lib/ruby/1.8/mongrel/configurator.rb:281:in `run'
+    /usr/lib/ruby/1.8/mongrel_rails:129:in `run'
+    /usr/lib/ruby/1.8/mongrel/command.rb:212:in `run'
+    /usr/lib/ruby/1.8/mongrel_rails:282
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:142:in `load_without_new_constant_marking'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:142:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:142:in `load'
+    /vendor/rails/railties/lib/commands/servers/mongrel.rb:64
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:153:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:153:in `require'
+    /vendor/rails/railties/lib/commands/server.rb:49
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+Rendered /home/rodrigo/projects/eleicoes2010/vendor/rails/actionpack/lib/action_controller/templates/rescues/_trace (104.6ms)
+Rendered /home/rodrigo/projects/eleicoes2010/vendor/rails/actionpack/lib/action_controller/templates/rescues/_request_and_response (1.1ms)
+Rendering /home/rodrigo/projects/eleicoes2010/vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing EleitorsController#create (for 192.168.2.4 at 2010-11-02 13:58:54) [POST]
+  Parameters: {"commit"=>"Criar", "authenticity_token"=>"c6b280ff449fdb49ddcef07d58f21fdfddff7db0", "eleitor"=>{"data_nasc"=>"12/10/1988", "cod_bio"=>"", "cpf"=>"12312312321", "nome"=>"rodrigo", "tit_eleitor"=>"123", "cod_zona"=>"123", "cod_secao"=>"123", "rg"=>"12312312321"}}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mEleitor Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `eleitors`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+
+
+NoMethodError (undefined method `tcod_zona' for #<Eleitor:0xb663ff54>):
+    /vendor/rails/activerecord/lib/active_record/attribute_methods.rb:260:in `method_missing'
+    /vendor/rails/activerecord/lib/active_record/validations.rb:398:in `send'
+    /vendor/rails/activerecord/lib/active_record/validations.rb:398
+    /vendor/rails/activerecord/lib/active_record/validations.rb:397:in `each'
+    /vendor/rails/activerecord/lib/active_record/validations.rb:397
+    /vendor/rails/activesupport/lib/active_support/callbacks.rb:182:in `call'
+    /vendor/rails/activesupport/lib/active_support/callbacks.rb:182:in `evaluate_method'
+    /vendor/rails/activesupport/lib/active_support/callbacks.rb:166:in `call'
+    /vendor/rails/activesupport/lib/active_support/callbacks.rb:90:in `run'
+    /vendor/rails/activesupport/lib/active_support/callbacks.rb:90:in `each'
+    /vendor/rails/activesupport/lib/active_support/callbacks.rb:90:in `send'
+    /vendor/rails/activesupport/lib/active_support/callbacks.rb:90:in `run'
+    /vendor/rails/activesupport/lib/active_support/callbacks.rb:277:in `run_callbacks'
+    /vendor/rails/activerecord/lib/active_record/validations.rb:1029:in `valid_without_callbacks?'
+    /vendor/rails/activerecord/lib/active_record/callbacks.rb:286:in `valid?'
+    /vendor/rails/activerecord/lib/active_record/validations.rb:1008:in `save_without_dirty'
+    /vendor/rails/activerecord/lib/active_record/dirty.rb:79:in `save_without_transactions'
+    /vendor/rails/activerecord/lib/active_record/transactions.rb:179:in `send'
+    /vendor/rails/activerecord/lib/active_record/transactions.rb:179:in `with_transaction_returning_status'
+    /vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/database_statements.rb:66:in `transaction'
+    /vendor/rails/activerecord/lib/active_record/transactions.rb:129:in `transaction'
+    /vendor/rails/activerecord/lib/active_record/transactions.rb:178:in `with_transaction_returning_status'
+    /vendor/rails/activerecord/lib/active_record/transactions.rb:146:in `save'
+    /vendor/rails/activerecord/lib/active_record/transactions.rb:158:in `rollback_active_record_state!'
+    /vendor/rails/activerecord/lib/active_record/transactions.rb:146:in `save'
+    /app/controllers/eleitors_controller.rb:46
+    /vendor/rails/actionpack/lib/action_controller/mime_responds.rb:106:in `call'
+    /vendor/rails/actionpack/lib/action_controller/mime_responds.rb:106:in `respond_to'
+    /app/controllers/eleitors_controller.rb:45:in `create'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:1256:in `send'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:1256:in `perform_action_without_filters'
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:617:in `call_filters'
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+    /vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /vendor/rails/actionpack/lib/action_controller/rescue.rb:136:in `perform_action_without_caching'
+    /vendor/rails/actionpack/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+    /vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+    /vendor/rails/activerecord/lib/active_record/query_cache.rb:8:in `cache'
+    /vendor/rails/actionpack/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:524:in `send'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:524:in `process_without_filters'
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:606:in `process_without_session_management_support'
+    /vendor/rails/actionpack/lib/action_controller/session_management.rb:134:in `process'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:392:in `process'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:184:in `handle_request'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:112:in `dispatch_unlocked'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:125:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:124:in `synchronize'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:124:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:134:in `dispatch_cgi'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:41:in `dispatch'
+    /usr/lib/ruby/1.8/mongrel/rails.rb:76:in `process'
+    /usr/lib/ruby/1.8/mongrel/rails.rb:74:in `synchronize'
+    /usr/lib/ruby/1.8/mongrel/rails.rb:74:in `process'
+    /usr/lib/ruby/1.8/mongrel.rb:159:in `process_client'
+    /usr/lib/ruby/1.8/mongrel.rb:158:in `each'
+    /usr/lib/ruby/1.8/mongrel.rb:158:in `process_client'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `initialize'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `new'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `initialize'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `new'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `run'
+    /usr/lib/ruby/1.8/mongrel/configurator.rb:282:in `run'
+    /usr/lib/ruby/1.8/mongrel/configurator.rb:281:in `each'
+    /usr/lib/ruby/1.8/mongrel/configurator.rb:281:in `run'
+    /usr/lib/ruby/1.8/mongrel_rails:129:in `run'
+    /usr/lib/ruby/1.8/mongrel/command.rb:212:in `run'
+    /usr/lib/ruby/1.8/mongrel_rails:282
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:142:in `load_without_new_constant_marking'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:142:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:142:in `load'
+    /vendor/rails/railties/lib/commands/servers/mongrel.rb:64
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:153:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:153:in `require'
+    /vendor/rails/railties/lib/commands/server.rb:49
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+Rendered /home/rodrigo/projects/eleicoes2010/vendor/rails/actionpack/lib/action_controller/templates/rescues/_trace (35.3ms)
+Rendered /home/rodrigo/projects/eleicoes2010/vendor/rails/actionpack/lib/action_controller/templates/rescues/_request_and_response (1.0ms)
+Rendering /home/rodrigo/projects/eleicoes2010/vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing EleitorsController#create (for 192.168.2.4 at 2010-11-02 13:59:23) [POST]
+  Parameters: {"commit"=>"Criar", "authenticity_token"=>"c6b280ff449fdb49ddcef07d58f21fdfddff7db0", "eleitor"=>{"data_nasc"=>"12/10/1988", "cod_bio"=>"", "cpf"=>"12312312321", "nome"=>"rodrigo", "tit_eleitor"=>"123", "cod_zona"=>"123", "cod_secao"=>"123", "rg"=>"12312312321"}}
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mEleitor Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `eleitors`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mEleitor Exists (0.3ms)[0m   [0mSELECT `eleitors`.id FROM `eleitors` WHERE (`eleitors`.`tit_eleitor` = 123) LIMIT 1[0m
+  [4;36;1mEleitor Exists (0.2ms)[0m   [0;1mSELECT `eleitors`.id FROM `eleitors` WHERE (`eleitors`.`cpf` = 12312312321) LIMIT 1[0m
+  [4;35;1mEleitor Exists (0.2ms)[0m   [0mSELECT `eleitors`.id FROM `eleitors` WHERE (`eleitors`.`rg` = 12312312321) LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+Rendering template within layouts/eleitors
+Rendering eleitors/new
+Completed in 31ms (View: 12, DB: 2) | 200 OK [http://192.168.2.2/eleitors]
+
+
+Processing EleitorsController#create (for 192.168.2.4 at 2010-11-02 13:59:58) [POST]
+  Parameters: {"commit"=>"Criar", "authenticity_token"=>"c6b280ff449fdb49ddcef07d58f21fdfddff7db0", "eleitor"=>{"data_nasc"=>"12/10/1988", "cod_bio"=>"", "cpf"=>"12312312321", "nome"=>"rodrigo", "tit_eleitor"=>"1234", "cod_zona"=>"144", "cod_secao"=>"123", "rg"=>"12312312321"}}
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mEleitor Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `eleitors`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mEleitor Exists (0.4ms)[0m   [0mSELECT `eleitors`.id FROM `eleitors` WHERE (`eleitors`.`tit_eleitor` = 1234) LIMIT 1[0m
+  [4;36;1mEleitor Exists (0.1ms)[0m   [0;1mSELECT `eleitors`.id FROM `eleitors` WHERE (`eleitors`.`cpf` = 12312312321) LIMIT 1[0m
+  [4;35;1mEleitor Exists (0.1ms)[0m   [0mSELECT `eleitors`.id FROM `eleitors` WHERE (`eleitors`.`rg` = 12312312321) LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+Rendering template within layouts/eleitors
+Rendering eleitors/new
+Completed in 102ms (View: 16, DB: 2) | 200 OK [http://192.168.2.2/eleitors]
+
+
+Processing EleitorsController#create (for 192.168.2.4 at 2010-11-02 14:00:13) [POST]
+  Parameters: {"commit"=>"Criar", "authenticity_token"=>"c6b280ff449fdb49ddcef07d58f21fdfddff7db0", "eleitor"=>{"data_nasc"=>"12/10/1988", "cod_bio"=>"", "cpf"=>"12312312321", "nome"=>"rodrigo", "tit_eleitor"=>"1234", "cod_zona"=>"14", "cod_secao"=>"123", "rg"=>"12312312321"}}
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mEleitor Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `eleitors`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mEleitor Exists (0.1ms)[0m   [0mSELECT `eleitors`.id FROM `eleitors` WHERE (`eleitors`.`tit_eleitor` = 1234) LIMIT 1[0m
+  [4;36;1mEleitor Exists (0.1ms)[0m   [0;1mSELECT `eleitors`.id FROM `eleitors` WHERE (`eleitors`.`cpf` = 12312312321) LIMIT 1[0m
+  [4;35;1mEleitor Exists (0.1ms)[0m   [0mSELECT `eleitors`.id FROM `eleitors` WHERE (`eleitors`.`rg` = 12312312321) LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+Rendering template within layouts/eleitors
+Rendering eleitors/new
+Completed in 43ms (View: 12, DB: 1) | 200 OK [http://192.168.2.2/eleitors]
+
+
+Processing EleitorsController#create (for 192.168.2.4 at 2010-11-02 14:00:15) [POST]
+  Parameters: {"commit"=>"Criar", "authenticity_token"=>"c6b280ff449fdb49ddcef07d58f21fdfddff7db0", "eleitor"=>{"data_nasc"=>"12/10/1988", "cod_bio"=>"", "cpf"=>"12312312321", "nome"=>"rodrigo", "tit_eleitor"=>"1234", "cod_zona"=>"14", "cod_secao"=>"123", "rg"=>"12312312321"}}
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mEleitor Columns (9.9ms)[0m   [0mSHOW FIELDS FROM `eleitors`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mEleitor Exists (0.2ms)[0m   [0mSELECT `eleitors`.id FROM `eleitors` WHERE (`eleitors`.`tit_eleitor` = 1234) LIMIT 1[0m
+  [4;36;1mEleitor Exists (0.1ms)[0m   [0;1mSELECT `eleitors`.id FROM `eleitors` WHERE (`eleitors`.`cpf` = 12312312321) LIMIT 1[0m
+  [4;35;1mEleitor Exists (0.1ms)[0m   [0mSELECT `eleitors`.id FROM `eleitors` WHERE (`eleitors`.`rg` = 12312312321) LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+Rendering template within layouts/eleitors
+Rendering eleitors/new
+Completed in 43ms (View: 14, DB: 11) | 200 OK [http://192.168.2.2/eleitors]
+
+
+Processing EleitorsController#create (for 192.168.2.4 at 2010-11-02 14:00:41) [POST]
+  Parameters: {"commit"=>"Criar", "authenticity_token"=>"c6b280ff449fdb49ddcef07d58f21fdfddff7db0", "eleitor"=>{"data_nasc"=>"12/10/1988", "cod_bio"=>"", "cpf"=>"12312312321", "nome"=>"rodrigo", "tit_eleitor"=>"1234", "cod_zona"=>"1234", "cod_secao"=>"123", "rg"=>"12312312321"}}
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mEleitor Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `eleitors`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mEleitor Exists (0.1ms)[0m   [0mSELECT `eleitors`.id FROM `eleitors` WHERE (`eleitors`.`tit_eleitor` = 1234) LIMIT 1[0m
+  [4;36;1mEleitor Exists (0.1ms)[0m   [0;1mSELECT `eleitors`.id FROM `eleitors` WHERE (`eleitors`.`cpf` = 12312312321) LIMIT 1[0m
+  [4;35;1mEleitor Exists (0.1ms)[0m   [0mSELECT `eleitors`.id FROM `eleitors` WHERE (`eleitors`.`rg` = 12312312321) LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+Rendering template within layouts/eleitors
+Rendering eleitors/new
+Completed in 29ms (View: 12, DB: 1) | 200 OK [http://192.168.2.2/eleitors]
+
+
+Processing EleitorsController#create (for 192.168.2.4 at 2010-11-02 14:01:55) [POST]
+  Parameters: {"commit"=>"Criar", "authenticity_token"=>"c6b280ff449fdb49ddcef07d58f21fdfddff7db0", "eleitor"=>{"data_nasc"=>"12/10/1988", "cod_bio"=>"", "cpf"=>"12312312321", "nome"=>"rodrigo", "tit_eleitor"=>"1234", "cod_zona"=>"1234", "cod_secao"=>"123", "rg"=>"12312312321"}}
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mEleitor Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `eleitors`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mEleitor Exists (0.1ms)[0m   [0mSELECT `eleitors`.id FROM `eleitors` WHERE (`eleitors`.`tit_eleitor` = 1234) LIMIT 1[0m
+  [4;36;1mEleitor Exists (0.1ms)[0m   [0;1mSELECT `eleitors`.id FROM `eleitors` WHERE (`eleitors`.`cpf` = 12312312321) LIMIT 1[0m
+  [4;35;1mEleitor Exists (0.1ms)[0m   [0mSELECT `eleitors`.id FROM `eleitors` WHERE (`eleitors`.`rg` = 12312312321) LIMIT 1[0m
+  [4;36;1mEleitor Create (0.2ms)[0m   [0;1mINSERT INTO `eleitors` (`created_at`, `cod_func`, `data_nasc`, `tit_eleitor`, `nome`, `cpf`, `cod_bio`, `updated_at`, `cod_secao`, `cod_zona`, `rg`) VALUES('2010-11-02 16:01:55', NULL, 12, 1234, 'rodrigo', 12312312321, '', '2010-11-02 16:01:55', 123, 1234, 12312312321)[0m
+  [4;35;1mSQL (73.4ms)[0m   [0mCOMMIT[0m
+Redirected to #<Eleitor:0xb63a4d6c>
+Completed in 91ms (DB: 75) | 302 Found [http://192.168.2.2/eleitors]
+
+
+Processing EleitorsController#show (for 192.168.2.4 at 2010-11-02 14:01:55) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mEleitor Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `eleitors`[0m
+  [4;35;1mEleitor Load (0.3ms)[0m   [0mSELECT * FROM `eleitors` WHERE (`eleitors`.`id` = 2) [0m
+Rendering template within layouts/eleitors
+Rendering eleitors/show
+Completed in 18ms (View: 7, DB: 1) | 200 OK [http://192.168.2.2/eleitors/2]
+
+
+Processing EleitorsController#index (for 192.168.2.4 at 2010-11-02 14:01:58) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mEleitor Load (0.3ms)[0m   [0;1mSELECT * FROM `eleitors` [0m
+Rendering template within layouts/eleitors
+Rendering eleitors/index
+  [4;35;1mEleitor Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `eleitors`[0m
+Completed in 26ms (View: 17, DB: 1) | 200 OK [http://192.168.2.2/eleitors]
+
+
+Processing HomeController#index (for 192.168.2.4 at 2010-11-02 14:07:17) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 8ms (View: 5, DB: 0) | 200 OK [http://192.168.2.2/home]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-02 14:07:39) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 8ms (View: 5, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing EleitorsController#index (for 127.0.0.1 at 2010-11-02 14:08:07) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mEleitor Load (0.2ms)[0m   [0;1mSELECT * FROM `eleitors` [0m
+Rendering template within layouts/eleitors
+Rendering eleitors/index
+  [4;35;1mEleitor Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `eleitors`[0m
+Completed in 27ms (View: 17, DB: 1) | 200 OK [http://localhost/eleitors]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-02 14:08:09) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 8ms (View: 5, DB: 0) | 200 OK [http://localhost/home]
+
+
+Processing EstadosController#index (for 127.0.0.1 at 2010-11-02 14:08:12) [GET]
+  [4;36;1mSQL (2.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mEstado Load (0.1ms)[0m   [0;1mSELECT * FROM `estados` [0m
+Rendering template within layouts/estados
+Rendering estados/index
+  [4;35;1mEstado Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `estados`[0m
+Completed in 105ms (View: 96, DB: 3) | 200 OK [http://localhost/estados]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-02 14:08:14) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 9ms (View: 6, DB: 0) | 200 OK [http://localhost/home]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-02 14:53:03) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 9ms (View: 6, DB: 0) | 200 OK [http://localhost/home]
+
+
+Processing HomeController#index (for 192.168.2.4 at 2010-11-02 14:53:57) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 9ms (View: 6, DB: 0) | 200 OK [http://192.168.2.2/home]
+
+
+Processing EleitorsController#index (for 192.168.2.4 at 2010-11-02 14:55:34) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mEleitor Load (0.1ms)[0m   [0;1mSELECT * FROM `eleitors` [0m
+Rendering template within layouts/eleitors
+Rendering eleitors/index
+  [4;35;1mEleitor Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `eleitors`[0m
+Completed in 26ms (View: 17, DB: 1) | 200 OK [http://192.168.2.2/eleitors]
+
+
+Processing EleitorsController#index (for 192.168.2.4 at 2010-11-02 14:57:59) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mEleitor Load (0.1ms)[0m   [0;1mSELECT * FROM `eleitors` [0m
+Rendering template within layouts/eleitors
+Rendering eleitors/index
+  [4;35;1mEleitor Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `eleitors`[0m
+Completed in 25ms (View: 16, DB: 1) | 200 OK [http://192.168.2.2/eleitors]
+
+
+Processing EleitorsController#index (for 192.168.2.4 at 2010-11-02 15:01:54) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mEleitor Load (0.1ms)[0m   [0;1mSELECT * FROM `eleitors` [0m
+Rendering template within layouts/eleitors
+Rendering eleitors/index
+  [4;35;1mEleitor Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `eleitors`[0m
+Completed in 25ms (View: 16, DB: 1) | 200 OK [http://192.168.2.2/eleitors]
+
+
+Processing EleitorsController#index (for 192.168.2.4 at 2010-11-02 15:03:39) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mEleitor Load (0.2ms)[0m   [0;1mSELECT * FROM `eleitors` [0m
+Rendering template within layouts/eleitors
+Rendering eleitors/index
+  [4;35;1mEleitor Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `eleitors`[0m
+Completed in 28ms (View: 18, DB: 1) | 200 OK [http://192.168.2.2/eleitors]
+
+
+Processing EleitorsController#index (for 192.168.2.4 at 2010-11-02 15:04:06) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mEleitor Load (0.1ms)[0m   [0;1mSELECT * FROM `eleitors` [0m
+Rendering template within layouts/eleitors
+Rendering eleitors/index
+  [4;35;1mEleitor Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `eleitors`[0m
+Completed in 26ms (View: 17, DB: 1) | 200 OK [http://192.168.2.2/eleitors]
+
+
+Processing EleitorsController#index (for 192.168.2.4 at 2010-11-02 15:07:35) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mEleitor Load (0.1ms)[0m   [0;1mSELECT * FROM `eleitors` [0m
+Rendering template within layouts/eleitors
+Rendering eleitors/index
+  [4;35;1mEleitor Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `eleitors`[0m
+Completed in 25ms (View: 16, DB: 1) | 200 OK [http://192.168.2.2/eleitors]
+
+
+Processing EleitorsController#index (for 192.168.2.4 at 2010-11-02 15:08:45) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mEleitor Load (0.1ms)[0m   [0;1mSELECT * FROM `eleitors` [0m
+Rendering template within layouts/eleitors
+Rendering eleitors/index
+  [4;35;1mEleitor Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `eleitors`[0m
+Completed in 38ms (View: 17, DB: 1) | 200 OK [http://192.168.2.2/eleitors]
+
+
+Processing EleitorsController#index (for 192.168.2.4 at 2010-11-02 15:11:11) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mEleitor Load (0.1ms)[0m   [0;1mSELECT * FROM `eleitors` [0m
+Rendering template within layouts/eleitors
+Rendering eleitors/index
+  [4;35;1mEleitor Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `eleitors`[0m
+Completed in 27ms (View: 17, DB: 1) | 200 OK [http://192.168.2.2/eleitors]
+
+
+Processing EleitorsController#index (for 192.168.2.4 at 2010-11-02 15:11:16) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mEleitor Load (0.1ms)[0m   [0;1mSELECT * FROM `eleitors` [0m
+Rendering template within layouts/eleitors
+Rendering eleitors/index
+  [4;35;1mEleitor Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `eleitors`[0m
+Completed in 38ms (View: 17, DB: 1) | 200 OK [http://192.168.2.2/eleitors]
+
+
+Processing EleitorsController#index (for 192.168.2.4 at 2010-11-02 15:11:57) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mEleitor Load (0.1ms)[0m   [0;1mSELECT * FROM `eleitors` [0m
+Rendering template within layouts/eleitors
+Rendering eleitors/index
+  [4;35;1mEleitor Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `eleitors`[0m
+Completed in 25ms (View: 16, DB: 1) | 200 OK [http://192.168.2.2/eleitors]
+
+
+Processing EleitorsController#index (for 192.168.2.4 at 2010-11-02 15:12:08) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mEleitor Load (0.1ms)[0m   [0;1mSELECT * FROM `eleitors` [0m
+Rendering template within layouts/eleitors
+Rendering eleitors/index
+  [4;35;1mEleitor Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `eleitors`[0m
+Completed in 37ms (View: 28, DB: 1) | 200 OK [http://192.168.2.2/eleitors]
+
+
+Processing EleitorsController#index (for 192.168.2.4 at 2010-11-02 15:12:12) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mEleitor Load (0.2ms)[0m   [0;1mSELECT * FROM `eleitors` [0m
+Rendering template within layouts/eleitors
+Rendering eleitors/index
+  [4;35;1mEleitor Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `eleitors`[0m
+Completed in 92ms (View: 19, DB: 1) | 200 OK [http://192.168.2.2/eleitors]
+
+
+Processing EleitorsController#index (for 192.168.2.4 at 2010-11-02 15:12:25) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mEleitor Load (0.2ms)[0m   [0;1mSELECT * FROM `eleitors` [0m
+Rendering template within layouts/eleitors
+Rendering eleitors/index
+  [4;35;1mEleitor Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `eleitors`[0m
+Completed in 27ms (View: 17, DB: 1) | 200 OK [http://192.168.2.2/eleitors]
+
+
+Processing EleitorsController#index (for 192.168.2.4 at 2010-11-02 15:12:40) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mEleitor Load (0.1ms)[0m   [0;1mSELECT * FROM `eleitors` [0m
+Rendering template within layouts/eleitors
+Rendering eleitors/index
+  [4;35;1mEleitor Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `eleitors`[0m
+Completed in 25ms (View: 17, DB: 1) | 200 OK [http://192.168.2.2/eleitors]
+
+
+Processing EleitorsController#index (for 192.168.2.4 at 2010-11-02 15:14:13) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mEleitor Load (0.1ms)[0m   [0;1mSELECT * FROM `eleitors` [0m
+Rendering template within layouts/eleitors
+Rendering eleitors/index
+  [4;35;1mEleitor Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `eleitors`[0m
+Completed in 25ms (View: 16, DB: 1) | 200 OK [http://192.168.2.2/eleitors]
+
+
+Processing EleitorsController#index (for 192.168.2.4 at 2010-11-02 15:14:49) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mEleitor Load (0.2ms)[0m   [0;1mSELECT * FROM `eleitors` [0m
+Rendering template within layouts/eleitors
+Rendering eleitors/index
+  [4;35;1mEleitor Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `eleitors`[0m
+Completed in 90ms (View: 17, DB: 1) | 200 OK [http://192.168.2.2/eleitors]
+
+
+Processing EleitorsController#index (for 192.168.2.4 at 2010-11-02 15:15:33) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mEleitor Load (0.1ms)[0m   [0;1mSELECT * FROM `eleitors` [0m
+Rendering template within layouts/eleitors
+Rendering eleitors/index
+  [4;35;1mEleitor Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `eleitors`[0m
+Completed in 26ms (View: 17, DB: 1) | 200 OK [http://192.168.2.2/eleitors]
+
+
+Processing EleitorsController#index (for 192.168.2.4 at 2010-11-02 15:16:59) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mEleitor Load (0.2ms)[0m   [0;1mSELECT * FROM `eleitors` [0m
+Rendering template within layouts/eleitors
+Rendering eleitors/index
+  [4;35;1mEleitor Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `eleitors`[0m
+Completed in 28ms (View: 17, DB: 1) | 200 OK [http://192.168.2.2/eleitors]
+
+
+Processing EleitorsController#index (for 192.168.2.4 at 2010-11-02 15:18:16) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mEleitor Load (0.1ms)[0m   [0;1mSELECT * FROM `eleitors` [0m
+Rendering template within layouts/eleitors
+Rendering eleitors/index
+  [4;35;1mEleitor Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `eleitors`[0m
+Completed in 25ms (View: 16, DB: 1) | 200 OK [http://192.168.2.2/eleitors]
+
+
+Processing EleitorsController#index (for 192.168.2.4 at 2010-11-02 15:18:40) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mEleitor Load (0.2ms)[0m   [0;1mSELECT * FROM `eleitors` [0m
+Rendering template within layouts/eleitors
+Rendering eleitors/index
+  [4;35;1mEleitor Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `eleitors`[0m
+Completed in 104ms (View: 17, DB: 1) | 200 OK [http://192.168.2.2/eleitors]
+
+
+Processing EleitorsController#index (for 192.168.2.4 at 2010-11-02 15:19:22) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mEleitor Load (0.1ms)[0m   [0;1mSELECT * FROM `eleitors` [0m
+Rendering template within layouts/eleitors
+Rendering eleitors/index
+  [4;35;1mEleitor Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `eleitors`[0m
+Completed in 26ms (View: 17, DB: 1) | 200 OK [http://192.168.2.2/eleitors]
+
+
+Processing EleitorsController#index (for 192.168.2.4 at 2010-11-02 15:21:40) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mEleitor Load (0.1ms)[0m   [0;1mSELECT * FROM `eleitors` [0m
+Rendering template within layouts/eleitors
+Rendering eleitors/index
+  [4;35;1mEleitor Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `eleitors`[0m
+Completed in 26ms (View: 17, DB: 1) | 200 OK [http://192.168.2.2/eleitors]
+
+
+Processing EleitorsController#index (for 192.168.2.4 at 2010-11-02 15:22:21) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mEleitor Load (0.1ms)[0m   [0;1mSELECT * FROM `eleitors` [0m
+Rendering template within layouts/eleitors
+Rendering eleitors/index
+  [4;35;1mEleitor Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `eleitors`[0m
+Completed in 27ms (View: 17, DB: 1) | 200 OK [http://192.168.2.2/eleitors]
+
+
+Processing EleitorsController#index (for 192.168.2.4 at 2010-11-02 15:23:08) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mEleitor Load (0.2ms)[0m   [0;1mSELECT * FROM `eleitors` [0m
+Rendering template within layouts/eleitors
+Rendering eleitors/index
+  [4;35;1mEleitor Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `eleitors`[0m
+Completed in 90ms (View: 18, DB: 1) | 200 OK [http://192.168.2.2/eleitors]
+
+
+Processing EleitorsController#index (for 192.168.2.4 at 2010-11-02 15:23:53) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mEleitor Load (0.1ms)[0m   [0;1mSELECT * FROM `eleitors` [0m
+Rendering template within layouts/eleitors
+Rendering eleitors/index
+  [4;35;1mEleitor Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `eleitors`[0m
+Completed in 26ms (View: 17, DB: 1) | 200 OK [http://192.168.2.2/eleitors]
+
+
+Processing EleitorsController#index (for 192.168.2.4 at 2010-11-02 15:24:39) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mEleitor Load (0.1ms)[0m   [0;1mSELECT * FROM `eleitors` [0m
+Rendering template within layouts/eleitors
+Rendering eleitors/index
+  [4;35;1mEleitor Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `eleitors`[0m
+Completed in 27ms (View: 17, DB: 1) | 200 OK [http://192.168.2.2/eleitors]
+
+
+Processing EleitorsController#index (for 192.168.2.4 at 2010-11-02 15:24:54) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mEleitor Load (0.1ms)[0m   [0;1mSELECT * FROM `eleitors` [0m
+Rendering template within layouts/eleitors
+Rendering eleitors/index
+  [4;35;1mEleitor Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `eleitors`[0m
+Completed in 38ms (View: 16, DB: 1) | 200 OK [http://192.168.2.2/eleitors]
+
+
+Processing EleitorsController#index (for 192.168.2.4 at 2010-11-02 15:25:02) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mEleitor Load (0.1ms)[0m   [0;1mSELECT * FROM `eleitors` [0m
+Rendering template within layouts/eleitors
+Rendering eleitors/index
+  [4;35;1mEleitor Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `eleitors`[0m
+Completed in 94ms (View: 19, DB: 1) | 200 OK [http://192.168.2.2/eleitors]
+
+
+Processing EleitorsController#index (for 192.168.2.4 at 2010-11-02 15:25:25) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mEleitor Load (0.1ms)[0m   [0;1mSELECT * FROM `eleitors` [0m
+Rendering template within layouts/eleitors
+Rendering eleitors/index
+  [4;35;1mEleitor Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `eleitors`[0m
+Completed in 26ms (View: 17, DB: 1) | 200 OK [http://192.168.2.2/eleitors]
+
+
+Processing EleitorsController#index (for 192.168.2.4 at 2010-11-02 15:25:26) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mEleitor Load (0.1ms)[0m   [0;1mSELECT * FROM `eleitors` [0m
+Rendering template within layouts/eleitors
+Rendering eleitors/index
+  [4;35;1mEleitor Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `eleitors`[0m
+Completed in 26ms (View: 17, DB: 1) | 200 OK [http://192.168.2.2/eleitors]
+
+
+Processing EleitorsController#index (for 192.168.2.4 at 2010-11-02 15:25:26) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mEleitor Load (0.1ms)[0m   [0;1mSELECT * FROM `eleitors` [0m
+Rendering template within layouts/eleitors
+Rendering eleitors/index
+  [4;35;1mEleitor Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `eleitors`[0m
+Completed in 31ms (View: 19, DB: 1) | 200 OK [http://192.168.2.2/eleitors]
+
+
+Processing EleitorsController#index (for 192.168.2.4 at 2010-11-02 15:25:26) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mEleitor Load (0.1ms)[0m   [0;1mSELECT * FROM `eleitors` [0m
+Rendering template within layouts/eleitors
+Rendering eleitors/index
+  [4;35;1mEleitor Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `eleitors`[0m
+Completed in 28ms (View: 19, DB: 1) | 200 OK [http://192.168.2.2/eleitors]
+
+
+Processing HomeController#index (for 192.168.2.4 at 2010-11-02 15:25:48) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 9ms (View: 6, DB: 0) | 200 OK [http://192.168.2.2/home]
+
+
+Processing EleitorsController#index (for 192.168.2.4 at 2010-11-02 15:25:56) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mEleitor Load (0.1ms)[0m   [0;1mSELECT * FROM `eleitors` [0m
+Rendering template within layouts/eleitors
+Rendering eleitors/index
+  [4;35;1mEleitor Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `eleitors`[0m
+Completed in 73ms (View: 17, DB: 1) | 200 OK [http://192.168.2.2/eleitors]
+
+
+Processing EleitorsController#index (for 192.168.2.4 at 2010-11-02 15:26:47) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mEleitor Load (0.1ms)[0m   [0;1mSELECT * FROM `eleitors` [0m
+Rendering template within layouts/eleitors
+Rendering eleitors/index
+  [4;35;1mEleitor Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `eleitors`[0m
+Completed in 26ms (View: 17, DB: 1) | 200 OK [http://192.168.2.2/eleitors]
+
+
+Processing EleitorsController#index (for 192.168.2.4 at 2010-11-02 15:26:53) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mEleitor Load (0.1ms)[0m   [0;1mSELECT * FROM `eleitors` [0m
+Rendering template within layouts/eleitors
+Rendering eleitors/index
+  [4;35;1mEleitor Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `eleitors`[0m
+Completed in 26ms (View: 17, DB: 1) | 200 OK [http://192.168.2.2/eleitors]
+
+
+Processing EleitorsController#index (for 192.168.2.4 at 2010-11-02 15:28:21) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mEleitor Load (0.1ms)[0m   [0;1mSELECT * FROM `eleitors` [0m
+Rendering template within layouts/eleitors
+Rendering eleitors/index
+  [4;35;1mEleitor Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `eleitors`[0m
+Completed in 25ms (View: 16, DB: 1) | 200 OK [http://192.168.2.2/eleitors]
+
+
+Processing EleitorsController#index (for 192.168.2.4 at 2010-11-02 15:30:20) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mEleitor Load (0.1ms)[0m   [0;1mSELECT * FROM `eleitors` [0m
+Rendering template within layouts/eleitors
+Rendering eleitors/index
+  [4;35;1mEleitor Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `eleitors`[0m
+Completed in 28ms (View: 18, DB: 1) | 200 OK [http://192.168.2.2/eleitors]
+
+
+Processing EstadosController#index (for 192.168.2.4 at 2010-11-02 15:30:34) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mEstado Load (0.1ms)[0m   [0;1mSELECT * FROM `estados` [0m
+Rendering template within layouts/estados
+Rendering estados/index
+  [4;35;1mEstado Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `estados`[0m
+Completed in 37ms (View: 28, DB: 1) | 200 OK [http://192.168.2.2/estados]
+
+
+Processing EleitorsController#index (for 192.168.2.4 at 2010-11-02 15:31:51) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mEleitor Load (0.1ms)[0m   [0;1mSELECT * FROM `eleitors` [0m
+Rendering template within layouts/eleitors
+Rendering eleitors/index
+  [4;35;1mEleitor Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `eleitors`[0m
+Completed in 25ms (View: 16, DB: 1) | 200 OK [http://192.168.2.2/eleitors]
+
+
+Processing ZonasController#index (for 192.168.2.4 at 2010-11-02 15:31:58) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mZona Load (0.1ms)[0m   [0;1mSELECT * FROM `zonas` [0m
+Rendering template within layouts/zonas
+Rendering zonas/index
+  [4;35;1mZona Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `zonas`[0m
+Completed in 23ms (View: 15, DB: 1) | 200 OK [http://192.168.2.2/zonas]
+
+
+Processing EleitorsController#index (for 192.168.2.4 at 2010-11-02 15:34:36) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mEleitor Load (0.1ms)[0m   [0;1mSELECT * FROM `eleitors` [0m
+Rendering template within layouts/eleitors
+Rendering eleitors/index
+  [4;35;1mEleitor Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `eleitors`[0m
+Completed in 89ms (View: 80, DB: 1) | 200 OK [http://192.168.2.2/eleitors]
+
+
+Processing EleitorsController#index (for 192.168.2.4 at 2010-11-02 15:45:29) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mEleitor Load (0.1ms)[0m   [0;1mSELECT * FROM `eleitors` [0m
+Rendering template within layouts/eleitors
+Rendering eleitors/index
+  [4;35;1mEleitor Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `eleitors`[0m
+Completed in 26ms (View: 17, DB: 1) | 200 OK [http://192.168.2.2/eleitors]
+
+
+Processing EleitorsController#index (for 192.168.2.4 at 2010-11-02 15:45:58) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mEleitor Load (0.1ms)[0m   [0;1mSELECT * FROM `eleitors` [0m
+Rendering template within layouts/eleitors
+Rendering eleitors/index
+  [4;35;1mEleitor Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `eleitors`[0m
+Completed in 26ms (View: 17, DB: 1) | 200 OK [http://192.168.2.2/eleitors]
+
+
+Processing EleitorsController#index (for 192.168.2.4 at 2010-11-02 15:49:28) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mEleitor Load (0.1ms)[0m   [0;1mSELECT * FROM `eleitors` [0m
+Rendering template within layouts/eleitors
+Rendering eleitors/index
+  [4;35;1mEleitor Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `eleitors`[0m
+Completed in 26ms (View: 17, DB: 1) | 200 OK [http://192.168.2.2/eleitors]
+
+
+Processing EleitorsController#index (for 192.168.2.4 at 2010-11-02 15:49:41) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mEleitor Load (0.1ms)[0m   [0;1mSELECT * FROM `eleitors` [0m
+Rendering template within layouts/eleitors
+Rendering eleitors/index
+  [4;35;1mEleitor Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `eleitors`[0m
+Completed in 36ms (View: 21, DB: 1) | 200 OK [http://192.168.2.2/eleitors]
+
+
+Processing EleitorsController#index (for 192.168.2.4 at 2010-11-02 15:50:15) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mEleitor Load (0.1ms)[0m   [0;1mSELECT * FROM `eleitors` [0m
+Rendering template within layouts/eleitors
+Rendering eleitors/index
+  [4;35;1mEleitor Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `eleitors`[0m
+Completed in 27ms (View: 18, DB: 1) | 200 OK [http://192.168.2.2/eleitors]
+
+
+Processing EleitorsController#index (for 192.168.2.4 at 2010-11-02 15:50:26) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mEleitor Load (0.1ms)[0m   [0;1mSELECT * FROM `eleitors` [0m
+Rendering template within layouts/eleitors
+Rendering eleitors/index
+  [4;35;1mEleitor Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `eleitors`[0m
+Completed in 26ms (View: 17, DB: 1) | 200 OK [http://192.168.2.2/eleitors]
+
+
+Processing EleitorsController#index (for 192.168.2.4 at 2010-11-02 15:51:25) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mEleitor Load (0.1ms)[0m   [0;1mSELECT * FROM `eleitors` [0m
+Rendering template within layouts/eleitors
+Rendering eleitors/index
+  [4;35;1mEleitor Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `eleitors`[0m
+Completed in 25ms (View: 16, DB: 1) | 200 OK [http://192.168.2.2/eleitors]
+
+
+Processing EleitorsController#index (for 192.168.2.4 at 2010-11-02 15:52:44) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mEleitor Load (0.1ms)[0m   [0;1mSELECT * FROM `eleitors` [0m
+Rendering template within layouts/eleitors
+Rendering eleitors/index
+  [4;35;1mEleitor Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `eleitors`[0m
+Completed in 26ms (View: 17, DB: 1) | 200 OK [http://192.168.2.2/eleitors]
+
+
+Processing EleitorsController#index (for 192.168.2.4 at 2010-11-02 15:53:14) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mEleitor Load (0.1ms)[0m   [0;1mSELECT * FROM `eleitors` [0m
+Rendering template within layouts/eleitors
+Rendering eleitors/index
+  [4;35;1mEleitor Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `eleitors`[0m
+Completed in 26ms (View: 17, DB: 1) | 200 OK [http://192.168.2.2/eleitors]
+
+
+Processing EleitorsController#index (for 192.168.2.4 at 2010-11-02 15:55:50) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mEleitor Load (0.1ms)[0m   [0;1mSELECT * FROM `eleitors` [0m
+Rendering template within layouts/eleitors
+Rendering eleitors/index
+  [4;35;1mEleitor Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `eleitors`[0m
+Completed in 25ms (View: 16, DB: 1) | 200 OK [http://192.168.2.2/eleitors]
+
+
+Processing EleitorsController#index (for 192.168.2.4 at 2010-11-02 15:57:27) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mEleitor Load (0.1ms)[0m   [0;1mSELECT * FROM `eleitors` [0m
+Rendering template within layouts/eleitors
+Rendering eleitors/index
+  [4;35;1mEleitor Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `eleitors`[0m
+Completed in 31ms (View: 19, DB: 1) | 200 OK [http://192.168.2.2/eleitors]
+
+
+Processing EleitorsController#index (for 192.168.2.4 at 2010-11-02 15:57:42) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mEleitor Load (0.1ms)[0m   [0;1mSELECT * FROM `eleitors` [0m
+Rendering template within layouts/eleitors
+Rendering eleitors/index
+  [4;35;1mEleitor Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `eleitors`[0m
+Completed in 39ms (View: 17, DB: 1) | 200 OK [http://192.168.2.2/eleitors]
+
+
+Processing EleitorsController#index (for 192.168.2.4 at 2010-11-02 15:57:56) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mEleitor Load (0.1ms)[0m   [0;1mSELECT * FROM `eleitors` [0m
+Rendering template within layouts/eleitors
+Rendering eleitors/index
+  [4;35;1mEleitor Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `eleitors`[0m
+Completed in 26ms (View: 17, DB: 1) | 200 OK [http://192.168.2.2/eleitors]
+
+
+Processing EleitorsController#index (for 192.168.2.4 at 2010-11-02 15:58:08) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mEleitor Load (0.1ms)[0m   [0;1mSELECT * FROM `eleitors` [0m
+Rendering template within layouts/eleitors
+Rendering eleitors/index
+  [4;35;1mEleitor Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `eleitors`[0m
+Completed in 25ms (View: 17, DB: 1) | 200 OK [http://192.168.2.2/eleitors]
+
+
+Processing EleitorsController#index (for 192.168.2.4 at 2010-11-02 15:58:22) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mEleitor Load (0.1ms)[0m   [0;1mSELECT * FROM `eleitors` [0m
+Rendering template within layouts/eleitors
+Rendering eleitors/index
+  [4;35;1mEleitor Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `eleitors`[0m
+Completed in 105ms (View: 35, DB: 1) | 200 OK [http://192.168.2.2/eleitors]
+
+
+Processing EleitorsController#index (for 192.168.2.4 at 2010-11-02 15:58:29) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mEleitor Load (0.1ms)[0m   [0;1mSELECT * FROM `eleitors` [0m
+Rendering template within layouts/eleitors
+Rendering eleitors/index
+  [4;35;1mEleitor Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `eleitors`[0m
+Completed in 26ms (View: 17, DB: 1) | 200 OK [http://192.168.2.2/eleitors]
+
+
+Processing EleitorsController#index (for 192.168.2.4 at 2010-11-02 15:58:36) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mEleitor Load (0.1ms)[0m   [0;1mSELECT * FROM `eleitors` [0m
+Rendering template within layouts/eleitors
+Rendering eleitors/index
+  [4;35;1mEleitor Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `eleitors`[0m
+Completed in 25ms (View: 17, DB: 1) | 200 OK [http://192.168.2.2/eleitors]
+
+
+Processing EleitorsController#index (for 192.168.2.4 at 2010-11-02 15:58:42) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mEleitor Load (0.1ms)[0m   [0;1mSELECT * FROM `eleitors` [0m
+Rendering template within layouts/eleitors
+Rendering eleitors/index
+  [4;35;1mEleitor Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `eleitors`[0m
+Completed in 25ms (View: 16, DB: 1) | 200 OK [http://192.168.2.2/eleitors]
+
+
+Processing EleitorsController#index (for 192.168.2.4 at 2010-11-02 15:58:52) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mEleitor Load (0.1ms)[0m   [0;1mSELECT * FROM `eleitors` [0m
+Rendering template within layouts/eleitors
+Rendering eleitors/index
+  [4;35;1mEleitor Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `eleitors`[0m
+Completed in 27ms (View: 17, DB: 1) | 200 OK [http://192.168.2.2/eleitors]
+
+
+Processing ZonasController#index (for 192.168.2.4 at 2010-11-02 15:59:40) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mZona Load (0.1ms)[0m   [0;1mSELECT * FROM `zonas` [0m
+Rendering template within layouts/zonas
+Rendering zonas/index
+  [4;35;1mZona Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `zonas`[0m
+Completed in 24ms (View: 15, DB: 1) | 200 OK [http://192.168.2.2/zonas]
+
+
+Processing EleitorsController#index (for 192.168.2.4 at 2010-11-02 16:05:26) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mEleitor Load (0.1ms)[0m   [0;1mSELECT * FROM `eleitors` [0m
+Rendering template within layouts/eleitors
+Rendering eleitors/index
+  [4;35;1mEleitor Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `eleitors`[0m
+Completed in 26ms (View: 17, DB: 1) | 200 OK [http://192.168.2.2/eleitors]
+
+
+Processing EleitorsController#index (for 192.168.2.4 at 2010-11-02 16:06:58) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mEleitor Load (0.1ms)[0m   [0;1mSELECT * FROM `eleitors` [0m
+Rendering template within layouts/eleitors
+Rendering eleitors/index
+  [4;35;1mEleitor Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `eleitors`[0m
+Completed in 35ms (View: 26, DB: 1) | 200 OK [http://192.168.2.2/eleitors]
+
+
+Processing EleitorsController#index (for 192.168.2.4 at 2010-11-02 16:07:02) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mEleitor Load (0.1ms)[0m   [0;1mSELECT * FROM `eleitors` [0m
+Rendering template within layouts/eleitors
+Rendering eleitors/index
+  [4;35;1mEleitor Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `eleitors`[0m
+Completed in 28ms (View: 18, DB: 1) | 200 OK [http://192.168.2.2/eleitors]
+
+
+Processing EleitorsController#index (for 192.168.2.4 at 2010-11-02 16:07:59) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mEleitor Load (0.1ms)[0m   [0;1mSELECT * FROM `eleitors` [0m
+Rendering template within layouts/eleitors
+Rendering eleitors/index
+  [4;35;1mEleitor Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `eleitors`[0m
+Completed in 26ms (View: 17, DB: 1) | 200 OK [http://192.168.2.2/eleitors]
+
+
+Processing EleitorsController#index (for 192.168.2.4 at 2010-11-02 16:08:26) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mEleitor Load (0.1ms)[0m   [0;1mSELECT * FROM `eleitors` [0m
+Rendering template within layouts/eleitors
+Rendering eleitors/index
+  [4;35;1mEleitor Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `eleitors`[0m
+Completed in 28ms (View: 19, DB: 1) | 200 OK [http://192.168.2.2/eleitors]
+
+
+Processing EleitorsController#index (for 192.168.2.4 at 2010-11-02 16:09:46) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mEleitor Load (0.2ms)[0m   [0;1mSELECT * FROM `eleitors` [0m
+Rendering template within layouts/eleitors
+Rendering eleitors/index
+  [4;35;1mEleitor Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `eleitors`[0m
+Completed in 88ms (View: 17, DB: 1) | 200 OK [http://192.168.2.2/eleitors]
+
+
+Processing EleitorsController#index (for 192.168.2.4 at 2010-11-02 16:10:17) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mEleitor Load (0.1ms)[0m   [0;1mSELECT * FROM `eleitors` [0m
+Rendering template within layouts/eleitors
+Rendering eleitors/index
+  [4;35;1mEleitor Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `eleitors`[0m
+Completed in 26ms (View: 17, DB: 1) | 200 OK [http://192.168.2.2/eleitors]
+
+
+Processing EleitorsController#index (for 192.168.2.4 at 2010-11-02 16:10:52) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mEleitor Load (0.1ms)[0m   [0;1mSELECT * FROM `eleitors` [0m
+Rendering template within layouts/eleitors
+Rendering eleitors/index
+  [4;35;1mEleitor Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `eleitors`[0m
+Completed in 34ms (View: 25, DB: 1) | 200 OK [http://192.168.2.2/eleitors]
+
+
+Processing EleitorsController#index (for 192.168.2.4 at 2010-11-02 16:12:02) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mEleitor Load (0.1ms)[0m   [0;1mSELECT * FROM `eleitors` [0m
+Rendering template within layouts/eleitors
+Rendering eleitors/index
+  [4;35;1mEleitor Columns (3.2ms)[0m   [0mSHOW FIELDS FROM `eleitors`[0m
+Completed in 30ms (View: 19, DB: 4) | 200 OK [http://192.168.2.2/eleitors]
+
+
+Processing EleitorsController#index (for 192.168.2.4 at 2010-11-02 16:12:05) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mEleitor Load (0.1ms)[0m   [0;1mSELECT * FROM `eleitors` [0m
+Rendering template within layouts/eleitors
+Rendering eleitors/index
+  [4;35;1mEleitor Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `eleitors`[0m
+Completed in 26ms (View: 17, DB: 1) | 200 OK [http://192.168.2.2/eleitors]

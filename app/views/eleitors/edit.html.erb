@@ -4,38 +4,39 @@
   <%= f.error_messages %>
 
   <p>
-    Título de Eleitor<br />
-    <%= f.text_field :tit_eleitor %>
+    Número do Título*: <%= f.text_field :tit_eleitor %><br />
   </p>
   <p>
-    Código da Seção<br />
-    <%= f.text_field :cod_secao %>
+    Código da Seção*: <%= f.text_field :cod_secao %><br />
   </p>
   <p>
-    Código do Funcionário<br />
+    Código da Zona*: <%= f.text_field :cod_zona %><br />
+  </p>
+  <!--p>
+    <%= f.label :cod_func %>????<br />
     <%= f.text_field :cod_func %>
+  </p-->
+  <p>
+    Nome*: <%= f.text_field :nome %><br />
   </p>
   <p>
-    <%= f.label :nome %><br />
-    <%= f.text_field :nome %>
+    Data de Nascimento*: <%= f.text_field :data_nasc %><br />
   </p>
   <p>
-    <%= f.label :cpf %><br />
-    <%= f.text_field :cpf %>
+    CPF*: <%= f.text_field :cpf %><br />
   </p>
   <p>
-    <%= f.label :rg %><br />
-    <%= f.text_field :rg %>
+    RG*: <%= f.text_field :rg %><br />
   </p>
   <p>
-    <%= f.label :cod_bio %><br />
-    <%= f.text_field :cod_bio %>
+    Código Biométrico: <%= f.text_field :cod_bio %><br />
   </p>
   <p>
     <%= f.submit "Atualizar" %>
   </p>
 <% end %>
-
+  <p class="campOb">*Campos Obrigatórios !</p>
 <%= link_to 'Ver', @eleitor %> |
 <%= link_to 'Voltar', eleitors_path %>
+<%= link_to 'HOME', home_index_path %>
 

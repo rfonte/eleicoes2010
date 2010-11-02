@@ -66,4 +66,36 @@ h1 {
 tbody tr th {
     font-size: 13px;
 }
+.campOb{
+    font-size: 8px;
+    text-decoration: bold;
+}
+table td {
+    border: 2px solid grey;
+    text-align: center;
+    padding: 5px 10px;
+}
+table th {
+    border: 2px inset #228B22;
+    text-align: center;
+    padding: 5px 10px;
+}
+.view {
+    background: #000 url("/images/view.png") no-repeat scroll 0 0;
+}
+.edit {
+    background: #000 url("/images/edit.png") no-repeat scroll 0 0;
+}
+.cancel {
+    background: #000 url("/images/cancel.png") no-repeat scroll 0 0;
+}
+.home {
+    background: #000 url("/images/home.png") no-repeat scroll 0 0;
+}
+.add {
+    background: #000 url("/images/add.png") no-repeat scroll 0 0;
+}
+.view, .edit, .cancel {
+    border: 0px none;
+}
 

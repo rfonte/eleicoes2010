@@ -1,34 +1,38 @@
-<h1>Listagem de Eleitores</h1>
+<br /><h1>Listagem de Eleitores</h1><br /><br /><br />
 
 <table>
   <tr>
     <th>Número do Título</th>
-    <th>Código da seção</th>
-    <th>Código do funcionário</th>
+    <th>Código da Seção</th>
+    <th>Código da Zona</th>
+    <!--th>Código do funcionário</th-->
     <th>Nome</th>
-    <th>Cpf</th>
-    <th>Rg</th>
-    <th>Código biométrico</th>
+    <th>Data de Nascimento</th>
+    <th>CPF</th>
+    <th>RG</th>
+    <th>Código Biométrico</th>
   </tr>
 
 <% for eleitor in @eleitors %>
   <tr>
     <td><%=h eleitor.tit_eleitor %></td>
     <td><%=h eleitor.cod_secao %></td>
-    <td><%=h eleitor.cod_func %></td>
+    <td><%=h eleitor.cod_zona %></td>
+    <!--td><%=h eleitor.cod_func %></td-->
     <td><%=h eleitor.nome %></td>
+    <td><%=h eleitor.data_nasc %></td>
     <td><%=h eleitor.cpf %></td>
     <td><%=h eleitor.rg %></td>
     <td><%=h eleitor.cod_bio %></td>
-    <td><%= link_to 'Ver', eleitor %></td>
-    <td><%= link_to 'Editar', edit_eleitor_path(eleitor) %></td>
-    <td><%= link_to 'Excluir', eleitor, :confirm => 'Are you sure?', :method => :delete %></td>
+    <td class="view"><%= link_to 'Ver', eleitor %></td>
+    <td class="edit"><%= link_to 'Editar', edit_eleitor_path(eleitor) %></td>
+    <td class="cancel"><%= link_to 'Excluir', eleitor, :confirm => 'Are you sure?', :method => :delete %></td>
   </tr>
 <% end %>
 </table>
 
 <br />
 
-<%= link_to 'Novo Eleitor', new_eleitor_path %>
-<%= link_to 'HOME', home_index_path %>
+<span class="add"><%= link_to 'Novo Eleitor', new_eleitor_path %></span>
+<span class="home"><%= link_to 'HOME', home_index_path %></span>
 

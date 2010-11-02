@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100930221112) do
+ActiveRecord::Schema.define(:version => 20101102153822) do
 
   create_table "cad_eleitors", :force => true do |t|
     t.datetime "created_at"
@@ -42,6 +42,8 @@ ActiveRecord::Schema.define(:version => 20100930221112) do
     t.string   "cod_bio"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "cod_zona"
+    t.integer  "data_nasc"
   end
 
   create_table "estados", :force => true do |t|
@@ -67,7 +69,7 @@ ActiveRecord::Schema.define(:version => 20100930221112) do
     t.string   "coligacao"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.integer  "pres_naconal"
+    t.text     "pres_nacional"
   end
 
   create_table "secaos", :force => true do |t|

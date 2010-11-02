@@ -1,0 +1,79 @@
+Eleitores
+    Index
+        Ajustar fontes
+        Colocar imagem de fundo na tabela listada
+        Colocar botão novo
+        Colocar boto home
+        colocar botão de ver
+        colocar botão de editar
+        colocar botão de excluir
+    New
+    Show
+    Edit
+
+Estados
+    Model
+    Index
+        Ajustar fontes
+        Colocar imagem de fundo na tabela listada
+        Colocar botão novo
+        Colocar boto home
+        colocar botão de ver
+        colocar botão de editar
+        colocar botão de excluir
+    New
+    Show
+    Edit
+
+Municípios
+    Model
+    Index
+        Ajustar fontes
+        Colocar imagem de fundo na tabela listada
+        Colocar botão novo
+        Colocar boto home
+        colocar botão de ver
+        colocar botão de editar
+        colocar botão de excluir
+    New
+    Show
+    Edit
+
+Zonas
+    Model
+    Index
+        Ajustar fontes
+        Colocar imagem de fundo na tabela listada
+        Colocar botão novo
+        Colocar boto home
+        colocar botão de ver
+        colocar botão de editar
+        colocar botão de excluir
+    New
+    Show
+    Edit
+
+Seções
+    Model
+    Index
+        Ajustar fontes
+        Colocar imagem de fundo na tabela listada
+        Colocar botão novo
+        Colocar boto home
+        colocar botão de ver
+        colocar botão de editar
+        colocar botão de excluir
+    New
+    Show
+    Edit
+
+Home
+    Ajustar menu
+    ajustar box twitter
+    ajustar box do video
+    ajustar box do menu
+
+
+- Não esquecer de ajustar arquivo de json
+- Imagens como link ver, editar e excluir
+
