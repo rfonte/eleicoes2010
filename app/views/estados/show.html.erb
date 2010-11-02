@@ -1,14 +1,10 @@
-<p>
-  <b>Código do Estado:</b>
-  <%=h @estado.id %>
-</p>
+<br /><h1>Localidade</h1><br /><br /><br />
 
-<p>
-  <b>Nome do Estado:</b>
-  <%=h @estado.nome_est %>
-</p>
+<div class="show">
+  <p><b>Código do Estado: </b><%=h @estado.id %></p><br />
+  <p><b>Nome do Estado: </b><%=h @estado.nome_est %></p><br />
+</div>
 
-
-<%= link_to 'Editar', edit_estado_path(@estado) %> |
-<%= link_to 'Voltar', estados_path %>
+<span class="edit"><%= link_to 'Editar', edit_estado_path(@estado) %></span>
+<span class="voltar"><%= link_to 'Voltar', estados_path %></span>
 

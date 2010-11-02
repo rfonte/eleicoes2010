@@ -25532,3 +25532,480 @@ Processing EleitorsController#edit (for 127.0.0.1 at 2010-11-02 16:54:41) [GET]
 Rendering template within layouts/eleitors
 Rendering eleitors/edit
 Completed in 24ms (View: 14, DB: 1) | 200 OK [http://localhost/eleitors/1/edit]
+
+
+Processing EleitorsController#update (for 127.0.0.1 at 2010-11-02 16:57:06) [PUT]
+  Parameters: {"commit"=>"Atualizar", "authenticity_token"=>"dbbc3e3392673ea64015f79d1cb8d5faf567db8f", "id"=>"1", "eleitor"=>{"data_nasc"=>"12", "cod_bio"=>"213123213", "cpf"=>"214748364", "nome"=>"Rodrigo", "tit_eleitor"=>"123", "cod_zona"=>"12345", "cod_secao"=>"", "rg"=>"214748364"}}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mEleitor Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `eleitors`[0m
+  [4;35;1mEleitor Load (0.1ms)[0m   [0mSELECT * FROM `eleitors` WHERE (`eleitors`.`id` = 1) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mEleitor Exists (0.4ms)[0m   [0mSELECT `eleitors`.id FROM `eleitors` WHERE (`eleitors`.`tit_eleitor` = 123 AND `eleitors`.id <> 1) LIMIT 1[0m
+  [4;36;1mEleitor Exists (0.2ms)[0m   [0;1mSELECT `eleitors`.id FROM `eleitors` WHERE (`eleitors`.`cpf` = 214748364 AND `eleitors`.id <> 1) LIMIT 1[0m
+  [4;35;1mEleitor Exists (0.2ms)[0m   [0mSELECT `eleitors`.id FROM `eleitors` WHERE (`eleitors`.`rg` = 214748364 AND `eleitors`.id <> 1) LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+Rendering template within layouts/eleitors
+Rendering eleitors/edit
+Completed in 33ms (View: 13, DB: 2) | 200 OK [http://localhost/eleitors/1]
+
+
+Processing EleitorsController#update (for 127.0.0.1 at 2010-11-02 16:57:22) [PUT]
+  Parameters: {"commit"=>"Atualizar", "authenticity_token"=>"dbbc3e3392673ea64015f79d1cb8d5faf567db8f", "id"=>"1", "eleitor"=>{"data_nasc"=>"12", "cod_bio"=>"213123213", "cpf"=>"214748364", "nome"=>"Rodrigo", "tit_eleitor"=>"123", "cod_zona"=>"12345", "cod_secao"=>"", "rg"=>"214748364"}}
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mEleitor Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `eleitors`[0m
+  [4;36;1mEleitor Load (0.1ms)[0m   [0;1mSELECT * FROM `eleitors` WHERE (`eleitors`.`id` = 1) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mEleitor Exists (0.1ms)[0m   [0;1mSELECT `eleitors`.id FROM `eleitors` WHERE (`eleitors`.`tit_eleitor` = 123 AND `eleitors`.id <> 1) LIMIT 1[0m
+  [4;35;1mEleitor Exists (0.1ms)[0m   [0mSELECT `eleitors`.id FROM `eleitors` WHERE (`eleitors`.`cpf` = 214748364 AND `eleitors`.id <> 1) LIMIT 1[0m
+  [4;36;1mEleitor Exists (0.1ms)[0m   [0;1mSELECT `eleitors`.id FROM `eleitors` WHERE (`eleitors`.`rg` = 214748364 AND `eleitors`.id <> 1) LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+Rendering template within layouts/eleitors
+Rendering eleitors/edit
+Completed in 38ms (View: 15, DB: 2) | 200 OK [http://localhost/eleitors/1]
+
+
+Processing EleitorsController#update (for 127.0.0.1 at 2010-11-02 16:57:31) [PUT]
+  Parameters: {"commit"=>"Atualizar", "authenticity_token"=>"dbbc3e3392673ea64015f79d1cb8d5faf567db8f", "id"=>"1", "eleitor"=>{"data_nasc"=>"12", "cod_bio"=>"213123213", "cpf"=>"214748364", "nome"=>"Rodrigo", "tit_eleitor"=>"123", "cod_zona"=>"12345", "cod_secao"=>"", "rg"=>"214748364"}}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mEleitor Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `eleitors`[0m
+  [4;35;1mEleitor Load (0.1ms)[0m   [0mSELECT * FROM `eleitors` WHERE (`eleitors`.`id` = 1) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mEleitor Exists (0.1ms)[0m   [0mSELECT `eleitors`.id FROM `eleitors` WHERE (`eleitors`.`tit_eleitor` = 123 AND `eleitors`.id <> 1) LIMIT 1[0m
+  [4;36;1mEleitor Exists (0.1ms)[0m   [0;1mSELECT `eleitors`.id FROM `eleitors` WHERE (`eleitors`.`cpf` = 214748364 AND `eleitors`.id <> 1) LIMIT 1[0m
+  [4;35;1mEleitor Exists (0.1ms)[0m   [0mSELECT `eleitors`.id FROM `eleitors` WHERE (`eleitors`.`rg` = 214748364 AND `eleitors`.id <> 1) LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+Rendering template within layouts/eleitors
+Rendering eleitors/edit
+Completed in 38ms (View: 15, DB: 2) | 200 OK [http://localhost/eleitors/1]
+
+
+Processing EleitorsController#index (for 127.0.0.1 at 2010-11-02 16:57:42) [GET]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mEleitor Load (0.1ms)[0m   [0mSELECT * FROM `eleitors` [0m
+Rendering template within layouts/eleitors
+Rendering eleitors/index
+  [4;36;1mEleitor Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `eleitors`[0m
+Completed in 26ms (View: 17, DB: 1) | 200 OK [http://localhost/eleitors]
+
+
+Processing EleitorsController#edit (for 127.0.0.1 at 2010-11-02 16:58:28) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mEleitor Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `eleitors`[0m
+  [4;36;1mEleitor Load (0.1ms)[0m   [0;1mSELECT * FROM `eleitors` WHERE (`eleitors`.`id` = 1) [0m
+Rendering template within layouts/eleitors
+Rendering eleitors/edit
+Completed in 24ms (View: 15, DB: 1) | 200 OK [http://localhost/eleitors/1/edit]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-02 16:58:35) [GET]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 21ms (View: 18, DB: 0) | 200 OK [http://localhost/home]
+
+
+Processing EleitorsController#index (for 127.0.0.1 at 2010-11-02 16:58:37) [GET]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mEleitor Load (0.1ms)[0m   [0mSELECT * FROM `eleitors` [0m
+Rendering template within layouts/eleitors
+Rendering eleitors/index
+  [4;36;1mEleitor Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `eleitors`[0m
+Completed in 27ms (View: 17, DB: 1) | 200 OK [http://localhost/eleitors]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-02 16:58:43) [GET]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 9ms (View: 6, DB: 0) | 200 OK [http://localhost/home]
+
+
+Processing EstadosController#index (for 127.0.0.1 at 2010-11-02 16:58:45) [GET]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mEstado Load (0.2ms)[0m   [0mSELECT * FROM `estados` [0m
+Rendering template within layouts/estados
+Rendering estados/index
+  [4;36;1mEstado Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `estados`[0m
+Completed in 38ms (View: 27, DB: 1) | 200 OK [http://localhost/estados]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-02 16:59:04) [GET]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 8ms (View: 5, DB: 0) | 200 OK [http://localhost/home]
+
+
+Processing EleitorsController#index (for 127.0.0.1 at 2010-11-02 16:59:07) [GET]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mEleitor Load (0.1ms)[0m   [0mSELECT * FROM `eleitors` [0m
+Rendering template within layouts/eleitors
+Rendering eleitors/index
+  [4;36;1mEleitor Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `eleitors`[0m
+Completed in 27ms (View: 17, DB: 1) | 200 OK [http://localhost/eleitors]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-02 16:59:13) [GET]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 10ms (View: 7, DB: 0) | 200 OK [http://localhost/home]
+
+
+Processing EstadosController#index (for 127.0.0.1 at 2010-11-02 16:59:16) [GET]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mEstado Load (0.1ms)[0m   [0mSELECT * FROM `estados` [0m
+Rendering template within layouts/estados
+Rendering estados/index
+  [4;36;1mEstado Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `estados`[0m
+Completed in 39ms (View: 28, DB: 1) | 200 OK [http://localhost/estados]
+
+
+Processing EstadosController#index (for 127.0.0.1 at 2010-11-02 17:00:04) [GET]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mEstado Load (0.1ms)[0m   [0mSELECT * FROM `estados` [0m
+Rendering template within layouts/estados
+Rendering estados/index
+  [4;36;1mEstado Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `estados`[0m
+Completed in 35ms (View: 26, DB: 1) | 200 OK [http://localhost/estados]
+
+
+Processing EstadosController#index (for 127.0.0.1 at 2010-11-02 17:00:43) [GET]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mEstado Load (0.1ms)[0m   [0mSELECT * FROM `estados` [0m
+Rendering template within layouts/estados
+Rendering estados/index
+  [4;36;1mEstado Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `estados`[0m
+Completed in 37ms (View: 27, DB: 1) | 200 OK [http://localhost/estados]
+
+
+Processing EstadosController#index (for 127.0.0.1 at 2010-11-02 17:01:40) [GET]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mEstado Load (0.1ms)[0m   [0mSELECT * FROM `estados` [0m
+Rendering template within layouts/estados
+Rendering estados/index
+  [4;36;1mEstado Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `estados`[0m
+Completed in 36ms (View: 27, DB: 1) | 200 OK [http://localhost/estados]
+
+
+Processing EstadosController#show (for 127.0.0.1 at 2010-11-02 17:01:54) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mEstado Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `estados`[0m
+  [4;36;1mEstado Load (0.5ms)[0m   [0;1mSELECT * FROM `estados` WHERE (`estados`.`id` = 1) [0m
+Rendering template within layouts/estados
+Rendering estados/show
+Completed in 15ms (View: 5, DB: 1) | 200 OK [http://localhost/estados/1]
+
+
+Processing EstadosController#show (for 127.0.0.1 at 2010-11-02 17:02:29) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mEstado Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `estados`[0m
+  [4;36;1mEstado Load (0.1ms)[0m   [0;1mSELECT * FROM `estados` WHERE (`estados`.`id` = 1) [0m
+Rendering template within layouts/estados
+Rendering estados/show
+Completed in 14ms (View: 5, DB: 1) | 200 OK [http://localhost/estados/1]
+
+
+Processing EstadosController#index (for 127.0.0.1 at 2010-11-02 17:02:37) [GET]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mEstado Load (0.1ms)[0m   [0mSELECT * FROM `estados` [0m
+Rendering template within layouts/estados
+Rendering estados/index
+  [4;36;1mEstado Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `estados`[0m
+Completed in 37ms (View: 27, DB: 1) | 200 OK [http://localhost/estados]
+
+
+Processing EstadosController#new (for 127.0.0.1 at 2010-11-02 17:02:39) [GET]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mEstado Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `estados`[0m
+Rendering template within layouts/estados
+Rendering estados/new
+Completed in 17ms (View: 8, DB: 1) | 200 OK [http://localhost/estados/new]
+
+
+Processing EstadosController#new (for 127.0.0.1 at 2010-11-02 17:03:37) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mEstado Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `estados`[0m
+Rendering template within layouts/estados
+Rendering estados/new
+Completed in 18ms (View: 7, DB: 1) | 200 OK [http://localhost/estados/new]
+
+
+Processing EstadosController#new (for 127.0.0.1 at 2010-11-02 17:03:45) [GET]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mEstado Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `estados`[0m
+Rendering template within layouts/estados
+Rendering estados/new
+Completed in 20ms (View: 10, DB: 1) | 200 OK [http://localhost/estados/new]
+
+
+Processing EstadosController#new (for 127.0.0.1 at 2010-11-02 17:03:54) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mEstado Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `estados`[0m
+Rendering template within layouts/estados
+Rendering estados/new
+Completed in 22ms (View: 13, DB: 1) | 200 OK [http://localhost/estados/new]
+
+
+Processing EstadosController#new (for 127.0.0.1 at 2010-11-02 17:04:04) [GET]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mEstado Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `estados`[0m
+Rendering template within layouts/estados
+Rendering estados/new
+Completed in 16ms (View: 7, DB: 1) | 200 OK [http://localhost/estados/new]
+
+
+Processing EstadosController#new (for 127.0.0.1 at 2010-11-02 17:04:31) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mEstado Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `estados`[0m
+Rendering template within layouts/estados
+Rendering estados/new
+Completed in 17ms (View: 8, DB: 1) | 200 OK [http://localhost/estados/new]
+
+
+Processing EstadosController#index (for 127.0.0.1 at 2010-11-02 17:04:39) [GET]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mEstado Load (0.1ms)[0m   [0mSELECT * FROM `estados` [0m
+Rendering template within layouts/estados
+Rendering estados/index
+  [4;36;1mEstado Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `estados`[0m
+Completed in 97ms (View: 89, DB: 1) | 200 OK [http://localhost/estados]
+
+
+Processing EstadosController#show (for 127.0.0.1 at 2010-11-02 17:04:43) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mEstado Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `estados`[0m
+  [4;36;1mEstado Load (0.1ms)[0m   [0;1mSELECT * FROM `estados` WHERE (`estados`.`id` = 1) [0m
+Rendering template within layouts/estados
+Rendering estados/show
+Completed in 15ms (View: 5, DB: 1) | 200 OK [http://localhost/estados/1]
+
+
+Processing EstadosController#show (for 127.0.0.1 at 2010-11-02 17:06:34) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mEstado Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `estados`[0m
+  [4;36;1mEstado Load (0.1ms)[0m   [0;1mSELECT * FROM `estados` WHERE (`estados`.`id` = 1) [0m
+Rendering template within layouts/estados
+Rendering estados/show
+Completed in 15ms (View: 5, DB: 1) | 200 OK [http://localhost/estados/1]
+
+
+Processing EstadosController#show (for 127.0.0.1 at 2010-11-02 17:07:20) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mEstado Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `estados`[0m
+  [4;36;1mEstado Load (0.1ms)[0m   [0;1mSELECT * FROM `estados` WHERE (`estados`.`id` = 1) [0m
+Rendering template within layouts/estados
+Rendering estados/show
+Completed in 15ms (View: 5, DB: 1) | 200 OK [http://localhost/estados/1]
+
+
+Processing EstadosController#show (for 127.0.0.1 at 2010-11-02 17:07:41) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mEstado Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `estados`[0m
+  [4;36;1mEstado Load (0.1ms)[0m   [0;1mSELECT * FROM `estados` WHERE (`estados`.`id` = 1) [0m
+Rendering template within layouts/estados
+Rendering estados/show
+Completed in 15ms (View: 5, DB: 1) | 200 OK [http://localhost/estados/1]
+
+
+Processing EstadosController#show (for 127.0.0.1 at 2010-11-02 17:07:49) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mEstado Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `estados`[0m
+  [4;36;1mEstado Load (0.1ms)[0m   [0;1mSELECT * FROM `estados` WHERE (`estados`.`id` = 1) [0m
+Rendering template within layouts/estados
+Rendering estados/show
+Completed in 16ms (View: 6, DB: 1) | 200 OK [http://localhost/estados/1]
+
+
+Processing EstadosController#index (for 127.0.0.1 at 2010-11-02 17:07:55) [GET]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mEstado Load (0.1ms)[0m   [0mSELECT * FROM `estados` [0m
+Rendering template within layouts/estados
+Rendering estados/index
+  [4;36;1mEstado Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `estados`[0m
+Completed in 44ms (View: 33, DB: 1) | 200 OK [http://localhost/estados]
+
+
+Processing EstadosController#edit (for 127.0.0.1 at 2010-11-02 17:07:58) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mEstado Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `estados`[0m
+  [4;36;1mEstado Load (0.1ms)[0m   [0;1mSELECT * FROM `estados` WHERE (`estados`.`id` = 1) [0m
+Rendering template within layouts/estados
+Rendering estados/edit
+Completed in 18ms (View: 9, DB: 1) | 200 OK [http://localhost/estados/1/edit]
+
+
+Processing EstadosController#edit (for 127.0.0.1 at 2010-11-02 17:10:05) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mEstado Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `estados`[0m
+  [4;36;1mEstado Load (0.1ms)[0m   [0;1mSELECT * FROM `estados` WHERE (`estados`.`id` = 1) [0m
+Rendering template within layouts/estados
+Rendering estados/edit
+Completed in 17ms (View: 8, DB: 1) | 200 OK [http://localhost/estados/1/edit]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-02 17:10:47) [GET]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 9ms (View: 6, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing EleitorsController#index (for 127.0.0.1 at 2010-11-02 17:10:50) [GET]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mEleitor Load (0.1ms)[0m   [0mSELECT * FROM `eleitors` [0m
+Rendering template within layouts/eleitors
+Rendering eleitors/index
+  [4;36;1mEleitor Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `eleitors`[0m
+Completed in 28ms (View: 19, DB: 1) | 200 OK [http://localhost/eleitors]
+
+
+Processing EleitorsController#edit (for 127.0.0.1 at 2010-11-02 17:10:52) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mEleitor Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `eleitors`[0m
+  [4;36;1mEleitor Load (0.1ms)[0m   [0;1mSELECT * FROM `eleitors` WHERE (`eleitors`.`id` = 1) [0m
+Rendering template within layouts/eleitors
+Rendering eleitors/edit
+Completed in 24ms (View: 15, DB: 1) | 200 OK [http://localhost/eleitors/1/edit]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-02 17:11:59) [GET]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing EstadosController#index (for 127.0.0.1 at 2010-11-02 17:12:02) [GET]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mEstado Load (0.1ms)[0m   [0mSELECT * FROM `estados` [0m
+Rendering template within layouts/estados
+Rendering estados/index
+  [4;36;1mEstado Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `estados`[0m
+Completed in 39ms (View: 28, DB: 1) | 200 OK [http://localhost/estados]
+
+
+Processing EstadosController#edit (for 127.0.0.1 at 2010-11-02 17:12:04) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mEstado Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `estados`[0m
+  [4;36;1mEstado Load (0.1ms)[0m   [0;1mSELECT * FROM `estados` WHERE (`estados`.`id` = 1) [0m
+Rendering template within layouts/estados
+Rendering estados/edit
+Completed in 18ms (View: 9, DB: 1) | 200 OK [http://localhost/estados/1/edit]
+
+
+Processing EstadosController#edit (for 127.0.0.1 at 2010-11-02 17:12:14) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mEstado Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `estados`[0m
+  [4;36;1mEstado Load (0.1ms)[0m   [0;1mSELECT * FROM `estados` WHERE (`estados`.`id` = 1) [0m
+Rendering template within layouts/estados
+Rendering estados/edit
+Completed in 17ms (View: 8, DB: 1) | 200 OK [http://localhost/estados/1/edit]
+
+
+Processing EstadosController#edit (for 127.0.0.1 at 2010-11-02 17:12:33) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mEstado Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `estados`[0m
+  [4;36;1mEstado Load (0.1ms)[0m   [0;1mSELECT * FROM `estados` WHERE (`estados`.`id` = 1) [0m
+Rendering template within layouts/estados
+Rendering estados/edit
+Completed in 17ms (View: 8, DB: 1) | 200 OK [http://localhost/estados/1/edit]
+
+
+Processing EstadosController#edit (for 127.0.0.1 at 2010-11-02 17:12:44) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mEstado Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `estados`[0m
+  [4;36;1mEstado Load (0.1ms)[0m   [0;1mSELECT * FROM `estados` WHERE (`estados`.`id` = 1) [0m
+Rendering template within layouts/estados
+Rendering estados/edit
+Completed in 18ms (View: 9, DB: 1) | 200 OK [http://localhost/estados/1/edit]
+
+
+Processing EstadosController#edit (for 127.0.0.1 at 2010-11-02 17:12:51) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mEstado Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `estados`[0m
+  [4;36;1mEstado Load (0.1ms)[0m   [0;1mSELECT * FROM `estados` WHERE (`estados`.`id` = 1) [0m
+Rendering template within layouts/estados
+Rendering estados/edit
+Completed in 18ms (View: 9, DB: 1) | 200 OK [http://localhost/estados/1/edit]
+
+
+Processing EstadosController#show (for 127.0.0.1 at 2010-11-02 17:12:55) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mEstado Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `estados`[0m
+  [4;36;1mEstado Load (0.1ms)[0m   [0;1mSELECT * FROM `estados` WHERE (`estados`.`id` = 1) [0m
+Rendering template within layouts/estados
+Rendering estados/show
+Completed in 28ms (View: 18, DB: 1) | 200 OK [http://localhost/estados/1]
+
+
+Processing EstadosController#index (for 127.0.0.1 at 2010-11-02 17:12:57) [GET]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mEstado Load (0.1ms)[0m   [0mSELECT * FROM `estados` [0m
+Rendering template within layouts/estados
+Rendering estados/index
+  [4;36;1mEstado Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `estados`[0m
+Completed in 36ms (View: 27, DB: 1) | 200 OK [http://localhost/estados]

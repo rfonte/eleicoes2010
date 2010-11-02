@@ -1,4 +1,4 @@
-<h1>Lista de Estados</h1>
+<br /><h1>Lista de Estados</h1><br /><br /><br />
 
 <table>
   <tr>
@@ -10,15 +10,15 @@
   <tr>
     <td><%=h estado.id %></td>
     <td><%=h estado.nome_est %></td>
-    <td><%= link_to 'Exibir', estado %></td>
-    <td><%= link_to 'Editar', edit_estado_path(estado) %></td>
-    <td><%= link_to 'Excluir', estado, :confirm => 'Are you sure?', :method => :delete %></td>
+    <td class="view"><%= link_to 'Exibir', estado %></td>
+    <td class="edit"><%= link_to 'Editar', edit_estado_path(estado) %></td>
+    <td class="cancel"><%= link_to 'Excluir', estado, :confirm => 'Are you sure?', :method => :delete %></td>
   </tr>
 <% end %>
 </table>
 
 <br />
 
-<%= link_to 'Novo Estado', new_estado_path %>
-<%= link_to 'HOME', home_index_path %>
+<span class="add"><%= link_to 'Novo Estado', new_estado_path %></span>
+<span class="home"><%= link_to 'HOME', home_index_path %></span>
 

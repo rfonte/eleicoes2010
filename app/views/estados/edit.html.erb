@@ -1,17 +1,14 @@
-<h1>Edição de Estado</h1>
+<br /><h1>Edição de Estado</h1><br /><br />
 
 <% form_for(@estado) do |f| %>
   <%= f.error_messages %>
 
-  <p>
-    Nome do Estado<br />
-    <%= f.text_field :nome_est %>
-  </p>
-  <p>
-    <%= f.submit "Atualizar" %>
-  </p>
+<div class="editar">
+  <p>Nome do Estado: <%= f.text_field :nome_est %></p><br />
+  <p class="atualizar"><%= f.submit "Atualizar" %></p><br />
 <% end %>
+</div>
 
-<%= link_to 'Exibir', @estado %> |
-<%= link_to 'Voltar', estados_path %>
+<span class="view"><%= link_to 'Exibir', @estado %></span>
+<span class="voltar"><%= link_to 'Voltar', estados_path %></span>
 

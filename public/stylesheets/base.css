@@ -87,5 +87,5 @@ table th {
 .add { background: #000 url("/images/add.png") no-repeat scroll 0 0; }
 .voltar { background: #000 url("/images/voltar.png") no-repeat scroll 0 0; }
 .view, .edit, .cancel { border: 0px none; }
-.new, .show { font-size: 13px; }
+.new, .show, .editar { font-size: 13px; }
 

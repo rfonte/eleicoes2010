@@ -1,16 +1,6 @@
 Eleitores
 Estados
     Model
-    Index
-        Ajustar fontes
-        Colocar imagem de fundo na tabela listada
-        Colocar botão novo
-        Colocar boto home
-        colocar botão de ver
-        colocar botão de editar
-        colocar botão de excluir
-    New
-    Show
     Edit
 
 Municípios
