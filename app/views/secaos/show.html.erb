@@ -1,34 +1,16 @@
-<p>
-  <b>Código da Seção:</b>
-  <%=h @secao.id %>
-</p>
+<br /><h1>Seção</h1><br /><br /><br />
 
-<p>
-  <b>Código da Zona:</b>
-  <%=h @secao.zona_id %>
-</p>
-
-<p>
-  <b>Cód do Município:</b>
-  <%=h @secao.municipio_id %>
-</p>
-
-<p>
-  <b>Código do Estado:</b>
-  <%=h @secao.estado_id %>
-</p>
-
-<p>
-  <b>Código da Urna:</b>
-  <%=h @secao.urna_id %>
-</p>
-
-<p>
-  <b>Sala:</b>
-  <%=h @secao.sala %>
-</p>
+<div class="show">
+  <p><b>Código da Seção: </b><%=h @secao.id %></p><br />
+  <p><b>Código da Zona: </b><%=h @secao.zona_id %></p><br />
+  <p><b>Cód do Município: </b><%=h @secao.municipio_id %></p><br />
+  <p><b>Código do Estado: </b><%=h @secao.estado_id %></p><br />
+  <p><b>Código da Urna: </b><%=h @secao.urna_id %></p><br />
+  <p><b>Sala: </b><%=h @secao.sala %></p><br />
+</div>
 
 
-<%= link_to 'Editar', edit_secao_path(@secao) %> |
-<%= link_to 'Voltar', secaos_path %>
+<span class="edit"><%= link_to 'Editar', edit_secao_path(@secao) %></span>
+<span class="voltar"><%= link_to 'Voltar', secaos_path %></span>
+<span class="home"><%= link_to 'HOME', home_index_path %></span>
 

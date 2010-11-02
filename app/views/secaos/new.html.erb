@@ -1,32 +1,17 @@
-<h1>Nova Seção</h1>
+<br /><h1>Nova Seção</h1><br /><br /><br />
 
 <% form_for(@secao) do |f| %>
   <%= f.error_messages %>
-
-  <p>
-    Zona<br />
-    <%= collection_select(:secao, :zona_id, Zona.all, :id, :nome_zona) %>
-  </p>
-  <p>
-    Município<br />
-    <%= collection_select(:secao, :municipio_id, Municipio.all, :id, :nome_munic) %>
-  </p>
-  <p>
-    Estado<br />
-    <%= collection_select(:secao, :estado_id, Estado.all, :id, :nome_est) %>
-  </p>
-  <p>
-    Urna<br />
-    <%= collection_select(:secao, :urna_id, Urna.all, :id, :id) %>
-  </p>
-  <p>
-    <%= f.label :sala %><br />
-    <%= f.text_field :sala %>
-  </p>
-  <p>
-    <%= f.submit "Criar" %>
-  </p>
+<div class="new">
+  <p>Zona: <%= collection_select(:secao, :zona_id, Zona.all, :id, :nome_zona) %></p><br />
+  <p>Município: <%= collection_select(:secao, :municipio_id, Municipio.all, :id, :nome_munic) %></p><br />
+  <p>Estado: <%= collection_select(:secao, :estado_id, Estado.all, :id, :nome_est) %></p><br />
+  <p>Urna: <%= collection_select(:secao, :urna_id, Urna.all, :id, :id) %></p><br />
+  <p>Sala: <%= f.text_field :sala %></p><br />
+  <p class="criar"><%= f.submit "Criar" %></p><br />
 <% end %>
+</div>
 
-<%= link_to 'Voltar', secaos_path %>
+<span class="voltar"><%= link_to 'Voltar', secaos_path %></span>
+<span class="home"><%= link_to 'HOME', home_index_path %></span>
 
