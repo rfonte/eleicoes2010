@@ -1,21 +1,17 @@
-<h1>Edição de Municípios</h1>
+<br /><h1>Edição de Municípios</h1><br /><br /><br />
 
 <% form_for(@municipio) do |f| %>
   <%= f.error_messages %>
-
-  <p>
-    Estado<br />
-    <%= collection_select(:municipio, :estado_id, Estado.all, :id, :nome_est) %>
-  </p>
-  <p>
-    Nome do Município<br />
-    <%= f.text_field :nome_munic %>
-  </p>
-  <p>
-    <%= f.submit "Atualizar" %>
-  </p>
+<div class="editar">
+  <p>Estado: <%= collection_select(:municipio, :estado_id, Estado.all, :id, :nome_est) %></p><br />
+  <p>Nome do Município: <%= f.text_field :nome_munic %></p><br />
+  <p class="atualizar"><%= f.submit "Atualizar" %></p>
 <% end %>
+</div>
 
-<%= link_to 'Exibir', @municipio %> |
-<%= link_to 'Voltar', municipios_path %>
+<br />
+
+<span class="view"><%= link_to 'Exibir', @municipio %></span>
+<span class="voltar"><%= link_to 'Voltar', municipios_path %></span>
+<span class="home"><%= link_to 'HOME', home_index_path %></span>
 

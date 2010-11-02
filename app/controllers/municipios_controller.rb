@@ -3,7 +3,6 @@ class MunicipiosController < ApplicationController
   # GET /municipios.xml
   def index
     @municipios = Municipio.find(:all)
-
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @municipios }

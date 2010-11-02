@@ -1,19 +1,14 @@
-<p>
-  <b>Código do Município:</b>
-  <%=h @municipio.id %>
-</p>
+<br /><h1>Municipio</h1><br /><br /><br />
 
-<p>
-  <b>Código do Estado:</b>
-  <%=h @municipio.estado_id %>
-</p>
+<div class="show">
+  <p><b>Código do Município: </b><%=h @municipio.id %></p><br />
+  <p><b>Código do Estado: </b><%=h @municipio.estado_id %></p><br />
+  <p><b>Nome do Município: </b><%=h @municipio.nome_munic %></p>
+</div>
 
-<p>
-  <b>Nome do Município:</b>
-  <%=h @municipio.nome_munic %>
-</p>
+<br />
 
-
-<%= link_to 'Editar', edit_municipio_path(@municipio) %> |
-<%= link_to 'Voltar', municipios_path %>
+<span class="edit"><%= link_to 'Editar', edit_municipio_path(@municipio) %></span>
+<span class="voltar"><%= link_to 'Voltar', municipios_path %></span>
+<span class="home"><%= link_to 'HOME', home_index_path %></span>
 

@@ -1,4 +1,4 @@
-<h1>Listagem de Municípios</h1>
+<br /><h1>Listagem de Municípios</h1><br /><br /><br />
 
 <table>
   <tr>
@@ -12,15 +12,15 @@
     <td><%=h municipio.id %></td>
     <td><%=h municipio.estado_id %></td>
     <td><%=h municipio.nome_munic %></td>
-    <td><%= link_to 'Exibir', municipio %></td>
-    <td><%= link_to 'Editar', edit_municipio_path(municipio) %></td>
-    <td><%= link_to 'Excluir', municipio, :confirm => 'Are you sure?', :method => :delete %></td>
+    <td class="view"><%= link_to 'Exibir', municipio %></td>
+    <td class="edit"><%= link_to 'Editar', edit_municipio_path(municipio) %></td>
+    <td class="cancel"><%= link_to 'Excluir', municipio, :confirm => 'Are you sure?', :method => :delete %></td>
   </tr>
 <% end %>
 </table>
 
 <br />
 
-<%= link_to 'Novo Município', new_municipio_path %>
-<%= link_to 'HOME', home_index_path %>
+<span class="add"><%= link_to 'Novo Município', new_municipio_path %></span>
+<span class="home"><%= link_to 'HOME', home_index_path %></span>
 

@@ -26009,3 +26009,508 @@ Rendering template within layouts/estados
 Rendering estados/index
   [4;36;1mEstado Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `estados`[0m
 Completed in 36ms (View: 27, DB: 1) | 200 OK [http://localhost/estados]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-02 17:17:25) [GET]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 9ms (View: 6, DB: 0) | 200 OK [http://localhost/home]
+
+
+Processing MunicipiosController#index (for 127.0.0.1 at 2010-11-02 17:17:29) [GET]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mMunicipio Load (0.1ms)[0m   [0mSELECT * FROM `municipios` [0m
+Rendering template within layouts/municipios
+Rendering municipios/index
+  [4;36;1mMunicipio Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `municipios`[0m
+Completed in 34ms (View: 24, DB: 1) | 200 OK [http://localhost/municipios]
+
+
+Processing MunicipiosController#index (for 127.0.0.1 at 2010-11-02 17:18:20) [GET]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mMunicipio Load (0.1ms)[0m   [0mSELECT * FROM `municipios` [0m
+Rendering template within layouts/municipios
+Rendering municipios/index
+  [4;36;1mMunicipio Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `municipios`[0m
+Completed in 33ms (View: 23, DB: 1) | 200 OK [http://localhost/municipios]
+
+
+Processing MunicipiosController#index (for 127.0.0.1 at 2010-11-02 17:18:44) [GET]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mMunicipio Load (0.1ms)[0m   [0mSELECT * FROM `municipios` [0m
+Rendering template within layouts/municipios
+Rendering municipios/index
+  [4;36;1mMunicipio Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `municipios`[0m
+Completed in 33ms (View: 24, DB: 1) | 200 OK [http://localhost/municipios]
+
+
+Processing MunicipiosController#index (for 127.0.0.1 at 2010-11-02 17:19:35) [GET]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mMunicipio Load (0.1ms)[0m   [0mSELECT * FROM `municipios` [0m
+Rendering template within layouts/municipios
+Rendering municipios/index
+  [4;36;1mMunicipio Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `municipios`[0m
+Completed in 34ms (View: 24, DB: 1) | 200 OK [http://localhost/municipios]
+
+
+Processing MunicipiosController#index (for 127.0.0.1 at 2010-11-02 17:20:10) [GET]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mMunicipio Load (0.1ms)[0m   [0mSELECT * FROM `municipios` [0m
+Rendering template within layouts/municipios
+Rendering municipios/index
+  [4;36;1mMunicipio Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `municipios`[0m
+Completed in 33ms (View: 24, DB: 1) | 200 OK [http://localhost/municipios]
+
+
+Processing MunicipiosController#index (for 127.0.0.1 at 2010-11-02 17:20:41) [GET]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mMunicipio Load (0.1ms)[0m   [0mSELECT * FROM `municipios` [0m
+Rendering template within layouts/municipios
+Rendering municipios/index
+  [4;36;1mMunicipio Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `municipios`[0m
+Completed in 33ms (View: 23, DB: 1) | 200 OK [http://localhost/municipios]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-02 17:20:56) [GET]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 9ms (View: 6, DB: 0) | 200 OK [http://localhost/home]
+
+
+Processing MunicipiosController#index (for 127.0.0.1 at 2010-11-02 17:21:00) [GET]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mMunicipio Load (0.2ms)[0m   [0mSELECT * FROM `municipios` [0m
+Rendering template within layouts/municipios
+Rendering municipios/index
+  [4;36;1mMunicipio Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `municipios`[0m
+Completed in 35ms (View: 25, DB: 1) | 200 OK [http://localhost/municipios]
+
+
+Processing MunicipiosController#show (for 127.0.0.1 at 2010-11-02 17:25:14) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mMunicipio Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `municipios`[0m
+  [4;36;1mMunicipio Load (0.3ms)[0m   [0;1mSELECT * FROM `municipios` WHERE (`municipios`.`id` = 1) [0m
+Rendering template within layouts/municipios
+Rendering municipios/show
+Completed in 16ms (View: 7, DB: 1) | 200 OK [http://localhost/municipios/1]
+
+
+Processing MunicipiosController#index (for 127.0.0.1 at 2010-11-02 17:25:17) [GET]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mMunicipio Load (0.1ms)[0m   [0mSELECT * FROM `municipios` [0m
+Rendering template within layouts/municipios
+Rendering municipios/index
+  [4;36;1mMunicipio Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `municipios`[0m
+Completed in 33ms (View: 24, DB: 1) | 200 OK [http://localhost/municipios]
+
+
+Processing MunicipiosController#new (for 127.0.0.1 at 2010-11-02 17:25:18) [GET]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mMunicipio Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `municipios`[0m
+Rendering template within layouts/municipios
+Rendering municipios/new
+  [4;36;1mEstado Load (0.2ms)[0m   [0;1mSELECT * FROM `estados` [0m
+  [4;35;1mEstado Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `estados`[0m
+Completed in 45ms (View: 18, DB: 2) | 200 OK [http://localhost/municipios/new]
+
+
+Processing MunicipiosController#new (for 127.0.0.1 at 2010-11-02 17:29:23) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mMunicipio Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `municipios`[0m
+Rendering template within layouts/municipios
+Rendering municipios/new
+  [4;35;1mEstado Load (0.1ms)[0m   [0mSELECT * FROM `estados` [0m
+  [4;36;1mEstado Columns (0.5ms)[0m   [0;1mSHOW FIELDS FROM `estados`[0m
+Completed in 39ms (View: 16, DB: 1) | 200 OK [http://localhost/municipios/new]
+
+
+Processing MunicipiosController#index (for 127.0.0.1 at 2010-11-02 17:29:56) [GET]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mMunicipio Load (0.1ms)[0m   [0mSELECT * FROM `municipios` [0m
+Rendering template within layouts/municipios
+Rendering municipios/index
+  [4;36;1mMunicipio Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `municipios`[0m
+Completed in 46ms (View: 24, DB: 1) | 200 OK [http://localhost/municipios]
+
+
+Processing MunicipiosController#edit (for 127.0.0.1 at 2010-11-02 17:29:59) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mMunicipio Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `municipios`[0m
+  [4;36;1mMunicipio Load (0.1ms)[0m   [0;1mSELECT * FROM `municipios` WHERE (`municipios`.`id` = 1) [0m
+Rendering template within layouts/municipios
+Rendering municipios/edit
+  [4;35;1mEstado Load (9.1ms)[0m   [0mSELECT * FROM `estados` [0m
+  [4;36;1mEstado Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `estados`[0m
+Completed in 36ms (View: 27, DB: 1) | 200 OK [http://localhost/municipios/1/edit]
+
+
+Processing MunicipiosController#index (for 127.0.0.1 at 2010-11-02 17:30:12) [GET]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mMunicipio Load (0.2ms)[0m   [0mSELECT * FROM `municipios` [0m
+Rendering template within layouts/municipios
+Rendering municipios/index
+  [4;36;1mMunicipio Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `municipios`[0m
+Completed in 49ms (View: 25, DB: 1) | 200 OK [http://localhost/municipios]
+
+
+Processing MunicipiosController#new (for 127.0.0.1 at 2010-11-02 17:30:14) [GET]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mMunicipio Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `municipios`[0m
+Rendering template within layouts/municipios
+Rendering municipios/new
+  [4;36;1mEstado Load (0.1ms)[0m   [0;1mSELECT * FROM `estados` [0m
+  [4;35;1mEstado Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `estados`[0m
+Completed in 26ms (View: 16, DB: 1) | 200 OK [http://localhost/municipios/new]
+
+
+Processing MunicipiosController#index (for 127.0.0.1 at 2010-11-02 17:30:25) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mMunicipio Load (0.1ms)[0m   [0;1mSELECT * FROM `municipios` [0m
+Rendering template within layouts/municipios
+Rendering municipios/index
+  [4;35;1mMunicipio Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `municipios`[0m
+Completed in 33ms (View: 24, DB: 1) | 200 OK [http://localhost/municipios]
+
+
+Processing MunicipiosController#edit (for 127.0.0.1 at 2010-11-02 17:30:32) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mMunicipio Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `municipios`[0m
+  [4;35;1mMunicipio Load (0.1ms)[0m   [0mSELECT * FROM `municipios` WHERE (`municipios`.`id` = 1) [0m
+Rendering template within layouts/municipios
+Rendering municipios/edit
+  [4;36;1mEstado Load (0.2ms)[0m   [0;1mSELECT * FROM `estados` [0m
+  [4;35;1mEstado Columns (0.5ms)[0m   [0mSHOW FIELDS FROM `estados`[0m
+Completed in 26ms (View: 17, DB: 1) | 200 OK [http://localhost/municipios/1/edit]
+
+
+Processing MunicipiosController#edit (for 127.0.0.1 at 2010-11-02 17:31:40) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mMunicipio Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `municipios`[0m
+  [4;35;1mMunicipio Load (0.1ms)[0m   [0mSELECT * FROM `municipios` WHERE (`municipios`.`id` = 1) [0m
+Rendering template within layouts/municipios
+Rendering municipios/edit
+  [4;36;1mEstado Load (0.1ms)[0m   [0;1mSELECT * FROM `estados` [0m
+  [4;35;1mEstado Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `estados`[0m
+Completed in 28ms (View: 18, DB: 1) | 200 OK [http://localhost/municipios/1/edit]
+
+
+Processing MunicipiosController#edit (for 127.0.0.1 at 2010-11-02 17:31:45) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mMunicipio Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `municipios`[0m
+  [4;35;1mMunicipio Load (0.1ms)[0m   [0mSELECT * FROM `municipios` WHERE (`municipios`.`id` = 1) [0m
+Rendering template within layouts/municipios
+Rendering municipios/edit
+  [4;36;1mEstado Load (0.1ms)[0m   [0;1mSELECT * FROM `estados` [0m
+  [4;35;1mEstado Columns (0.5ms)[0m   [0mSHOW FIELDS FROM `estados`[0m
+Completed in 27ms (View: 18, DB: 1) | 200 OK [http://localhost/municipios/1/edit]
+
+
+Processing MunicipiosController#show (for 127.0.0.1 at 2010-11-02 17:31:47) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mMunicipio Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `municipios`[0m
+  [4;35;1mMunicipio Load (0.1ms)[0m   [0mSELECT * FROM `municipios` WHERE (`municipios`.`id` = 1) [0m
+Rendering template within layouts/municipios
+Rendering municipios/show
+Completed in 15ms (View: 6, DB: 1) | 200 OK [http://localhost/municipios/1]
+
+
+Processing MunicipiosController#show (for 127.0.0.1 at 2010-11-02 17:32:10) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mMunicipio Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `municipios`[0m
+  [4;35;1mMunicipio Load (0.1ms)[0m   [0mSELECT * FROM `municipios` WHERE (`municipios`.`id` = 1) [0m
+Rendering template within layouts/municipios
+Rendering municipios/show
+Completed in 79ms (View: 6, DB: 1) | 200 OK [http://localhost/municipios/1]
+
+
+Processing MunicipiosController#show (for 127.0.0.1 at 2010-11-02 17:32:49) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mMunicipio Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `municipios`[0m
+  [4;35;1mMunicipio Load (0.1ms)[0m   [0mSELECT * FROM `municipios` WHERE (`municipios`.`id` = 1) [0m
+Rendering template within layouts/municipios
+Rendering municipios/show
+Completed in 16ms (View: 6, DB: 1) | 200 OK [http://localhost/municipios/1]
+
+
+Processing MunicipiosController#show (for 127.0.0.1 at 2010-11-02 17:32:57) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mMunicipio Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `municipios`[0m
+  [4;35;1mMunicipio Load (0.1ms)[0m   [0mSELECT * FROM `municipios` WHERE (`municipios`.`id` = 1) [0m
+Rendering template within layouts/municipios
+Rendering municipios/show
+Completed in 16ms (View: 6, DB: 1) | 200 OK [http://localhost/municipios/1]
+
+
+Processing MunicipiosController#show (for 127.0.0.1 at 2010-11-02 17:33:08) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mMunicipio Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `municipios`[0m
+  [4;35;1mMunicipio Load (0.1ms)[0m   [0mSELECT * FROM `municipios` WHERE (`municipios`.`id` = 1) [0m
+Rendering template within layouts/municipios
+Rendering municipios/show
+Completed in 15ms (View: 6, DB: 1) | 200 OK [http://localhost/municipios/1]
+
+
+Processing MunicipiosController#show (for 127.0.0.1 at 2010-11-02 17:33:20) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mMunicipio Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `municipios`[0m
+  [4;35;1mMunicipio Load (0.1ms)[0m   [0mSELECT * FROM `municipios` WHERE (`municipios`.`id` = 1) [0m
+Rendering template within layouts/municipios
+Rendering municipios/show
+Completed in 17ms (View: 6, DB: 1) | 200 OK [http://localhost/municipios/1]
+
+
+Processing MunicipiosController#index (for 127.0.0.1 at 2010-11-02 17:33:45) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mMunicipio Load (0.1ms)[0m   [0;1mSELECT * FROM `municipios` [0m
+Rendering template within layouts/municipios
+Rendering municipios/index
+  [4;35;1mMunicipio Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `municipios`[0m
+Completed in 34ms (View: 24, DB: 1) | 200 OK [http://localhost/municipios]
+
+
+Processing MunicipiosController#edit (for 127.0.0.1 at 2010-11-02 17:33:47) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mMunicipio Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `municipios`[0m
+  [4;35;1mMunicipio Load (0.1ms)[0m   [0mSELECT * FROM `municipios` WHERE (`municipios`.`id` = 1) [0m
+Rendering template within layouts/municipios
+Rendering municipios/edit
+  [4;36;1mEstado Load (0.1ms)[0m   [0;1mSELECT * FROM `estados` [0m
+  [4;35;1mEstado Columns (0.5ms)[0m   [0mSHOW FIELDS FROM `estados`[0m
+Completed in 26ms (View: 17, DB: 1) | 200 OK [http://localhost/municipios/1/edit]
+
+
+Processing MunicipiosController#edit (for 127.0.0.1 at 2010-11-02 17:35:19) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mMunicipio Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `municipios`[0m
+  [4;35;1mMunicipio Load (0.1ms)[0m   [0mSELECT * FROM `municipios` WHERE (`municipios`.`id` = 1) [0m
+Rendering template within layouts/municipios
+Rendering municipios/edit
+  [4;36;1mEstado Load (0.1ms)[0m   [0;1mSELECT * FROM `estados` [0m
+  [4;35;1mEstado Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `estados`[0m
+Completed in 26ms (View: 17, DB: 1) | 200 OK [http://localhost/municipios/1/edit]
+
+
+Processing MunicipiosController#edit (for 127.0.0.1 at 2010-11-02 17:35:34) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mMunicipio Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `municipios`[0m
+  [4;35;1mMunicipio Load (0.1ms)[0m   [0mSELECT * FROM `municipios` WHERE (`municipios`.`id` = 1) [0m
+Rendering template within layouts/municipios
+Rendering municipios/edit
+  [4;36;1mEstado Load (0.1ms)[0m   [0;1mSELECT * FROM `estados` [0m
+  [4;35;1mEstado Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `estados`[0m
+Completed in 28ms (View: 19, DB: 1) | 200 OK [http://localhost/municipios/1/edit]
+
+
+Processing MunicipiosController#edit (for 127.0.0.1 at 2010-11-02 17:36:02) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mMunicipio Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `municipios`[0m
+  [4;35;1mMunicipio Load (0.1ms)[0m   [0mSELECT * FROM `municipios` WHERE (`municipios`.`id` = 1) [0m
+Rendering template within layouts/municipios
+Rendering municipios/edit
+  [4;36;1mEstado Load (0.1ms)[0m   [0;1mSELECT * FROM `estados` [0m
+  [4;35;1mEstado Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `estados`[0m
+Completed in 28ms (View: 18, DB: 1) | 200 OK [http://localhost/municipios/1/edit]
+
+
+Processing MunicipiosController#edit (for 127.0.0.1 at 2010-11-02 17:36:03) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mMunicipio Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `municipios`[0m
+  [4;35;1mMunicipio Load (0.1ms)[0m   [0mSELECT * FROM `municipios` WHERE (`municipios`.`id` = 1) [0m
+Rendering template within layouts/municipios
+Rendering municipios/edit
+  [4;36;1mEstado Load (0.1ms)[0m   [0;1mSELECT * FROM `estados` [0m
+  [4;35;1mEstado Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `estados`[0m
+Completed in 27ms (View: 18, DB: 1) | 200 OK [http://localhost/municipios/1/edit]
+
+
+Processing MunicipiosController#edit (for 127.0.0.1 at 2010-11-02 17:36:04) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mMunicipio Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `municipios`[0m
+  [4;35;1mMunicipio Load (0.1ms)[0m   [0mSELECT * FROM `municipios` WHERE (`municipios`.`id` = 1) [0m
+Rendering template within layouts/municipios
+Rendering municipios/edit
+  [4;36;1mEstado Load (0.1ms)[0m   [0;1mSELECT * FROM `estados` [0m
+  [4;35;1mEstado Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `estados`[0m
+Completed in 29ms (View: 19, DB: 1) | 200 OK [http://localhost/municipios/1/edit]
+
+
+Processing MunicipiosController#show (for 127.0.0.1 at 2010-11-02 17:36:26) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mMunicipio Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `municipios`[0m
+  [4;35;1mMunicipio Load (0.1ms)[0m   [0mSELECT * FROM `municipios` WHERE (`municipios`.`id` = 1) [0m
+Rendering template within layouts/municipios
+Rendering municipios/show
+Completed in 16ms (View: 6, DB: 1) | 200 OK [http://localhost/municipios/1]
+
+
+Processing MunicipiosController#edit (for 127.0.0.1 at 2010-11-02 17:36:32) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mMunicipio Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `municipios`[0m
+  [4;35;1mMunicipio Load (0.1ms)[0m   [0mSELECT * FROM `municipios` WHERE (`municipios`.`id` = 1) [0m
+Rendering template within layouts/municipios
+Rendering municipios/edit
+  [4;36;1mEstado Load (0.1ms)[0m   [0;1mSELECT * FROM `estados` [0m
+  [4;35;1mEstado Columns (0.5ms)[0m   [0mSHOW FIELDS FROM `estados`[0m
+Completed in 26ms (View: 17, DB: 1) | 200 OK [http://localhost/municipios/1/edit]
+
+
+Processing MunicipiosController#show (for 127.0.0.1 at 2010-11-02 17:36:34) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mMunicipio Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `municipios`[0m
+  [4;35;1mMunicipio Load (0.1ms)[0m   [0mSELECT * FROM `municipios` WHERE (`municipios`.`id` = 1) [0m
+Rendering template within layouts/municipios
+Rendering municipios/show
+Completed in 79ms (View: 69, DB: 1) | 200 OK [http://localhost/municipios/1]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-02 17:37:00) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/home]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-02 17:37:28) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 9ms (View: 6, DB: 0) | 200 OK [http://localhost/home]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-02 17:37:35) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 9ms (View: 6, DB: 0) | 200 OK [http://localhost/home]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-02 17:37:35) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 9ms (View: 6, DB: 0) | 200 OK [http://localhost/home]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-02 17:37:35) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 9ms (View: 6, DB: 0) | 200 OK [http://localhost/home]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-02 17:37:36) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 14ms (View: 10, DB: 0) | 200 OK [http://localhost/home]
+
+
+Processing MunicipiosController#index (for 127.0.0.1 at 2010-11-02 17:37:44) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mMunicipio Load (0.2ms)[0m   [0;1mSELECT * FROM `municipios` [0m
+Rendering template within layouts/municipios
+Rendering municipios/index
+  [4;35;1mMunicipio Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `municipios`[0m
+Completed in 85ms (View: 26, DB: 1) | 200 OK [http://localhost/municipios]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-02 17:37:47) [GET]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/home]
+
+
+Processing ZonasController#index (for 127.0.0.1 at 2010-11-02 17:37:49) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mZona Load (0.1ms)[0m   [0;1mSELECT * FROM `zonas` [0m
+Rendering template within layouts/zonas
+Rendering zonas/index
+  [4;35;1mZona Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `zonas`[0m
+Completed in 24ms (View: 15, DB: 1) | 200 OK [http://localhost/zonas]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-02 17:37:53) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 8ms (View: 5, DB: 0) | 200 OK [http://localhost/home]
+
+
+Processing ZonasController#index (for 127.0.0.1 at 2010-11-02 17:39:52) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mZona Load (0.1ms)[0m   [0;1mSELECT * FROM `zonas` [0m
+Rendering template within layouts/zonas
+Rendering zonas/index
+  [4;35;1mZona Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `zonas`[0m
+Completed in 23ms (View: 15, DB: 1) | 200 OK [http://localhost/zonas]
