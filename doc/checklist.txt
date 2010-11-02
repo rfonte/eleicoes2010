@@ -1,25 +1,15 @@
 Eleitores
 Estados
 Municípios
-    Model
     Index
         - Ajustar o show para mostrar os nomes
-    View
+    Show
         - Ajustar com os nomes do estado e município
 Zonas
-    Model
     Index
-        Ajustar fontes
-        Colocar imagem de fundo na tabela listada
-        Colocar botão novo
-        Colocar boto home
-        colocar botão de ver
-        colocar botão de editar
-        colocar botão de excluir
-    New
+        - Ajustar o show para mostrar os nomes
     Show
-    Edit
-
+        - Ajustar com os nomes do estado e município
 Seções
     Model
     Index

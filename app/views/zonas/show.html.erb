@@ -1,24 +1,13 @@
-<p>
-  <b>Código da Zona:</b>
-  <%=h @zona.id %>
-</p>
+<br /><h1>Zona</h1><br /><br /><br />
 
-<p>
-  <b>Código Município:</b>
-  <%=h @zona.municipio_id %>
-</p>
+<div class="show">
+  <p><b>Código da Zona: </b><%=h @zona.id %></p><br />
+  <p><b>Código Município: </b><%=h @zona.municipio_id %></p><br />
+  <p><b>Código do Estado: </b><%=h @zona.estado_id %></p><br />
+  <p><b>Nome da Zona: </b><%=h @zona.nome_zona %></p><br />
+</div>
 
-<p>
-  <b>Código do Estado:</b>
-  <%=h @zona.estado_id %>
-</p>
-
-<p>
-  <b>Nome da Zona:</b>
-  <%=h @zona.nome_zona %>
-</p>
-
-
-<%= link_to 'Editar', edit_zona_path(@zona) %> |
-<%= link_to 'Voltar', zonas_path %>
+<span class="edit"><%= link_to 'Editar', edit_zona_path(@zona) %></span>
+<span class="voltar"><%= link_to 'Voltar', zonas_path %></span>
+<span class="home"><%= link_to 'HOME', home_index_path %></span>
 

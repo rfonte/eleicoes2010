@@ -1,25 +1,16 @@
-<h1>Edição de Zona</h1>
+<br /><h1>Edição de Zona</h1><br /><br /><br />
 
 <% form_for(@zona) do |f| %>
   <%= f.error_messages %>
-
-  <p>
-    Município<br />
-    <%= collection_select(:zona, :municipio_id, Municipio.all, :id, :nome_munic) %>
-  </p>
-  <p>
-    Estado<br />
-    <%= collection_select(:zona, :estado_id, Estado.all, :id, :nome_est) %>
-  </p>
-  <p>
-    Nome da Zona<br />
-    <%= f.text_field :nome_zona %>
-  </p>
-  <p>
-    <%= f.submit "Atualizar" %>
-  </p>
+<div class="editar">
+  <p> Município: <%= collection_select(:zona, :municipio_id, Municipio.all, :id, :nome_munic) %></p><br />
+  <p> Estado: <%= collection_select(:zona, :estado_id, Estado.all, :id, :nome_est) %></p><br />
+  <p> Nome da Zona: <%= f.text_field :nome_zona %></p><br />
+  <p class="atualizar"><%= f.submit "Atualizar" %></p><br />
 <% end %>
+</div>
 
-<%= link_to 'Ver', @zona %> |
-<%= link_to 'Voltar', zonas_path %>
+<span class="view"><%= link_to 'Ver', @zona %></span>
+<span class="voltar"><%= link_to 'Voltar', zonas_path %></span>
+<span class="home"><%= link_to 'HOME', home_index_path %></span>
 
