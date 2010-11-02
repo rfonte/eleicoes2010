@@ -14,16 +14,11 @@ ul ul {
     display: none;
     position:fixed;
 }
-
-ul li {
-    overflow: hidden;
-}
-#menu li {
-    display: inline;
-}
+ul li { overflow: hidden; }
+#menu li { display: inline; }
 a:link {color: #FFF;}
 a:visited {color: #FFF;}
-a:hover {color: #FFD700;}
+a:hover {color: #c9c721;}
 a:active {color: #000;}
 #body {
     margin-left: 20%;
@@ -40,20 +35,29 @@ a:active {color: #000;}
     height: 10px;
 }
 #menu1 {
-    background: #778899 none repeat scroll 0 0;
+    background: #6a6262 none repeat scroll 0 0;
     height: 40px;
+    font-size: 16px;
+    padding: 3px 6px;
 }
 #youtubeBox {
+    background: #000 url("/images/fundo_video.png") repeat scroll 0 0;
     width: 385px;
     height: 250px;
     position: absolute;
+    margin: 10px 0px;
 }
 #twitterBox {
-    background: #000 none repeat scroll 0 0;
+    background: #000 url("/images/fundo_video.png") repeat scroll 0 0;
     width: 385px;
     height: 250px;
-    margin: 0px 385px;
+    margin: 10px 395px;
     text-align: center;
+}
+embed {
+    width: 375px;
+    height: 225px;
+    margin: 19px 5px;
 }
 img {
     width: 175px;

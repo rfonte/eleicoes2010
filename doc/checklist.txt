@@ -18,7 +18,7 @@ Home
     ajustar box do menu
 
 
-- Não esquecer de ajustar arquivo de json
-- Imagens como link ver, editar e excluir
-- Logo do botão criar, atualizar
+- Não esquecer de ajustar arquivo de jquery
+- Ajuste de imagens como link ver, editar e excluir
+- Imagem do botão criar, atualizar
 
