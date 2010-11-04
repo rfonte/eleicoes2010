@@ -24,6 +24,7 @@
     <td><%=h eleitor.cpf %></td>
     <td><%=h eleitor.rg %></td>
     <td><%=h eleitor.cod_bio %></td>
+    <td><%= link_to image_tag("/images/view.png", :border=>0), :action => 'show', :id => eleitor %></td>
     <td class="view"><%= link_to 'Ver', eleitor %></td>
     <td class="edit"><%= link_to 'Editar', edit_eleitor_path(eleitor) %></td>
     <td class="cancel"><%= link_to 'Excluir', eleitor, :confirm => 'Are you sure?', :method => :delete %></td>

@@ -36,9 +36,9 @@ a:active {color: #000;}
 }
 #menu1 {
     background: #6a6262 none repeat scroll 0 0;
-    font-size: 16px;
+    font-size: 12px;
     height: 40px;
-    padding: 3px 6px;
+    padding: 3px 1px;
 }
 #youtubeBox {
     background: #000 url("/images/fundo_video.png") repeat scroll 0 0;
