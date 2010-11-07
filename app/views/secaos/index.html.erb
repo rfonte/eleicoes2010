@@ -2,11 +2,11 @@
 
 <table>
   <tr>
-    <th>Cod secao</th>
-    <th>Cod zona</th>
-    <th>Cod munic</th>
-    <th>Cod est</th>
-    <th>Cod urna</th>
+    <th>Código da Seção</th>
+    <th>Zona</th>
+    <th>Município</th>
+    <th>Estado</th>
+    <th>Código da Urna</th>
     <th>Sala</th>
   </tr>
 
@@ -14,8 +14,8 @@
   <tr>
     <td><%=h secao.id %></td>
     <td><%=h secao.zona.nome_zona %></td>
-    <td><%=h secao.municipio_id %></td>
-    <td><%=h secao.estado_id %></td>
+    <td><%=h secao.municipio.nome_munic %></td>
+    <td><%=h secao.estado.nome_est %></td>
     <td><%=h secao.urna_id %></td>
     <td><%=h secao.sala %></td>
      <td class="noborder"><%= link_to image_tag("/images/view.png", :border=>0), :action => 'show', :id => secao %></td>

@@ -3,14 +3,14 @@
 <table>
   <tr>
     <th>Código do Município</th>
-    <th>Estado Relacionado</th>
-    <th>Nome do Município</th>
+    <th>Estado</th>
+    <th>Município</th>
   </tr>
 
 <% for municipio in @municipios %>
   <tr>
     <td><%=h municipio.id %></td>
-    <td><%=h municipio.estado_id %></td>
+    <td><%=h municipio.estado.nome_est %></td>
     <td><%=h municipio.nome_munic %></td>
     <td class="noborder"><%= link_to image_tag("/images/view.png", :border=>0), :action => 'show', :id => municipio %></td>
     <td class="noborder"><%= link_to image_tag("/images/edit.png", :border=>0), :action => 'edit', :id => municipio %></td>

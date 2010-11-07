@@ -3,16 +3,16 @@
 <table>
   <tr>
     <th>Código da Zona</th>
-    <th>Código do Município</th>
-    <th>Código do Estado</th>
-    <th>Nome da Zona</th>
+    <th>Município</th>
+    <th>Estado</th>
+    <th>Zona</th>
   </tr>
 
 <% for zona in @zonas %>
   <tr>
     <td><%=h zona.id %></td>
-    <td><%=h zona.municipio_id %></td>
-    <td><%=h zona.estado_id %></td>
+    <td><%=h zona.municipio.nome_munic %></td>
+    <td><%=h zona.estado.nome_est %></td>
     <td><%=h zona.nome_zona %></td>
     <td class="noborder"><%= link_to image_tag("/images/view.png", :border=>0), :action => 'show', :id => zona %></td>
     <td class="noborder"><%= link_to image_tag("/images/edit.png", :border=>0), :action => 'edit', :id => zona %></td>
