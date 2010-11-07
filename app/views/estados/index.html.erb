@@ -10,15 +10,15 @@
   <tr>
     <td><%=h estado.id %></td>
     <td><%=h estado.nome_est %></td>
-    <td class="view"><%= link_to 'Exibir', estado %></td>
-    <td class="edit"><%= link_to 'Editar', edit_estado_path(estado) %></td>
-    <td class="cancel"><%= link_to 'Excluir', estado, :confirm => 'Are you sure?', :method => :delete %></td>
-  </tr>
+    <td class="noborder"><%= link_to image_tag("/images/view.png", :border=>0), :action => 'show', :id => estado %></td>
+    <td class="noborder"><%= link_to image_tag("/images/edit.png", :border=>0), :action => 'edit', :id => estado %></td>
+    <td class="noborder"><%= link_to image_tag("/images/cancel.png", :border=>0), estado, :confirm => 'Are you sure?', :method => :delete %></td>
+</tr>
 <% end %>
 </table>
 
 <br />
 
-<span class="add"><%= link_to 'Novo Estado', new_estado_path %></span>
-<span class="home"><%= link_to 'HOME', home_index_path %></span>
+<%= link_to image_tag("/images/add.png", :border=>0), :action => 'new', :id => estado %>
+<%= link_to image_tag("/images/home.png", :border=>0), :action => 'index', :controller => 'home' %>
 

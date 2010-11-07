@@ -8,7 +8,7 @@
 
 <br />
 
-<span class="edit"><%= link_to 'Editar', edit_municipio_path(@municipio) %></span>
-<span class="voltar"><%= link_to 'Voltar', municipios_path %></span>
-<span class="home"><%= link_to 'HOME', home_index_path %></span>
+<span class="noborder"><%= link_to image_tag("/images/voltar.png", :border=>0), :action => 'index', :controller => 'municipios' %></span>
+<span class="view"><%= link_to 'Editar', edit_estado_path(@municipio) %></span>
+<span class="noborder"><%= link_to image_tag("/images/home.png", :border=>0), :action => 'index', :controller => 'home' %></span>
 

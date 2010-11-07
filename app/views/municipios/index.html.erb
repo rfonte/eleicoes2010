@@ -12,15 +12,15 @@
     <td><%=h municipio.id %></td>
     <td><%=h municipio.estado_id %></td>
     <td><%=h municipio.nome_munic %></td>
-    <td class="view"><%= link_to 'Exibir', municipio %></td>
-    <td class="edit"><%= link_to 'Editar', edit_municipio_path(municipio) %></td>
-    <td class="cancel"><%= link_to 'Excluir', municipio, :confirm => 'Are you sure?', :method => :delete %></td>
-  </tr>
+    <td class="noborder"><%= link_to image_tag("/images/view.png", :border=>0), :action => 'show', :id => municipio %></td>
+    <td class="noborder"><%= link_to image_tag("/images/edit.png", :border=>0), :action => 'edit', :id => municipio %></td>
+    <td class="noborder"><%= link_to image_tag("/images/cancel.png", :border=>0), municipio, :confirm => 'Are you sure?', :method => :delete %></td>
+ </tr>
 <% end %>
 </table>
 
 <br />
 
-<span class="add"><%= link_to 'Novo Município', new_municipio_path %></span>
-<span class="home"><%= link_to 'HOME', home_index_path %></span>
+<%= link_to image_tag("/images/add.png", :border=>0), :action => 'new', :id => municipio %>
+<%= link_to image_tag("/images/home.png", :border=>0), :action => 'index', :controller => 'home' %>
 
