@@ -33902,3 +33902,496 @@ Rendering template within layouts/zonas
 Rendering zonas/index
   [4;35;1mZona Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `zonas`[0m
 Completed in 28ms (View: 18, DB: 1) | 200 OK [http://localhost/zonas]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-07 17:51:59) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 10ms (View: 7, DB: 0) | 200 OK [http://localhost/home]
+
+
+Processing SecaosController#index (for 127.0.0.1 at 2010-11-07 17:52:03) [GET]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSecao Load (0.3ms)[0m   [0;1mSELECT * FROM `secaos` [0m
+Rendering template within layouts/secaos
+Rendering secaos/index
+  [4;35;1mSecao Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `secaos`[0m
+  [4;36;1mZona Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `zonas`[0m
+  [4;35;1mZona Load (0.3ms)[0m   [0mSELECT * FROM `zonas` WHERE (`zonas`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `zonas` WHERE (`zonas`.`id` = 2) [0m
+  [4;35;1mZona Load (0.1ms)[0m   [0mSELECT * FROM `zonas` WHERE (`zonas`.`id` = 1) [0m
+Completed in 61ms (View: 39, DB: 2) | 200 OK [http://localhost/secaos]
+
+
+Processing SecaosController#index (for 127.0.0.1 at 2010-11-07 17:54:00) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSecao Load (0.1ms)[0m   [0;1mSELECT * FROM `secaos` [0m
+Rendering template within layouts/secaos
+Rendering secaos/index
+  [4;35;1mSecao Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `secaos`[0m
+  [4;36;1mZona Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `zonas`[0m
+  [4;35;1mZona Load (0.1ms)[0m   [0mSELECT * FROM `zonas` WHERE (`zonas`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `zonas` WHERE (`zonas`.`id` = 2) [0m
+  [4;35;1mZona Load (0.1ms)[0m   [0mSELECT * FROM `zonas` WHERE (`zonas`.`id` = 1) [0m
+Completed in 44ms (View: 34, DB: 2) | 200 OK [http://localhost/secaos]
+
+
+Processing SecaosController#new (for 127.0.0.1 at 2010-11-07 17:54:02) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSecao Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `secaos`[0m
+Rendering template within layouts/secaos
+Rendering secaos/new
+  [4;35;1mZona Load (0.1ms)[0m   [0mSELECT * FROM `zonas` [0m
+  [4;36;1mZona Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `zonas`[0m
+  [4;35;1mMunicipio Load (0.1ms)[0m   [0mSELECT * FROM `municipios` [0m
+  [4;36;1mMunicipio Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `municipios`[0m
+  [4;35;1mEstado Load (0.1ms)[0m   [0mSELECT * FROM `estados` [0m
+  [4;36;1mEstado Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `estados`[0m
+  [4;35;1mUrna Load (0.3ms)[0m   [0mSELECT * FROM `urnas` [0m
+  [4;36;1mUrna Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `urnas`[0m
+Completed in 70ms (View: 58, DB: 4) | 200 OK [http://localhost/secaos/new/3]
+
+
+Processing SecaosController#index (for 127.0.0.1 at 2010-11-07 17:54:04) [GET]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSecao Load (0.1ms)[0m   [0mSELECT * FROM `secaos` [0m
+Rendering template within layouts/secaos
+Rendering secaos/index
+  [4;36;1mSecao Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `secaos`[0m
+  [4;35;1mZona Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `zonas`[0m
+  [4;36;1mZona Load (0.1ms)[0m   [0;1mSELECT * FROM `zonas` WHERE (`zonas`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `zonas` WHERE (`zonas`.`id` = 2) [0m
+  [4;36;1mZona Load (0.1ms)[0m   [0;1mSELECT * FROM `zonas` WHERE (`zonas`.`id` = 1) [0m
+Completed in 38ms (View: 29, DB: 2) | 200 OK [http://localhost/secaos]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-07 17:54:05) [GET]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 10ms (View: 6, DB: 0) | 200 OK [http://localhost/home]
+
+
+Processing SecaosController#index (for 127.0.0.1 at 2010-11-07 17:54:08) [GET]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSecao Load (0.1ms)[0m   [0mSELECT * FROM `secaos` [0m
+Rendering template within layouts/secaos
+Rendering secaos/index
+  [4;36;1mSecao Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `secaos`[0m
+  [4;35;1mZona Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `zonas`[0m
+  [4;36;1mZona Load (0.1ms)[0m   [0;1mSELECT * FROM `zonas` WHERE (`zonas`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `zonas` WHERE (`zonas`.`id` = 2) [0m
+  [4;36;1mZona Load (0.1ms)[0m   [0;1mSELECT * FROM `zonas` WHERE (`zonas`.`id` = 1) [0m
+Completed in 52ms (View: 40, DB: 2) | 200 OK [http://localhost/secaos]
+
+
+Processing SecaosController#index (for 127.0.0.1 at 2010-11-07 17:54:43) [GET]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSecao Load (0.1ms)[0m   [0mSELECT * FROM `secaos` [0m
+Rendering template within layouts/secaos
+Rendering secaos/index
+  [4;36;1mSecao Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `secaos`[0m
+  [4;35;1mZona Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `zonas`[0m
+  [4;36;1mZona Load (0.1ms)[0m   [0;1mSELECT * FROM `zonas` WHERE (`zonas`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `zonas` WHERE (`zonas`.`id` = 2) [0m
+  [4;36;1mZona Load (0.1ms)[0m   [0;1mSELECT * FROM `zonas` WHERE (`zonas`.`id` = 1) [0m
+Completed in 43ms (View: 33, DB: 2) | 200 OK [http://localhost/secaos]
+
+
+Processing SecaosController#show (for 127.0.0.1 at 2010-11-07 17:54:45) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSecao Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `secaos`[0m
+  [4;36;1mSecao Load (0.3ms)[0m   [0;1mSELECT * FROM `secaos` WHERE (`secaos`.`id` = 1) [0m
+Rendering template within layouts/secaos
+Rendering secaos/show
+Completed in 33ms (View: 24, DB: 1) | 200 OK [http://localhost/secaos/1]
+
+
+Processing SecaosController#show (for 127.0.0.1 at 2010-11-07 17:55:41) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSecao Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `secaos`[0m
+  [4;36;1mSecao Load (0.1ms)[0m   [0;1mSELECT * FROM `secaos` WHERE (`secaos`.`id` = 1) [0m
+Rendering template within layouts/secaos
+Rendering secaos/show
+Completed in 19ms (View: 9, DB: 1) | 200 OK [http://localhost/secaos/1]
+
+
+Processing SecaosController#index (for 127.0.0.1 at 2010-11-07 17:55:44) [GET]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSecao Load (0.1ms)[0m   [0mSELECT * FROM `secaos` [0m
+Rendering template within layouts/secaos
+Rendering secaos/index
+  [4;36;1mSecao Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `secaos`[0m
+  [4;35;1mZona Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `zonas`[0m
+  [4;36;1mZona Load (0.1ms)[0m   [0;1mSELECT * FROM `zonas` WHERE (`zonas`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `zonas` WHERE (`zonas`.`id` = 2) [0m
+  [4;36;1mZona Load (0.1ms)[0m   [0;1mSELECT * FROM `zonas` WHERE (`zonas`.`id` = 1) [0m
+Completed in 43ms (View: 33, DB: 2) | 200 OK [http://localhost/secaos]
+
+
+Processing SecaosController#show (for 127.0.0.1 at 2010-11-07 17:55:45) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSecao Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `secaos`[0m
+  [4;36;1mSecao Load (0.1ms)[0m   [0;1mSELECT * FROM `secaos` WHERE (`secaos`.`id` = 1) [0m
+Rendering template within layouts/secaos
+Rendering secaos/show
+Completed in 17ms (View: 8, DB: 1) | 200 OK [http://localhost/secaos/1]
+
+
+Processing SecaosController#edit (for 127.0.0.1 at 2010-11-07 17:55:47) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSecao Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `secaos`[0m
+  [4;36;1mSecao Load (0.1ms)[0m   [0;1mSELECT * FROM `secaos` WHERE (`secaos`.`id` = 1) [0m
+Rendering template within layouts/secaos
+Rendering secaos/edit
+  [4;35;1mZona Load (0.1ms)[0m   [0mSELECT * FROM `zonas` [0m
+  [4;36;1mZona Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `zonas`[0m
+  [4;35;1mMunicipio Load (0.1ms)[0m   [0mSELECT * FROM `municipios` [0m
+  [4;36;1mMunicipio Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `municipios`[0m
+  [4;35;1mEstado Load (0.1ms)[0m   [0mSELECT * FROM `estados` [0m
+  [4;36;1mEstado Columns (0.5ms)[0m   [0;1mSHOW FIELDS FROM `estados`[0m
+  [4;35;1mUrna Load (0.1ms)[0m   [0mSELECT * FROM `urnas` [0m
+  [4;36;1mUrna Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `urnas`[0m
+Completed in 124ms (View: 115, DB: 1) | 200 OK [http://localhost/secaos/1/edit]
+
+
+Processing SecaosController#index (for 127.0.0.1 at 2010-11-07 17:55:50) [GET]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSecao Load (0.1ms)[0m   [0mSELECT * FROM `secaos` [0m
+Rendering template within layouts/secaos
+Rendering secaos/index
+  [4;36;1mSecao Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `secaos`[0m
+  [4;35;1mZona Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `zonas`[0m
+  [4;36;1mZona Load (0.1ms)[0m   [0;1mSELECT * FROM `zonas` WHERE (`zonas`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `zonas` WHERE (`zonas`.`id` = 2) [0m
+  [4;36;1mZona Load (0.1ms)[0m   [0;1mSELECT * FROM `zonas` WHERE (`zonas`.`id` = 1) [0m
+Completed in 43ms (View: 33, DB: 2) | 200 OK [http://localhost/secaos]
+
+
+Processing SecaosController#edit (for 127.0.0.1 at 2010-11-07 17:55:52) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSecao Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `secaos`[0m
+  [4;36;1mSecao Load (0.1ms)[0m   [0;1mSELECT * FROM `secaos` WHERE (`secaos`.`id` = 1) [0m
+Rendering template within layouts/secaos
+Rendering secaos/edit
+  [4;35;1mZona Load (0.1ms)[0m   [0mSELECT * FROM `zonas` [0m
+  [4;36;1mZona Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `zonas`[0m
+  [4;35;1mMunicipio Load (0.1ms)[0m   [0mSELECT * FROM `municipios` [0m
+  [4;36;1mMunicipio Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `municipios`[0m
+  [4;35;1mEstado Load (0.1ms)[0m   [0mSELECT * FROM `estados` [0m
+  [4;36;1mEstado Columns (0.5ms)[0m   [0;1mSHOW FIELDS FROM `estados`[0m
+  [4;35;1mUrna Load (0.1ms)[0m   [0mSELECT * FROM `urnas` [0m
+  [4;36;1mUrna Columns (0.5ms)[0m   [0;1mSHOW FIELDS FROM `urnas`[0m
+Completed in 51ms (View: 42, DB: 1) | 200 OK [http://localhost/secaos/1/edit]
+
+
+Processing SecaosController#index (for 127.0.0.1 at 2010-11-07 17:55:54) [GET]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSecao Load (0.1ms)[0m   [0mSELECT * FROM `secaos` [0m
+Rendering template within layouts/secaos
+Rendering secaos/index
+  [4;36;1mSecao Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `secaos`[0m
+  [4;35;1mZona Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `zonas`[0m
+  [4;36;1mZona Load (0.1ms)[0m   [0;1mSELECT * FROM `zonas` WHERE (`zonas`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `zonas` WHERE (`zonas`.`id` = 2) [0m
+  [4;36;1mZona Load (0.1ms)[0m   [0;1mSELECT * FROM `zonas` WHERE (`zonas`.`id` = 1) [0m
+Completed in 43ms (View: 33, DB: 2) | 200 OK [http://localhost/secaos]
+
+
+Processing SecaosController#show (for 127.0.0.1 at 2010-11-07 17:55:55) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSecao Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `secaos`[0m
+  [4;36;1mSecao Load (0.1ms)[0m   [0;1mSELECT * FROM `secaos` WHERE (`secaos`.`id` = 1) [0m
+Rendering template within layouts/secaos
+Rendering secaos/show
+Completed in 17ms (View: 8, DB: 1) | 200 OK [http://localhost/secaos/1]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-07 17:55:57) [GET]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 9ms (View: 6, DB: 0) | 200 OK [http://localhost/home]
+
+
+Processing SecaosController#index (for 127.0.0.1 at 2010-11-07 17:56:00) [GET]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSecao Load (0.1ms)[0m   [0mSELECT * FROM `secaos` [0m
+Rendering template within layouts/secaos
+Rendering secaos/index
+  [4;36;1mSecao Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `secaos`[0m
+  [4;35;1mZona Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `zonas`[0m
+  [4;36;1mZona Load (0.1ms)[0m   [0;1mSELECT * FROM `zonas` WHERE (`zonas`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `zonas` WHERE (`zonas`.`id` = 2) [0m
+  [4;36;1mZona Load (0.1ms)[0m   [0;1mSELECT * FROM `zonas` WHERE (`zonas`.`id` = 1) [0m
+Completed in 45ms (View: 35, DB: 2) | 200 OK [http://localhost/secaos]
+
+
+Processing SecaosController#edit (for 127.0.0.1 at 2010-11-07 17:56:02) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSecao Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `secaos`[0m
+  [4;36;1mSecao Load (0.1ms)[0m   [0;1mSELECT * FROM `secaos` WHERE (`secaos`.`id` = 1) [0m
+Rendering template within layouts/secaos
+Rendering secaos/edit
+  [4;35;1mZona Load (0.1ms)[0m   [0mSELECT * FROM `zonas` [0m
+  [4;36;1mZona Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `zonas`[0m
+  [4;35;1mMunicipio Load (0.2ms)[0m   [0mSELECT * FROM `municipios` [0m
+  [4;36;1mMunicipio Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `municipios`[0m
+  [4;35;1mEstado Load (0.2ms)[0m   [0mSELECT * FROM `estados` [0m
+  [4;36;1mEstado Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `estados`[0m
+  [4;35;1mUrna Load (0.1ms)[0m   [0mSELECT * FROM `urnas` [0m
+  [4;36;1mUrna Columns (12.9ms)[0m   [0;1mSHOW FIELDS FROM `urnas`[0m
+Completed in 131ms (View: 123, DB: 1) | 200 OK [http://localhost/secaos/1/edit]
+
+
+Processing SecaosController#edit (for 127.0.0.1 at 2010-11-07 17:57:08) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSecao Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `secaos`[0m
+  [4;36;1mSecao Load (0.1ms)[0m   [0;1mSELECT * FROM `secaos` WHERE (`secaos`.`id` = 1) [0m
+Rendering template within layouts/secaos
+Rendering secaos/edit
+  [4;35;1mZona Load (0.1ms)[0m   [0mSELECT * FROM `zonas` [0m
+  [4;36;1mZona Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `zonas`[0m
+  [4;35;1mMunicipio Load (0.1ms)[0m   [0mSELECT * FROM `municipios` [0m
+  [4;36;1mMunicipio Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `municipios`[0m
+  [4;35;1mEstado Load (0.1ms)[0m   [0mSELECT * FROM `estados` [0m
+  [4;36;1mEstado Columns (0.5ms)[0m   [0;1mSHOW FIELDS FROM `estados`[0m
+  [4;35;1mUrna Load (0.1ms)[0m   [0mSELECT * FROM `urnas` [0m
+  [4;36;1mUrna Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `urnas`[0m
+Completed in 55ms (View: 46, DB: 1) | 200 OK [http://localhost/secaos/1/edit]
+
+
+Processing SecaosController#index (for 127.0.0.1 at 2010-11-07 17:57:10) [GET]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSecao Load (0.1ms)[0m   [0mSELECT * FROM `secaos` [0m
+Rendering template within layouts/secaos
+Rendering secaos/index
+  [4;36;1mSecao Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `secaos`[0m
+  [4;35;1mZona Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `zonas`[0m
+  [4;36;1mZona Load (0.1ms)[0m   [0;1mSELECT * FROM `zonas` WHERE (`zonas`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `zonas` WHERE (`zonas`.`id` = 2) [0m
+  [4;36;1mZona Load (0.1ms)[0m   [0;1mSELECT * FROM `zonas` WHERE (`zonas`.`id` = 1) [0m
+Completed in 41ms (View: 32, DB: 2) | 200 OK [http://localhost/secaos]
+
+
+Processing SecaosController#edit (for 127.0.0.1 at 2010-11-07 17:57:11) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSecao Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `secaos`[0m
+  [4;36;1mSecao Load (0.1ms)[0m   [0;1mSELECT * FROM `secaos` WHERE (`secaos`.`id` = 1) [0m
+Rendering template within layouts/secaos
+Rendering secaos/edit
+  [4;35;1mZona Load (0.1ms)[0m   [0mSELECT * FROM `zonas` [0m
+  [4;36;1mZona Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `zonas`[0m
+  [4;35;1mMunicipio Load (0.1ms)[0m   [0mSELECT * FROM `municipios` [0m
+  [4;36;1mMunicipio Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `municipios`[0m
+  [4;35;1mEstado Load (0.1ms)[0m   [0mSELECT * FROM `estados` [0m
+  [4;36;1mEstado Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `estados`[0m
+  [4;35;1mUrna Load (0.1ms)[0m   [0mSELECT * FROM `urnas` [0m
+  [4;36;1mUrna Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `urnas`[0m
+Completed in 138ms (View: 129, DB: 1) | 200 OK [http://localhost/secaos/1/edit]
+
+
+Processing SecaosController#show (for 127.0.0.1 at 2010-11-07 17:57:13) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSecao Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `secaos`[0m
+  [4;36;1mSecao Load (0.1ms)[0m   [0;1mSELECT * FROM `secaos` WHERE (`secaos`.`id` = 1) [0m
+Rendering template within layouts/secaos
+Rendering secaos/show
+Completed in 17ms (View: 8, DB: 1) | 200 OK [http://localhost/secaos/1]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-07 17:57:15) [GET]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 9ms (View: 6, DB: 0) | 200 OK [http://localhost/home]
+
+
+Processing SecaosController#index (for 127.0.0.1 at 2010-11-07 17:57:18) [GET]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSecao Load (0.1ms)[0m   [0mSELECT * FROM `secaos` [0m
+Rendering template within layouts/secaos
+Rendering secaos/index
+  [4;36;1mSecao Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `secaos`[0m
+  [4;35;1mZona Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `zonas`[0m
+  [4;36;1mZona Load (0.1ms)[0m   [0;1mSELECT * FROM `zonas` WHERE (`zonas`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `zonas` WHERE (`zonas`.`id` = 2) [0m
+  [4;36;1mZona Load (0.1ms)[0m   [0;1mSELECT * FROM `zonas` WHERE (`zonas`.`id` = 1) [0m
+Completed in 42ms (View: 32, DB: 2) | 200 OK [http://localhost/secaos]
+
+
+Processing SecaosController#edit (for 127.0.0.1 at 2010-11-07 17:57:20) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSecao Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `secaos`[0m
+  [4;36;1mSecao Load (0.1ms)[0m   [0;1mSELECT * FROM `secaos` WHERE (`secaos`.`id` = 1) [0m
+Rendering template within layouts/secaos
+Rendering secaos/edit
+  [4;35;1mZona Load (0.1ms)[0m   [0mSELECT * FROM `zonas` [0m
+  [4;36;1mZona Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `zonas`[0m
+  [4;35;1mMunicipio Load (0.1ms)[0m   [0mSELECT * FROM `municipios` [0m
+  [4;36;1mMunicipio Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `municipios`[0m
+  [4;35;1mEstado Load (0.1ms)[0m   [0mSELECT * FROM `estados` [0m
+  [4;36;1mEstado Columns (0.5ms)[0m   [0;1mSHOW FIELDS FROM `estados`[0m
+  [4;35;1mUrna Load (0.1ms)[0m   [0mSELECT * FROM `urnas` [0m
+  [4;36;1mUrna Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `urnas`[0m
+Completed in 57ms (View: 47, DB: 1) | 200 OK [http://localhost/secaos/1/edit]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-07 17:57:23) [GET]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 9ms (View: 6, DB: 0) | 200 OK [http://localhost/home]
+
+
+Processing SecaosController#index (for 127.0.0.1 at 2010-11-07 17:57:26) [GET]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSecao Load (0.1ms)[0m   [0mSELECT * FROM `secaos` [0m
+Rendering template within layouts/secaos
+Rendering secaos/index
+  [4;36;1mSecao Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `secaos`[0m
+  [4;35;1mZona Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `zonas`[0m
+  [4;36;1mZona Load (0.1ms)[0m   [0;1mSELECT * FROM `zonas` WHERE (`zonas`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `zonas` WHERE (`zonas`.`id` = 2) [0m
+  [4;36;1mZona Load (0.1ms)[0m   [0;1mSELECT * FROM `zonas` WHERE (`zonas`.`id` = 1) [0m
+Completed in 41ms (View: 32, DB: 2) | 200 OK [http://localhost/secaos]
+
+
+Processing SecaosController#new (for 127.0.0.1 at 2010-11-07 17:57:28) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSecao Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `secaos`[0m
+Rendering template within layouts/secaos
+Rendering secaos/new
+  [4;36;1mZona Load (0.2ms)[0m   [0;1mSELECT * FROM `zonas` [0m
+  [4;35;1mZona Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `zonas`[0m
+  [4;36;1mMunicipio Load (0.1ms)[0m   [0;1mSELECT * FROM `municipios` [0m
+  [4;35;1mMunicipio Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `municipios`[0m
+  [4;36;1mEstado Load (0.1ms)[0m   [0;1mSELECT * FROM `estados` [0m
+  [4;35;1mEstado Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `estados`[0m
+  [4;36;1mUrna Load (0.1ms)[0m   [0;1mSELECT * FROM `urnas` [0m
+  [4;35;1mUrna Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `urnas`[0m
+Completed in 121ms (View: 109, DB: 4) | 200 OK [http://localhost/secaos/new/3]
+
+
+Processing SecaosController#new (for 127.0.0.1 at 2010-11-07 17:58:01) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSecao Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `secaos`[0m
+Rendering template within layouts/secaos
+Rendering secaos/new
+  [4;35;1mZona Load (0.1ms)[0m   [0mSELECT * FROM `zonas` [0m
+  [4;36;1mZona Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `zonas`[0m
+  [4;35;1mMunicipio Load (0.1ms)[0m   [0mSELECT * FROM `municipios` [0m
+  [4;36;1mMunicipio Columns (0.5ms)[0m   [0;1mSHOW FIELDS FROM `municipios`[0m
+  [4;35;1mEstado Load (0.1ms)[0m   [0mSELECT * FROM `estados` [0m
+  [4;36;1mEstado Columns (0.5ms)[0m   [0;1mSHOW FIELDS FROM `estados`[0m
+  [4;35;1mUrna Load (0.1ms)[0m   [0mSELECT * FROM `urnas` [0m
+  [4;36;1mUrna Columns (0.5ms)[0m   [0;1mSHOW FIELDS FROM `urnas`[0m
+Completed in 53ms (View: 41, DB: 4) | 200 OK [http://localhost/secaos/new/3]
+
+
+Processing SecaosController#index (for 127.0.0.1 at 2010-11-07 17:58:02) [GET]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSecao Load (0.1ms)[0m   [0mSELECT * FROM `secaos` [0m
+Rendering template within layouts/secaos
+Rendering secaos/index
+  [4;36;1mSecao Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `secaos`[0m
+  [4;35;1mZona Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `zonas`[0m
+  [4;36;1mZona Load (0.1ms)[0m   [0;1mSELECT * FROM `zonas` WHERE (`zonas`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `zonas` WHERE (`zonas`.`id` = 2) [0m
+  [4;36;1mZona Load (0.1ms)[0m   [0;1mSELECT * FROM `zonas` WHERE (`zonas`.`id` = 1) [0m
+Completed in 41ms (View: 32, DB: 2) | 200 OK [http://localhost/secaos]
+
+
+Processing SecaosController#new (for 127.0.0.1 at 2010-11-07 17:58:05) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSecao Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `secaos`[0m
+Rendering template within layouts/secaos
+Rendering secaos/new
+  [4;36;1mZona Load (0.1ms)[0m   [0;1mSELECT * FROM `zonas` [0m
+  [4;35;1mZona Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `zonas`[0m
+  [4;36;1mMunicipio Load (0.1ms)[0m   [0;1mSELECT * FROM `municipios` [0m
+  [4;35;1mMunicipio Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `municipios`[0m
+  [4;36;1mEstado Load (0.1ms)[0m   [0;1mSELECT * FROM `estados` [0m
+  [4;35;1mEstado Columns (0.5ms)[0m   [0mSHOW FIELDS FROM `estados`[0m
+  [4;36;1mUrna Load (0.1ms)[0m   [0;1mSELECT * FROM `urnas` [0m
+  [4;35;1mUrna Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `urnas`[0m
+Completed in 126ms (View: 44, DB: 4) | 200 OK [http://localhost/secaos/new/3]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-07 17:58:06) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 9ms (View: 6, DB: 0) | 200 OK [http://localhost/home]
+
+
+Processing SecaosController#index (for 127.0.0.1 at 2010-11-07 17:58:09) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSecao Load (0.1ms)[0m   [0;1mSELECT * FROM `secaos` [0m
+Rendering template within layouts/secaos
+Rendering secaos/index
+  [4;35;1mSecao Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `secaos`[0m
+  [4;36;1mZona Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `zonas`[0m
+  [4;35;1mZona Load (0.1ms)[0m   [0mSELECT * FROM `zonas` WHERE (`zonas`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `zonas` WHERE (`zonas`.`id` = 2) [0m
+  [4;35;1mZona Load (0.1ms)[0m   [0mSELECT * FROM `zonas` WHERE (`zonas`.`id` = 1) [0m
+Completed in 47ms (View: 37, DB: 2) | 200 OK [http://localhost/secaos]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-07 17:58:17) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 9ms (View: 6, DB: 0) | 200 OK [http://localhost/home]

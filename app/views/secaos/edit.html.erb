@@ -13,7 +13,7 @@
 <% end %>
 </div>
 
-<span class="home"><%= link_to 'Ver', @secao %></span>
-<span class="home"><%= link_to 'Voltar', secaos_path %></span>
-<span class="home"><%= link_to 'HOME', home_index_path %></span>
+<span class="noborder"><%= link_to image_tag("/images/voltar.png", :border=>0), :action => 'index', :controller => 'secaos' %></span>
+<span><%= link_to 'Ver', @secao %></span>
+<span class="noborder"><%= link_to image_tag("/images/home.png", :border=>0), :action => 'index', :controller => 'home' %></span>
 
