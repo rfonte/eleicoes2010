@@ -2,4 +2,5 @@
 - Ajuste do link de ver do edit
 - Ajuste do botão submit dos edit's e dos new
 - Ajustar nome do estado na listagem de municipios
+- Ajustar nome do estado e município na listagem de zonas
 
