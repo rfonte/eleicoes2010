@@ -6,10 +6,8 @@
 <div class="editar">
   <p> Número do Título*: <%= f.text_field :tit_eleitor %><br /><br /></p>
   <p> Código da Seção*: <%= f.text_field :cod_secao %><br /><br /></p>
-  <p> Código da Zona*: <%= f.text_field :cod_zona %><br /><br /></p>
-  <!--p><%= f.label :cod_func %><br /><%= f.text_field :cod_func %></p-->
   <p> Nome*: <%= f.text_field :nome %><br /><br /></p>
-  <p> Data de Nascimento*: <%= f.text_field :data_nasc %><br /><br /></p>
+  <p> Data de Nascimento*: <%= f.date_select :data_nasc %><br /><br /></p>
   <p> CPF*: <%= f.text_field :cpf %><br /><br /></p>
   <p> RG*: <%= f.text_field :rg %><br /><br /></p>
   <p> Código Biométrico: <%= f.text_field :cod_bio %><br /><br /></p>

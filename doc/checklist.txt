@@ -2,3 +2,8 @@
 - Ajuste do link de ver do edit
 - Ajuste do botão submit dos edit's e dos new
 
+
+Partido
+    - Adicionar Código do partido
+    - Cargo
+

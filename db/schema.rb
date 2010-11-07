@@ -9,12 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20101102153822) do
-
-  create_table "cad_eleitors", :force => true do |t|
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
+ActiveRecord::Schema.define(:version => 20101107204456) do
 
   create_table "candidatos", :force => true do |t|
     t.integer  "cod_candidato"
@@ -35,15 +30,13 @@ ActiveRecord::Schema.define(:version => 20101102153822) do
   create_table "eleitors", :force => true do |t|
     t.integer  "tit_eleitor"
     t.integer  "cod_secao"
-    t.integer  "cod_func"
     t.string   "nome"
     t.integer  "cpf"
     t.integer  "rg"
     t.string   "cod_bio"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.integer  "cod_zona"
-    t.integer  "data_nasc"
+    t.date     "data_nasc"
   end
 
   create_table "estados", :force => true do |t|
