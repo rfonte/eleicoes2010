@@ -17,8 +17,8 @@
 <% end %>
 </div>
 
-  <p class="campOb">*Campos Obrigatórios !</p><br />
-  <span class="view"><%= link_to 'Ver', @eleitor %><span>
-  <span class="voltar"><%= link_to 'Voltar', eleitors_path %><span>
-  <span class="home"><%= link_to 'HOME', home_index_path %><span>
+<p class="campOb">*Campos Obrigatórios !</p><br />
+<span class="noborder"><%= link_to image_tag("/images/voltar.png", :border=>0), :action => 'index', :controller => 'eleitors' %></span>
+<span class="view"><%= link_to 'Ver', @eleitor %><span>
+<span class="noborder"><%= link_to image_tag("/images/home.png", :border=>0), :action => 'index', :controller => 'home' %></span>
 

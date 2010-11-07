@@ -24,16 +24,15 @@
     <td><%=h eleitor.cpf %></td>
     <td><%=h eleitor.rg %></td>
     <td><%=h eleitor.cod_bio %></td>
-    <td><%= link_to image_tag("/images/view.png", :border=>0), :action => 'show', :id => eleitor %></td>
-    <td class="view"><%= link_to 'Ver', eleitor %></td>
-    <td class="edit"><%= link_to 'Editar', edit_eleitor_path(eleitor) %></td>
-    <td class="cancel"><%= link_to 'Excluir', eleitor, :confirm => 'Are you sure?', :method => :delete %></td>
+    <td class="noborder"><%= link_to image_tag("/images/view.png", :border=>0), :action => 'show', :id => eleitor %></td>
+    <td class="noborder"><%= link_to image_tag("/images/edit.png", :border=>0), :action => 'edit', :id => eleitor %></td>
+    <td class="noborder"><%= link_to image_tag("/images/cancel.png", :border=>0), eleitor, :confirm => 'Are you sure?', :method => :delete %></td>
   </tr>
 <% end %>
 </table>
 
 <br />
 
-<span class="add"><%= link_to 'Novo Eleitor', new_eleitor_path %></span>
-<span class="home"><%= link_to 'HOME', home_index_path %></span>
+<%= link_to image_tag("/images/add.png", :border=>0), :action => 'new', :id => eleitor %>
+<%= link_to image_tag("/images/home.png", :border=>0), :action => 'index', :controller => 'home' %>
 

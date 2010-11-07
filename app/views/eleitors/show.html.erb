@@ -10,7 +10,9 @@
   <p><b>Cod bio:</b><%=h @eleitor.cod_bio %></p><br />
 </div>
 
+
+
+<span class="noborder"><%= link_to image_tag("/images/voltar.png", :border=>0), :action => 'index', :controller => 'eleitors' %></span>
 <span class="edit"><%= link_to 'Editar', edit_eleitor_path(@eleitor) %></span>
-<span class="voltar"><%= link_to 'Voltar', eleitors_path %></span>
-<span class="home"><%= link_to 'HOME', home_index_path %></span>
+<span class="noborder"><%= link_to image_tag("/images/home.png", :border=>0), :action => 'index', :controller => 'home' %></span>
 

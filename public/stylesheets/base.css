@@ -20,6 +20,8 @@ a:link {color: #FFF;}
 a:visited {color: #FFF;}
 a:hover {color: #c9c721;}
 a:active {color: #000;}
+#ok a:link {color: #FF1493;}
+#ok a:visited {color: #FF1493;}
 #body {
     height: 300px;
     margin-left: 20%;
@@ -59,7 +61,7 @@ embed {
     margin: 19px 5px;
     width: 375px;
 }
-img {
+#twitterLogo img {
     height: 70px;
     width: 175px;
 }
@@ -82,17 +84,13 @@ table th {
     padding: 5px 10px;
     text-align: center;
 }
-.view { background: #000 url("/images/view.png") no-repeat scroll 0 0; }
-.edit { background: #000 url("/images/edit.png") no-repeat scroll 0 0; }
-.cancel { background: #000 url("/images/cancel.png") no-repeat scroll 0 0; }
-.home { background: #000 url("/images/home.png") no-repeat scroll 0 0; }
-.add { background: #000 url("/images/add.png") no-repeat scroll 0 0; }
-.voltar { background: #000 url("/images/voltar.png") no-repeat scroll 0 0; }
-.view, .edit, .cancel { border: 0px none; }
-.new, .show, .editar { font-size: 13px; }
 #footer {
     background: #6A6262 none scroll 0 0;
     height: 30px;
     padding: 5px;
 }
+#menu ul li ul{
+    display: block;
+}
+.noborder { border: none}
 
