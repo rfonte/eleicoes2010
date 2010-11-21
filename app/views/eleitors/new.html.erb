@@ -12,12 +12,11 @@
   <p> RG*: <%= f.text_field :rg %><br /><br /></p>
   <p> Código Biométrico: <%= f.text_field :cod_bio %><br /><br /></p>
 
-  <a href="javascript:document.getElementById('new_eleitor').submit()">Criar</a>
+  <span><a href="javascript:document.getElementById('new_eleitor').submit()"><img src="/images/add.png"></img></a></span>
 <% end %>
 </div>
-<p class="campOb">*Campos Obrigatórios !</p><br /><br />
+
 <span class="noborder"><%= link_to image_tag("/images/voltar.png", :border=>0), :action => 'index', :controller => 'eleitors' %></span>
 <span class="noborder"><%= link_to image_tag("/images/home.png", :border=>0), :action => 'index', :controller => 'home' %></span>
-
-<!--%= f.date_select :data_aniv %-->
+<p class="campOb">*Campos Obrigatórios !</p><br /><br />
 
