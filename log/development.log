@@ -39014,3 +39014,1137 @@ Processing EleitorsController#edit (for 127.0.0.1 at 2010-11-10 10:06:40) [GET]
 Rendering template within layouts/eleitors
 Rendering eleitors/edit
 Completed in 99ms (View: 22, DB: 1) | 200 OK [http://localhost/eleitors/1/edit]
+
+
+Processing HomeController#index (for 192.168.2.4 at 2010-11-21 13:57:04) [GET]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 54ms (View: 47, DB: 0) | 200 OK [http://192.168.2.5/]
+
+
+Processing HomeController#index (for 192.168.2.4 at 2010-11-21 13:58:28) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 9ms (View: 6, DB: 0) | 200 OK [http://192.168.2.5/home]
+
+
+Processing PartidosController#index (for 192.168.2.4 at 2010-11-21 13:58:34) [GET]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mPartido Load (8.2ms)[0m   [0;1mSELECT * FROM `partidos` [0m
+Rendering template within layouts/partidos
+Rendering partidos/index
+  [4;35;1mPartido Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `partidos`[0m
+Completed in 113ms (View: 54, DB: 10) | 200 OK [http://192.168.2.5/partidos]
+
+
+Processing PartidosController#show (for 192.168.2.4 at 2010-11-21 13:59:19) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mPartido Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `partidos`[0m
+  [4;35;1mPartido Load (0.3ms)[0m   [0mSELECT * FROM `partidos` WHERE (`partidos`.`id` = 1) [0m
+Rendering template within layouts/partidos
+Rendering partidos/show
+Completed in 73ms (View: 63, DB: 1) | 200 OK [http://192.168.2.5/partidos/1]
+
+
+Processing EleitorsController#index (for 192.168.2.4 at 2010-11-21 13:59:28) [GET]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mEleitor Load (0.3ms)[0m   [0;1mSELECT * FROM `eleitors` [0m
+Rendering template within layouts/eleitors
+Rendering eleitors/index
+  [4;35;1mEleitor Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `eleitors`[0m
+Completed in 75ms (View: 58, DB: 2) | 200 OK [http://192.168.2.5/eleitors]
+
+
+Processing EleitorsController#new (for 192.168.2.4 at 2010-11-21 13:59:57) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mEleitor Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `eleitors`[0m
+Rendering template within layouts/eleitors
+Rendering eleitors/new
+Completed in 173ms (View: 164, DB: 1) | 200 OK [http://192.168.2.5/eleitors/new/2]
+
+
+Processing HomeController#index (for 192.168.2.4 at 2010-11-21 14:00:07) [GET]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 9ms (View: 6, DB: 0) | 200 OK [http://192.168.2.5/home]
+
+
+Processing EleitorsController#index (for 192.168.2.4 at 2010-11-21 14:00:10) [GET]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mEleitor Load (0.1ms)[0m   [0mSELECT * FROM `eleitors` [0m
+Rendering template within layouts/eleitors
+Rendering eleitors/index
+  [4;36;1mEleitor Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `eleitors`[0m
+Completed in 27ms (View: 19, DB: 1) | 200 OK [http://192.168.2.5/eleitors]
+
+
+Processing EleitorsController#show (for 192.168.2.4 at 2010-11-21 14:00:12) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mEleitor Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `eleitors`[0m
+  [4;36;1mEleitor Load (0.3ms)[0m   [0;1mSELECT * FROM `eleitors` WHERE (`eleitors`.`id` = 1) [0m
+Rendering template within layouts/eleitors
+Rendering eleitors/show
+Completed in 34ms (View: 24, DB: 1) | 200 OK [http://192.168.2.5/eleitors/1]
+
+
+Processing HomeController#index (for 192.168.2.4 at 2010-11-21 14:00:47) [GET]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 9ms (View: 6, DB: 0) | 200 OK [http://192.168.2.5/home]
+
+
+Processing EleitorsController#index (for 192.168.2.4 at 2010-11-21 14:00:52) [GET]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mEleitor Load (0.1ms)[0m   [0mSELECT * FROM `eleitors` [0m
+Rendering template within layouts/eleitors
+Rendering eleitors/index
+  [4;36;1mEleitor Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `eleitors`[0m
+Completed in 28ms (View: 19, DB: 1) | 200 OK [http://192.168.2.5/eleitors]
+
+
+Processing EleitorsController#edit (for 192.168.2.4 at 2010-11-21 14:00:54) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mEleitor Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `eleitors`[0m
+  [4;36;1mEleitor Load (0.1ms)[0m   [0;1mSELECT * FROM `eleitors` WHERE (`eleitors`.`id` = 1) [0m
+Rendering template within layouts/eleitors
+Rendering eleitors/edit
+Completed in 29ms (View: 20, DB: 1) | 200 OK [http://192.168.2.5/eleitors/1/edit]
+
+
+Processing HomeController#index (for 192.168.2.4 at 2010-11-21 14:01:17) [GET]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 9ms (View: 6, DB: 0) | 200 OK [http://192.168.2.5/home]
+
+
+Processing EleitorsController#index (for 192.168.2.4 at 2010-11-21 14:01:21) [GET]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mEleitor Load (0.1ms)[0m   [0mSELECT * FROM `eleitors` [0m
+Rendering template within layouts/eleitors
+Rendering eleitors/index
+  [4;36;1mEleitor Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `eleitors`[0m
+Completed in 95ms (View: 87, DB: 1) | 200 OK [http://192.168.2.5/eleitors]
+
+
+Processing EleitorsController#destroy (for 192.168.2.4 at 2010-11-21 14:01:32) [DELETE]
+  Parameters: {"authenticity_token"=>"455ea64f2860af086460b3a87be5081a5a40410f", "id"=>"1"}
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mEleitor Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `eleitors`[0m
+  [4;36;1mEleitor Load (0.1ms)[0m   [0;1mSELECT * FROM `eleitors` WHERE (`eleitors`.`id` = 1) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mEleitor Destroy (0.3ms)[0m   [0;1mDELETE FROM `eleitors` WHERE `id` = 1[0m
+  [4;35;1mSQL (89.4ms)[0m   [0mCOMMIT[0m
+Redirected to http://192.168.2.5:3000/eleitors
+Completed in 103ms (DB: 91) | 302 Found [http://192.168.2.5/eleitors/1]
+
+
+Processing EleitorsController#index (for 192.168.2.4 at 2010-11-21 14:01:32) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mEleitor Load (0.3ms)[0m   [0;1mSELECT * FROM `eleitors` [0m
+Rendering template within layouts/eleitors
+Rendering eleitors/index
+  [4;35;1mEleitor Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `eleitors`[0m
+Completed in 23ms (View: 14, DB: 1) | 200 OK [http://192.168.2.5/eleitors]
+
+
+Processing HomeController#index (for 192.168.2.4 at 2010-11-21 14:01:48) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 9ms (View: 6, DB: 0) | 200 OK [http://192.168.2.5/home]
+
+
+Processing EstadosController#index (for 192.168.2.4 at 2010-11-21 14:01:54) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mEstado Load (0.4ms)[0m   [0;1mSELECT * FROM `estados` [0m
+Rendering template within layouts/estados
+Rendering estados/index
+  [4;35;1mEstado Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `estados`[0m
+Completed in 205ms (View: 157, DB: 1) | 200 OK [http://192.168.2.5/estados]
+
+
+Processing EstadosController#index (for 192.168.2.4 at 2010-11-21 14:08:07) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mEstado Load (0.1ms)[0m   [0;1mSELECT * FROM `estados` [0m
+Rendering template within layouts/estados
+Rendering estados/index
+  [4;35;1mEstado Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `estados`[0m
+Completed in 155ms (View: 143, DB: 1) | 200 OK [http://192.168.2.5/estados]
+
+
+Processing EstadosController#show (for 192.168.2.4 at 2010-11-21 14:09:15) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mEstado Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `estados`[0m
+  [4;35;1mEstado Load (0.2ms)[0m   [0mSELECT * FROM `estados` WHERE (`estados`.`id` = 1) [0m
+Rendering template within layouts/estados
+Rendering estados/show
+Completed in 77ms (View: 66, DB: 1) | 200 OK [http://192.168.2.5/estados/1]
+
+
+Processing EstadosController#show (for 192.168.2.4 at 2010-11-21 14:09:23) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mEstado Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `estados`[0m
+  [4;35;1mEstado Load (0.1ms)[0m   [0mSELECT * FROM `estados` WHERE (`estados`.`id` = 1) [0m
+Rendering template within layouts/estados
+Rendering estados/show
+Completed in 17ms (View: 7, DB: 1) | 200 OK [http://192.168.2.5/estados/1]
+
+
+Processing HomeController#index (for 192.168.2.4 at 2010-11-21 14:09:39) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 84ms (View: 8, DB: 0) | 200 OK [http://192.168.2.5/home]
+
+
+Processing EstadosController#index (for 192.168.2.4 at 2010-11-21 14:09:43) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mEstado Load (0.2ms)[0m   [0;1mSELECT * FROM `estados` [0m
+Rendering template within layouts/estados
+Rendering estados/index
+  [4;35;1mEstado Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `estados`[0m
+Completed in 218ms (View: 206, DB: 1) | 200 OK [http://192.168.2.5/estados]
+
+
+Processing EstadosController#edit (for 192.168.2.4 at 2010-11-21 14:09:44) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mEstado Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `estados`[0m
+  [4;35;1mEstado Load (0.1ms)[0m   [0mSELECT * FROM `estados` WHERE (`estados`.`id` = 1) [0m
+Rendering template within layouts/estados
+Rendering estados/edit
+Completed in 43ms (View: 33, DB: 1) | 200 OK [http://192.168.2.5/estados/1/edit]
+
+
+Processing EstadosController#index (for 192.168.2.4 at 2010-11-21 14:10:03) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mEstado Load (0.2ms)[0m   [0;1mSELECT * FROM `estados` [0m
+Rendering template within layouts/estados
+Rendering estados/index
+  [4;35;1mEstado Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `estados`[0m
+Completed in 161ms (View: 150, DB: 1) | 200 OK [http://192.168.2.5/estados]
+
+
+Processing EstadosController#new (for 192.168.2.4 at 2010-11-21 14:10:13) [GET]
+  Parameters: {"id"=>"29"}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mEstado Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `estados`[0m
+Rendering template within layouts/estados
+Rendering estados/new
+Completed in 28ms (View: 19, DB: 1) | 200 OK [http://192.168.2.5/estados/new/29]
+
+
+Processing EstadosController#index (for 192.168.2.4 at 2010-11-21 14:10:29) [GET]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mEstado Load (0.1ms)[0m   [0mSELECT * FROM `estados` [0m
+Rendering template within layouts/estados
+Rendering estados/index
+  [4;36;1mEstado Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `estados`[0m
+Completed in 166ms (View: 153, DB: 1) | 200 OK [http://192.168.2.5/estados]
+
+
+Processing HomeController#index (for 192.168.2.4 at 2010-11-21 14:11:07) [GET]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 9ms (View: 6, DB: 0) | 200 OK [http://192.168.2.5/home]
+
+
+Processing MunicipiosController#index (for 192.168.2.4 at 2010-11-21 14:11:10) [GET]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mMunicipio Load (0.6ms)[0m   [0mSELECT * FROM `municipios` [0m
+Rendering template within layouts/municipios
+Rendering municipios/index
+  [4;36;1mMunicipio Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `municipios`[0m
+  [4;35;1mEstado Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `estados`[0m
+  [4;36;1mEstado Load (0.1ms)[0m   [0;1mSELECT * FROM `estados` WHERE (`estados`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `estados` WHERE (`estados`.`id` = 1) [0m
+  [4;36;1mEstado Load (0.3ms)[0m   [0;1mSELECT * FROM `estados` WHERE (`estados`.`id` = 2) [0m
+  [4;35;1mEstado Load (0.2ms)[0m   [0mSELECT * FROM `estados` WHERE (`estados`.`id` = 6) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `estados` WHERE (`estados`.`id` = 1) [0m
+Completed in 122ms (View: 86, DB: 4) | 200 OK [http://192.168.2.5/municipios]
+
+
+Processing MunicipiosController#show (for 192.168.2.4 at 2010-11-21 14:11:29) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mMunicipio Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `municipios`[0m
+  [4;36;1mMunicipio Load (0.2ms)[0m   [0;1mSELECT * FROM `municipios` WHERE (`municipios`.`id` = 1) [0m
+Rendering template within layouts/municipios
+Rendering municipios/show
+Completed in 77ms (View: 66, DB: 1) | 200 OK [http://192.168.2.5/municipios/1]
+
+
+Processing MunicipiosController#index (for 192.168.2.4 at 2010-11-21 14:11:47) [GET]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mMunicipio Load (0.1ms)[0m   [0mSELECT * FROM `municipios` [0m
+Rendering template within layouts/municipios
+Rendering municipios/index
+  [4;36;1mMunicipio Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `municipios`[0m
+  [4;35;1mEstado Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `estados`[0m
+  [4;36;1mEstado Load (0.1ms)[0m   [0;1mSELECT * FROM `estados` WHERE (`estados`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `estados` WHERE (`estados`.`id` = 1) [0m
+  [4;36;1mEstado Load (0.1ms)[0m   [0;1mSELECT * FROM `estados` WHERE (`estados`.`id` = 2) [0m
+  [4;35;1mEstado Load (0.3ms)[0m   [0mSELECT * FROM `estados` WHERE (`estados`.`id` = 6) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `estados` WHERE (`estados`.`id` = 1) [0m
+Completed in 58ms (View: 46, DB: 2) | 200 OK [http://192.168.2.5/municipios]
+
+
+Processing MunicipiosController#edit (for 192.168.2.4 at 2010-11-21 14:11:48) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mMunicipio Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `municipios`[0m
+  [4;36;1mMunicipio Load (0.1ms)[0m   [0;1mSELECT * FROM `municipios` WHERE (`municipios`.`id` = 1) [0m
+Rendering template within layouts/municipios
+Rendering municipios/edit
+  [4;35;1mEstado Load (0.1ms)[0m   [0mSELECT * FROM `estados` [0m
+  [4;36;1mEstado Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `estados`[0m
+Completed in 54ms (View: 44, DB: 1) | 200 OK [http://192.168.2.5/municipios/1/edit]
+
+
+Processing MunicipiosController#index (for 192.168.2.4 at 2010-11-21 14:12:00) [GET]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mMunicipio Load (0.1ms)[0m   [0mSELECT * FROM `municipios` [0m
+Rendering template within layouts/municipios
+Rendering municipios/index
+  [4;36;1mMunicipio Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `municipios`[0m
+  [4;35;1mEstado Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `estados`[0m
+  [4;36;1mEstado Load (0.1ms)[0m   [0;1mSELECT * FROM `estados` WHERE (`estados`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `estados` WHERE (`estados`.`id` = 1) [0m
+  [4;36;1mEstado Load (0.1ms)[0m   [0;1mSELECT * FROM `estados` WHERE (`estados`.`id` = 2) [0m
+  [4;35;1mEstado Load (0.1ms)[0m   [0mSELECT * FROM `estados` WHERE (`estados`.`id` = 6) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `estados` WHERE (`estados`.`id` = 1) [0m
+Completed in 66ms (View: 51, DB: 2) | 200 OK [http://192.168.2.5/municipios]
+
+
+Processing MunicipiosController#new (for 192.168.2.4 at 2010-11-21 14:12:02) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mMunicipio Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `municipios`[0m
+Rendering template within layouts/municipios
+Rendering municipios/new
+  [4;36;1mEstado Load (0.1ms)[0m   [0;1mSELECT * FROM `estados` [0m
+  [4;35;1mEstado Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `estados`[0m
+Completed in 109ms (View: 24, DB: 2) | 200 OK [http://192.168.2.5/municipios/new/5]
+
+
+Processing MunicipiosController#index (for 192.168.2.4 at 2010-11-21 14:12:31) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mMunicipio Load (0.1ms)[0m   [0;1mSELECT * FROM `municipios` [0m
+Rendering template within layouts/municipios
+Rendering municipios/index
+  [4;35;1mMunicipio Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `municipios`[0m
+  [4;36;1mEstado Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `estados`[0m
+  [4;35;1mEstado Load (0.1ms)[0m   [0mSELECT * FROM `estados` WHERE (`estados`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `estados` WHERE (`estados`.`id` = 1) [0m
+  [4;35;1mEstado Load (0.1ms)[0m   [0mSELECT * FROM `estados` WHERE (`estados`.`id` = 2) [0m
+  [4;36;1mEstado Load (0.1ms)[0m   [0;1mSELECT * FROM `estados` WHERE (`estados`.`id` = 6) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `estados` WHERE (`estados`.`id` = 1) [0m
+Completed in 55ms (View: 43, DB: 2) | 200 OK [http://192.168.2.5/municipios]
+
+
+Processing HomeController#index (for 192.168.2.4 at 2010-11-21 14:13:35) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 9ms (View: 6, DB: 0) | 200 OK [http://192.168.2.5/home]
+
+
+Processing ZonasController#index (for 192.168.2.4 at 2010-11-21 14:13:38) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mZona Load (0.4ms)[0m   [0;1mSELECT * FROM `zonas` [0m
+Rendering template within layouts/zonas
+Rendering zonas/index
+  [4;35;1mZona Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `zonas`[0m
+  [4;36;1mMunicipio Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `municipios`[0m
+  [4;35;1mMunicipio Load (0.1ms)[0m   [0mSELECT * FROM `municipios` WHERE (`municipios`.`id` = 1) [0m
+  [4;36;1mEstado Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `estados`[0m
+  [4;35;1mEstado Load (0.1ms)[0m   [0mSELECT * FROM `estados` WHERE (`estados`.`id` = 1) [0m
+  [4;36;1mMunicipio Load (0.4ms)[0m   [0;1mSELECT * FROM `municipios` WHERE (`municipios`.`id` = 4) [0m
+  [4;35;1mEstado Load (0.1ms)[0m   [0mSELECT * FROM `estados` WHERE (`estados`.`id` = 6) [0m
+Completed in 94ms (View: 66, DB: 4) | 200 OK [http://192.168.2.5/zonas]
+
+
+Processing ZonasController#show (for 192.168.2.4 at 2010-11-21 14:13:56) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mZona Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `zonas`[0m
+  [4;35;1mZona Load (0.3ms)[0m   [0mSELECT * FROM `zonas` WHERE (`zonas`.`id` = 1) [0m
+Rendering template within layouts/zonas
+Rendering zonas/show
+Completed in 51ms (View: 38, DB: 1) | 200 OK [http://192.168.2.5/zonas/1]
+
+
+Processing ZonasController#index (for 192.168.2.4 at 2010-11-21 14:14:07) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mZona Load (0.1ms)[0m   [0;1mSELECT * FROM `zonas` [0m
+Rendering template within layouts/zonas
+Rendering zonas/index
+  [4;35;1mZona Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `zonas`[0m
+  [4;36;1mMunicipio Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `municipios`[0m
+  [4;35;1mMunicipio Load (0.1ms)[0m   [0mSELECT * FROM `municipios` WHERE (`municipios`.`id` = 1) [0m
+  [4;36;1mEstado Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `estados`[0m
+  [4;35;1mEstado Load (0.1ms)[0m   [0mSELECT * FROM `estados` WHERE (`estados`.`id` = 1) [0m
+  [4;36;1mMunicipio Load (0.1ms)[0m   [0;1mSELECT * FROM `municipios` WHERE (`municipios`.`id` = 4) [0m
+  [4;35;1mEstado Load (0.1ms)[0m   [0mSELECT * FROM `estados` WHERE (`estados`.`id` = 6) [0m
+Completed in 50ms (View: 38, DB: 2) | 200 OK [http://192.168.2.5/zonas]
+
+
+Processing ZonasController#edit (for 192.168.2.4 at 2010-11-21 14:14:08) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mZona Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `zonas`[0m
+  [4;35;1mZona Load (0.1ms)[0m   [0mSELECT * FROM `zonas` WHERE (`zonas`.`id` = 1) [0m
+Rendering template within layouts/zonas
+Rendering zonas/edit
+  [4;36;1mMunicipio Load (0.1ms)[0m   [0;1mSELECT * FROM `municipios` [0m
+  [4;35;1mMunicipio Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `municipios`[0m
+  [4;36;1mEstado Load (0.1ms)[0m   [0;1mSELECT * FROM `estados` [0m
+  [4;35;1mEstado Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `estados`[0m
+Completed in 65ms (View: 55, DB: 1) | 200 OK [http://192.168.2.5/zonas/1/edit]
+
+
+Processing ZonasController#index (for 192.168.2.4 at 2010-11-21 14:14:23) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mZona Load (0.1ms)[0m   [0;1mSELECT * FROM `zonas` [0m
+Rendering template within layouts/zonas
+Rendering zonas/index
+  [4;35;1mZona Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `zonas`[0m
+  [4;36;1mMunicipio Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `municipios`[0m
+  [4;35;1mMunicipio Load (0.1ms)[0m   [0mSELECT * FROM `municipios` WHERE (`municipios`.`id` = 1) [0m
+  [4;36;1mEstado Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `estados`[0m
+  [4;35;1mEstado Load (0.1ms)[0m   [0mSELECT * FROM `estados` WHERE (`estados`.`id` = 1) [0m
+  [4;36;1mMunicipio Load (0.1ms)[0m   [0;1mSELECT * FROM `municipios` WHERE (`municipios`.`id` = 4) [0m
+  [4;35;1mEstado Load (0.1ms)[0m   [0mSELECT * FROM `estados` WHERE (`estados`.`id` = 6) [0m
+Completed in 124ms (View: 41, DB: 3) | 200 OK [http://192.168.2.5/zonas]
+
+
+Processing ZonasController#new (for 192.168.2.4 at 2010-11-21 14:14:27) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mZona Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `zonas`[0m
+Rendering template within layouts/zonas
+Rendering zonas/new
+  [4;35;1mEstado Load (0.2ms)[0m   [0mSELECT * FROM `estados` [0m
+  [4;36;1mEstado Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `estados`[0m
+  [4;35;1mMunicipio Load (0.1ms)[0m   [0mSELECT * FROM `municipios` [0m
+  [4;36;1mMunicipio Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `municipios`[0m
+Completed in 65ms (View: 53, DB: 2) | 200 OK [http://192.168.2.5/zonas/new/2]
+
+
+Processing ZonasController#index (for 192.168.2.4 at 2010-11-21 14:14:42) [GET]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mZona Load (0.1ms)[0m   [0mSELECT * FROM `zonas` [0m
+Rendering template within layouts/zonas
+Rendering zonas/index
+  [4;36;1mZona Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `zonas`[0m
+  [4;35;1mMunicipio Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `municipios`[0m
+  [4;36;1mMunicipio Load (0.1ms)[0m   [0;1mSELECT * FROM `municipios` WHERE (`municipios`.`id` = 1) [0m
+  [4;35;1mEstado Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `estados`[0m
+  [4;36;1mEstado Load (0.1ms)[0m   [0;1mSELECT * FROM `estados` WHERE (`estados`.`id` = 1) [0m
+  [4;35;1mMunicipio Load (0.1ms)[0m   [0mSELECT * FROM `municipios` WHERE (`municipios`.`id` = 4) [0m
+  [4;36;1mEstado Load (0.1ms)[0m   [0;1mSELECT * FROM `estados` WHERE (`estados`.`id` = 6) [0m
+Completed in 47ms (View: 35, DB: 3) | 200 OK [http://192.168.2.5/zonas]
+
+
+Processing ZonasController#destroy (for 192.168.2.4 at 2010-11-21 14:14:51) [DELETE]
+  Parameters: {"authenticity_token"=>"c9fb707bf021448ce039732aae86327721937293", "id"=>"1"}
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mZona Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `zonas`[0m
+  [4;36;1mZona Load (0.1ms)[0m   [0;1mSELECT * FROM `zonas` WHERE (`zonas`.`id` = 1) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mZona Destroy (0.3ms)[0m   [0;1mDELETE FROM `zonas` WHERE `id` = 1[0m
+  [4;35;1mSQL (57.2ms)[0m   [0mCOMMIT[0m
+Redirected to http://192.168.2.5:3000/zonas
+Completed in 144ms (DB: 58) | 302 Found [http://192.168.2.5/zonas/1]
+
+
+Processing ZonasController#index (for 192.168.2.4 at 2010-11-21 14:14:51) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mZona Load (0.3ms)[0m   [0;1mSELECT * FROM `zonas` [0m
+Rendering template within layouts/zonas
+Rendering zonas/index
+  [4;35;1mZona Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `zonas`[0m
+  [4;36;1mMunicipio Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `municipios`[0m
+  [4;35;1mMunicipio Load (0.1ms)[0m   [0mSELECT * FROM `municipios` WHERE (`municipios`.`id` = 4) [0m
+  [4;36;1mEstado Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `estados`[0m
+  [4;35;1mEstado Load (0.1ms)[0m   [0mSELECT * FROM `estados` WHERE (`estados`.`id` = 6) [0m
+Completed in 43ms (View: 30, DB: 2) | 200 OK [http://192.168.2.5/zonas]
+
+
+Processing HomeController#index (for 192.168.2.4 at 2010-11-21 14:15:05) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 9ms (View: 6, DB: 0) | 200 OK [http://192.168.2.5/home]
+
+
+Processing SecaosController#index (for 192.168.2.4 at 2010-11-21 14:15:07) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSecao Load (0.6ms)[0m   [0;1mSELECT * FROM `secaos` [0m
+Rendering template within layouts/secaos
+Rendering secaos/index
+  [4;35;1mSecao Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `secaos`[0m
+  [4;36;1mZona Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `zonas`[0m
+  [4;35;1mZona Load (0.2ms)[0m   [0mSELECT * FROM `zonas` WHERE (`zonas`.`id` = 2) [0m
+  [4;36;1mMunicipio Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `municipios`[0m
+  [4;35;1mMunicipio Load (0.1ms)[0m   [0mSELECT * FROM `municipios` WHERE (`municipios`.`id` = 1) [0m
+  [4;36;1mEstado Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `estados`[0m
+  [4;35;1mEstado Load (0.1ms)[0m   [0mSELECT * FROM `estados` WHERE (`estados`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `zonas` WHERE (`zonas`.`id` = 2) [0m
+  [4;35;1mMunicipio Load (0.1ms)[0m   [0mSELECT * FROM `municipios` WHERE (`municipios`.`id` = 4) [0m
+  [4;36;1mEstado Load (0.1ms)[0m   [0;1mSELECT * FROM `estados` WHERE (`estados`.`id` = 6) [0m
+  [4;35;1mZona Load (0.3ms)[0m   [0mSELECT * FROM `zonas` WHERE (`zonas`.`id` = 1) [0m
+
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.nome_zona) on line #16 of app/views/secaos/index.html.erb:
+13: <% for secao in @secaos %>
+14:   <tr>
+15:     <td><%=h secao.id %></td>
+16:     <td><%=h secao.zona.nome_zona %></td>
+17:     <td><%=h secao.municipio.nome_munic %></td>
+18:     <td><%=h secao.estado.nome_est %></td>
+19:     <td><%=h secao.urna_id %></td>
+
+    app/views/secaos/index.html.erb:16
+    app/views/secaos/index.html.erb:13:in `each'
+    app/views/secaos/index.html.erb:13
+    vendor/rails/actionpack/lib/action_view/renderable.rb:39:in `send'
+    vendor/rails/actionpack/lib/action_view/renderable.rb:39:in `render'
+    vendor/rails/actionpack/lib/action_view/template.rb:73:in `render_template'
+    vendor/rails/actionpack/lib/action_view/base.rb:256:in `render'
+    vendor/rails/actionpack/lib/action_view/base.rb:369:in `_render_with_layout'
+    vendor/rails/actionpack/lib/action_view/base.rb:254:in `render'
+    vendor/rails/actionpack/lib/action_controller/base.rb:1177:in `render_for_file'
+    vendor/rails/actionpack/lib/action_controller/base.rb:905:in `render_without_benchmark'
+    vendor/rails/actionpack/lib/action_controller/benchmarking.rb:51:in `render'
+    vendor/rails/activesupport/lib/active_support/core_ext/benchmark.rb:8:in `realtime'
+    vendor/rails/actionpack/lib/action_controller/benchmarking.rb:51:in `render'
+    vendor/rails/actionpack/lib/action_controller/mime_responds.rb:135:in `send'
+    vendor/rails/actionpack/lib/action_controller/mime_responds.rb:135
+    vendor/rails/actionpack/lib/action_controller/mime_responds.rb:164:in `call'
+    vendor/rails/actionpack/lib/action_controller/mime_responds.rb:164:in `respond'
+    vendor/rails/actionpack/lib/action_controller/mime_responds.rb:158:in `each'
+    vendor/rails/actionpack/lib/action_controller/mime_responds.rb:158:in `respond'
+    vendor/rails/actionpack/lib/action_controller/mime_responds.rb:107:in `respond_to'
+    app/controllers/secaos_controller.rb:7:in `index'
+    vendor/rails/actionpack/lib/action_controller/base.rb:1256:in `send'
+    vendor/rails/actionpack/lib/action_controller/base.rb:1256:in `perform_action_without_filters'
+    vendor/rails/actionpack/lib/action_controller/filters.rb:617:in `call_filters'
+    vendor/rails/actionpack/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+    vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    vendor/rails/actionpack/lib/action_controller/rescue.rb:136:in `perform_action_without_caching'
+    vendor/rails/actionpack/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+    vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+    vendor/rails/activerecord/lib/active_record/query_cache.rb:8:in `cache'
+    vendor/rails/actionpack/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+    vendor/rails/actionpack/lib/action_controller/base.rb:524:in `send'
+    vendor/rails/actionpack/lib/action_controller/base.rb:524:in `process_without_filters'
+    vendor/rails/actionpack/lib/action_controller/filters.rb:606:in `process_without_session_management_support'
+    vendor/rails/actionpack/lib/action_controller/session_management.rb:134:in `process'
+    vendor/rails/actionpack/lib/action_controller/base.rb:392:in `process'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:184:in `handle_request'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:112:in `dispatch_unlocked'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:125:in `dispatch'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:124:in `synchronize'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:124:in `dispatch'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:134:in `dispatch_cgi'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:41:in `dispatch'
+    /usr/lib/ruby/1.8/mongrel/rails.rb:76:in `process'
+    /usr/lib/ruby/1.8/mongrel/rails.rb:74:in `synchronize'
+    /usr/lib/ruby/1.8/mongrel/rails.rb:74:in `process'
+    /usr/lib/ruby/1.8/mongrel.rb:159:in `process_client'
+    /usr/lib/ruby/1.8/mongrel.rb:158:in `each'
+    /usr/lib/ruby/1.8/mongrel.rb:158:in `process_client'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `initialize'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `new'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `initialize'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `new'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `run'
+    /usr/lib/ruby/1.8/mongrel/configurator.rb:282:in `run'
+    /usr/lib/ruby/1.8/mongrel/configurator.rb:281:in `each'
+    /usr/lib/ruby/1.8/mongrel/configurator.rb:281:in `run'
+    /usr/lib/ruby/1.8/mongrel_rails:129:in `run'
+    /usr/lib/ruby/1.8/mongrel/command.rb:212:in `run'
+    /usr/lib/ruby/1.8/mongrel_rails:282
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:142:in `load_without_new_constant_marking'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:142:in `load'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:142:in `load'
+    vendor/rails/railties/lib/commands/servers/mongrel.rb:64
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:153:in `require'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:153:in `require'
+    vendor/rails/railties/lib/commands/server.rb:49
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+Rendered /home/rodrigo/projects/eleicoes2010/vendor/rails/actionpack/lib/action_controller/templates/rescues/_trace (38.2ms)
+Rendered /home/rodrigo/projects/eleicoes2010/vendor/rails/actionpack/lib/action_controller/templates/rescues/_request_and_response (1.1ms)
+Rendering /home/rodrigo/projects/eleicoes2010/vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mZona Load (0.1ms)[0m   [0;1mSELECT * FROM `zonas` [0m
+  [4;35;1mZona Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `zonas`[0m
+
+
+Processing SecaosController#index (for 192.168.2.4 at 2010-11-21 14:17:55) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSecao Load (0.1ms)[0m   [0;1mSELECT * FROM `secaos` [0m
+Rendering template within layouts/secaos
+Rendering secaos/index
+  [4;35;1mSecao Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `secaos`[0m
+  [4;36;1mZona Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `zonas`[0m
+  [4;35;1mZona Load (0.1ms)[0m   [0mSELECT * FROM `zonas` WHERE (`zonas`.`id` = 2) [0m
+  [4;36;1mMunicipio Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `municipios`[0m
+  [4;35;1mMunicipio Load (0.1ms)[0m   [0mSELECT * FROM `municipios` WHERE (`municipios`.`id` = 1) [0m
+  [4;36;1mEstado Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `estados`[0m
+  [4;35;1mEstado Load (0.1ms)[0m   [0mSELECT * FROM `estados` WHERE (`estados`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `zonas` WHERE (`zonas`.`id` = 2) [0m
+  [4;35;1mMunicipio Load (0.1ms)[0m   [0mSELECT * FROM `municipios` WHERE (`municipios`.`id` = 4) [0m
+  [4;36;1mEstado Load (0.1ms)[0m   [0;1mSELECT * FROM `estados` WHERE (`estados`.`id` = 6) [0m
+  [4;35;1mZona Load (0.1ms)[0m   [0mSELECT * FROM `zonas` WHERE (`zonas`.`id` = 1) [0m
+
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.nome_zona) on line #16 of app/views/secaos/index.html.erb:
+13: <% for secao in @secaos %>
+14:   <tr>
+15:     <td><%=h secao.id %></td>
+16:     <td><%=h secao.zona.nome_zona %></td>
+17:     <td><%=h secao.municipio.nome_munic %></td>
+18:     <td><%=h secao.estado.nome_est %></td>
+19:     <td><%=h secao.urna_id %></td>
+
+    app/views/secaos/index.html.erb:16
+    app/views/secaos/index.html.erb:13:in `each'
+    app/views/secaos/index.html.erb:13
+    vendor/rails/actionpack/lib/action_view/renderable.rb:39:in `send'
+    vendor/rails/actionpack/lib/action_view/renderable.rb:39:in `render'
+    vendor/rails/actionpack/lib/action_view/template.rb:73:in `render_template'
+    vendor/rails/actionpack/lib/action_view/base.rb:256:in `render'
+    vendor/rails/actionpack/lib/action_view/base.rb:369:in `_render_with_layout'
+    vendor/rails/actionpack/lib/action_view/base.rb:254:in `render'
+    vendor/rails/actionpack/lib/action_controller/base.rb:1177:in `render_for_file'
+    vendor/rails/actionpack/lib/action_controller/base.rb:905:in `render_without_benchmark'
+    vendor/rails/actionpack/lib/action_controller/benchmarking.rb:51:in `render'
+    vendor/rails/activesupport/lib/active_support/core_ext/benchmark.rb:8:in `realtime'
+    vendor/rails/actionpack/lib/action_controller/benchmarking.rb:51:in `render'
+    vendor/rails/actionpack/lib/action_controller/mime_responds.rb:135:in `send'
+    vendor/rails/actionpack/lib/action_controller/mime_responds.rb:135
+    vendor/rails/actionpack/lib/action_controller/mime_responds.rb:164:in `call'
+    vendor/rails/actionpack/lib/action_controller/mime_responds.rb:164:in `respond'
+    vendor/rails/actionpack/lib/action_controller/mime_responds.rb:158:in `each'
+    vendor/rails/actionpack/lib/action_controller/mime_responds.rb:158:in `respond'
+    vendor/rails/actionpack/lib/action_controller/mime_responds.rb:107:in `respond_to'
+    app/controllers/secaos_controller.rb:7:in `index'
+    vendor/rails/actionpack/lib/action_controller/base.rb:1256:in `send'
+    vendor/rails/actionpack/lib/action_controller/base.rb:1256:in `perform_action_without_filters'
+    vendor/rails/actionpack/lib/action_controller/filters.rb:617:in `call_filters'
+    vendor/rails/actionpack/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+    vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    vendor/rails/actionpack/lib/action_controller/rescue.rb:136:in `perform_action_without_caching'
+    vendor/rails/actionpack/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+    vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+    vendor/rails/activerecord/lib/active_record/query_cache.rb:8:in `cache'
+    vendor/rails/actionpack/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+    vendor/rails/actionpack/lib/action_controller/base.rb:524:in `send'
+    vendor/rails/actionpack/lib/action_controller/base.rb:524:in `process_without_filters'
+    vendor/rails/actionpack/lib/action_controller/filters.rb:606:in `process_without_session_management_support'
+    vendor/rails/actionpack/lib/action_controller/session_management.rb:134:in `process'
+    vendor/rails/actionpack/lib/action_controller/base.rb:392:in `process'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:184:in `handle_request'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:112:in `dispatch_unlocked'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:125:in `dispatch'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:124:in `synchronize'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:124:in `dispatch'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:134:in `dispatch_cgi'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:41:in `dispatch'
+    /usr/lib/ruby/1.8/mongrel/rails.rb:76:in `process'
+    /usr/lib/ruby/1.8/mongrel/rails.rb:74:in `synchronize'
+    /usr/lib/ruby/1.8/mongrel/rails.rb:74:in `process'
+    /usr/lib/ruby/1.8/mongrel.rb:159:in `process_client'
+    /usr/lib/ruby/1.8/mongrel.rb:158:in `each'
+    /usr/lib/ruby/1.8/mongrel.rb:158:in `process_client'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `initialize'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `new'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `initialize'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `new'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `run'
+    /usr/lib/ruby/1.8/mongrel/configurator.rb:282:in `run'
+    /usr/lib/ruby/1.8/mongrel/configurator.rb:281:in `each'
+    /usr/lib/ruby/1.8/mongrel/configurator.rb:281:in `run'
+    /usr/lib/ruby/1.8/mongrel_rails:129:in `run'
+    /usr/lib/ruby/1.8/mongrel/command.rb:212:in `run'
+    /usr/lib/ruby/1.8/mongrel_rails:282
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:142:in `load_without_new_constant_marking'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:142:in `load'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:142:in `load'
+    vendor/rails/railties/lib/commands/servers/mongrel.rb:64
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:153:in `require'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:153:in `require'
+    vendor/rails/railties/lib/commands/server.rb:49
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+Rendered /home/rodrigo/projects/eleicoes2010/vendor/rails/actionpack/lib/action_controller/templates/rescues/_trace (32.2ms)
+Rendered /home/rodrigo/projects/eleicoes2010/vendor/rails/actionpack/lib/action_controller/templates/rescues/_request_and_response (0.9ms)
+Rendering /home/rodrigo/projects/eleicoes2010/vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing SecaosController#index (for 192.168.2.4 at 2010-11-21 14:18:04) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSecao Load (0.1ms)[0m   [0;1mSELECT * FROM `secaos` [0m
+Rendering template within layouts/secaos
+Rendering secaos/index
+  [4;35;1mSecao Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `secaos`[0m
+  [4;36;1mZona Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `zonas`[0m
+  [4;35;1mZona Load (0.1ms)[0m   [0mSELECT * FROM `zonas` WHERE (`zonas`.`id` = 2) [0m
+  [4;36;1mMunicipio Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `municipios`[0m
+  [4;35;1mMunicipio Load (0.1ms)[0m   [0mSELECT * FROM `municipios` WHERE (`municipios`.`id` = 1) [0m
+  [4;36;1mEstado Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `estados`[0m
+  [4;35;1mEstado Load (0.1ms)[0m   [0mSELECT * FROM `estados` WHERE (`estados`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `zonas` WHERE (`zonas`.`id` = 2) [0m
+  [4;35;1mMunicipio Load (0.1ms)[0m   [0mSELECT * FROM `municipios` WHERE (`municipios`.`id` = 4) [0m
+  [4;36;1mEstado Load (0.1ms)[0m   [0;1mSELECT * FROM `estados` WHERE (`estados`.`id` = 6) [0m
+  [4;35;1mZona Load (0.1ms)[0m   [0mSELECT * FROM `zonas` WHERE (`zonas`.`id` = 1) [0m
+
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.nome_zona) on line #16 of app/views/secaos/index.html.erb:
+13: <% for secao in @secaos %>
+14:   <tr>
+15:     <td><%=h secao.id %></td>
+16:     <td><%=h secao.zona.nome_zona %></td>
+17:     <td><%=h secao.municipio.nome_munic %></td>
+18:     <td><%=h secao.estado.nome_est %></td>
+19:     <td><%=h secao.urna_id %></td>
+
+    app/views/secaos/index.html.erb:16
+    app/views/secaos/index.html.erb:13:in `each'
+    app/views/secaos/index.html.erb:13
+    vendor/rails/actionpack/lib/action_view/renderable.rb:39:in `send'
+    vendor/rails/actionpack/lib/action_view/renderable.rb:39:in `render'
+    vendor/rails/actionpack/lib/action_view/template.rb:73:in `render_template'
+    vendor/rails/actionpack/lib/action_view/base.rb:256:in `render'
+    vendor/rails/actionpack/lib/action_view/base.rb:369:in `_render_with_layout'
+    vendor/rails/actionpack/lib/action_view/base.rb:254:in `render'
+    vendor/rails/actionpack/lib/action_controller/base.rb:1177:in `render_for_file'
+    vendor/rails/actionpack/lib/action_controller/base.rb:905:in `render_without_benchmark'
+    vendor/rails/actionpack/lib/action_controller/benchmarking.rb:51:in `render'
+    vendor/rails/activesupport/lib/active_support/core_ext/benchmark.rb:8:in `realtime'
+    vendor/rails/actionpack/lib/action_controller/benchmarking.rb:51:in `render'
+    vendor/rails/actionpack/lib/action_controller/mime_responds.rb:135:in `send'
+    vendor/rails/actionpack/lib/action_controller/mime_responds.rb:135
+    vendor/rails/actionpack/lib/action_controller/mime_responds.rb:164:in `call'
+    vendor/rails/actionpack/lib/action_controller/mime_responds.rb:164:in `respond'
+    vendor/rails/actionpack/lib/action_controller/mime_responds.rb:158:in `each'
+    vendor/rails/actionpack/lib/action_controller/mime_responds.rb:158:in `respond'
+    vendor/rails/actionpack/lib/action_controller/mime_responds.rb:107:in `respond_to'
+    app/controllers/secaos_controller.rb:7:in `index'
+    vendor/rails/actionpack/lib/action_controller/base.rb:1256:in `send'
+    vendor/rails/actionpack/lib/action_controller/base.rb:1256:in `perform_action_without_filters'
+    vendor/rails/actionpack/lib/action_controller/filters.rb:617:in `call_filters'
+    vendor/rails/actionpack/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+    vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    vendor/rails/actionpack/lib/action_controller/rescue.rb:136:in `perform_action_without_caching'
+    vendor/rails/actionpack/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+    vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+    vendor/rails/activerecord/lib/active_record/query_cache.rb:8:in `cache'
+    vendor/rails/actionpack/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+    vendor/rails/actionpack/lib/action_controller/base.rb:524:in `send'
+    vendor/rails/actionpack/lib/action_controller/base.rb:524:in `process_without_filters'
+    vendor/rails/actionpack/lib/action_controller/filters.rb:606:in `process_without_session_management_support'
+    vendor/rails/actionpack/lib/action_controller/session_management.rb:134:in `process'
+    vendor/rails/actionpack/lib/action_controller/base.rb:392:in `process'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:184:in `handle_request'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:112:in `dispatch_unlocked'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:125:in `dispatch'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:124:in `synchronize'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:124:in `dispatch'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:134:in `dispatch_cgi'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:41:in `dispatch'
+    /usr/lib/ruby/1.8/mongrel/rails.rb:76:in `process'
+    /usr/lib/ruby/1.8/mongrel/rails.rb:74:in `synchronize'
+    /usr/lib/ruby/1.8/mongrel/rails.rb:74:in `process'
+    /usr/lib/ruby/1.8/mongrel.rb:159:in `process_client'
+    /usr/lib/ruby/1.8/mongrel.rb:158:in `each'
+    /usr/lib/ruby/1.8/mongrel.rb:158:in `process_client'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `initialize'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `new'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `initialize'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `new'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `run'
+    /usr/lib/ruby/1.8/mongrel/configurator.rb:282:in `run'
+    /usr/lib/ruby/1.8/mongrel/configurator.rb:281:in `each'
+    /usr/lib/ruby/1.8/mongrel/configurator.rb:281:in `run'
+    /usr/lib/ruby/1.8/mongrel_rails:129:in `run'
+    /usr/lib/ruby/1.8/mongrel/command.rb:212:in `run'
+    /usr/lib/ruby/1.8/mongrel_rails:282
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:142:in `load_without_new_constant_marking'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:142:in `load'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:142:in `load'
+    vendor/rails/railties/lib/commands/servers/mongrel.rb:64
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:153:in `require'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:153:in `require'
+    vendor/rails/railties/lib/commands/server.rb:49
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+Rendered /home/rodrigo/projects/eleicoes2010/vendor/rails/actionpack/lib/action_controller/templates/rescues/_trace (32.1ms)
+Rendered /home/rodrigo/projects/eleicoes2010/vendor/rails/actionpack/lib/action_controller/templates/rescues/_request_and_response (0.8ms)
+Rendering /home/rodrigo/projects/eleicoes2010/vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing SecaosController#index (for 192.168.2.4 at 2010-11-21 14:18:35) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSecao Load (0.2ms)[0m   [0;1mSELECT * FROM `secaos` [0m
+Rendering template within layouts/secaos
+Rendering secaos/index
+  [4;35;1mSecao Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `secaos`[0m
+  [4;36;1mZona Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `zonas`[0m
+  [4;35;1mZona Load (0.1ms)[0m   [0mSELECT * FROM `zonas` WHERE (`zonas`.`id` = 2) [0m
+  [4;36;1mMunicipio Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `municipios`[0m
+  [4;35;1mMunicipio Load (0.1ms)[0m   [0mSELECT * FROM `municipios` WHERE (`municipios`.`id` = 1) [0m
+  [4;36;1mEstado Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `estados`[0m
+  [4;35;1mEstado Load (0.1ms)[0m   [0mSELECT * FROM `estados` WHERE (`estados`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `zonas` WHERE (`zonas`.`id` = 2) [0m
+  [4;35;1mMunicipio Load (0.1ms)[0m   [0mSELECT * FROM `municipios` WHERE (`municipios`.`id` = 4) [0m
+  [4;36;1mEstado Load (0.1ms)[0m   [0;1mSELECT * FROM `estados` WHERE (`estados`.`id` = 6) [0m
+  [4;35;1mZona Load (0.1ms)[0m   [0mSELECT * FROM `zonas` WHERE (`zonas`.`id` = 1) [0m
+
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.nome_zona) on line #16 of app/views/secaos/index.html.erb:
+13: <% for secao in @secaos %>
+14:   <tr>
+15:     <td><%=h secao.id %></td>
+16:     <!--td><%=h secao.zona.nome_zona %></td-->
+17:     <td><%=h secao.municipio.nome_munic %></td>
+18:     <td><%=h secao.estado.nome_est %></td>
+19:     <td><%=h secao.urna_id %></td>
+
+    app/views/secaos/index.html.erb:16
+    app/views/secaos/index.html.erb:13:in `each'
+    app/views/secaos/index.html.erb:13
+    vendor/rails/actionpack/lib/action_view/renderable.rb:39:in `send'
+    vendor/rails/actionpack/lib/action_view/renderable.rb:39:in `render'
+    vendor/rails/actionpack/lib/action_view/template.rb:73:in `render_template'
+    vendor/rails/actionpack/lib/action_view/base.rb:256:in `render'
+    vendor/rails/actionpack/lib/action_view/base.rb:369:in `_render_with_layout'
+    vendor/rails/actionpack/lib/action_view/base.rb:254:in `render'
+    vendor/rails/actionpack/lib/action_controller/base.rb:1177:in `render_for_file'
+    vendor/rails/actionpack/lib/action_controller/base.rb:905:in `render_without_benchmark'
+    vendor/rails/actionpack/lib/action_controller/benchmarking.rb:51:in `render'
+    vendor/rails/activesupport/lib/active_support/core_ext/benchmark.rb:8:in `realtime'
+    vendor/rails/actionpack/lib/action_controller/benchmarking.rb:51:in `render'
+    vendor/rails/actionpack/lib/action_controller/mime_responds.rb:135:in `send'
+    vendor/rails/actionpack/lib/action_controller/mime_responds.rb:135
+    vendor/rails/actionpack/lib/action_controller/mime_responds.rb:164:in `call'
+    vendor/rails/actionpack/lib/action_controller/mime_responds.rb:164:in `respond'
+    vendor/rails/actionpack/lib/action_controller/mime_responds.rb:158:in `each'
+    vendor/rails/actionpack/lib/action_controller/mime_responds.rb:158:in `respond'
+    vendor/rails/actionpack/lib/action_controller/mime_responds.rb:107:in `respond_to'
+    app/controllers/secaos_controller.rb:7:in `index'
+    vendor/rails/actionpack/lib/action_controller/base.rb:1256:in `send'
+    vendor/rails/actionpack/lib/action_controller/base.rb:1256:in `perform_action_without_filters'
+    vendor/rails/actionpack/lib/action_controller/filters.rb:617:in `call_filters'
+    vendor/rails/actionpack/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+    vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    vendor/rails/actionpack/lib/action_controller/rescue.rb:136:in `perform_action_without_caching'
+    vendor/rails/actionpack/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+    vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+    vendor/rails/activerecord/lib/active_record/query_cache.rb:8:in `cache'
+    vendor/rails/actionpack/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+    vendor/rails/actionpack/lib/action_controller/base.rb:524:in `send'
+    vendor/rails/actionpack/lib/action_controller/base.rb:524:in `process_without_filters'
+    vendor/rails/actionpack/lib/action_controller/filters.rb:606:in `process_without_session_management_support'
+    vendor/rails/actionpack/lib/action_controller/session_management.rb:134:in `process'
+    vendor/rails/actionpack/lib/action_controller/base.rb:392:in `process'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:184:in `handle_request'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:112:in `dispatch_unlocked'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:125:in `dispatch'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:124:in `synchronize'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:124:in `dispatch'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:134:in `dispatch_cgi'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:41:in `dispatch'
+    /usr/lib/ruby/1.8/mongrel/rails.rb:76:in `process'
+    /usr/lib/ruby/1.8/mongrel/rails.rb:74:in `synchronize'
+    /usr/lib/ruby/1.8/mongrel/rails.rb:74:in `process'
+    /usr/lib/ruby/1.8/mongrel.rb:159:in `process_client'
+    /usr/lib/ruby/1.8/mongrel.rb:158:in `each'
+    /usr/lib/ruby/1.8/mongrel.rb:158:in `process_client'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `initialize'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `new'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `initialize'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `new'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `run'
+    /usr/lib/ruby/1.8/mongrel/configurator.rb:282:in `run'
+    /usr/lib/ruby/1.8/mongrel/configurator.rb:281:in `each'
+    /usr/lib/ruby/1.8/mongrel/configurator.rb:281:in `run'
+    /usr/lib/ruby/1.8/mongrel_rails:129:in `run'
+    /usr/lib/ruby/1.8/mongrel/command.rb:212:in `run'
+    /usr/lib/ruby/1.8/mongrel_rails:282
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:142:in `load_without_new_constant_marking'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:142:in `load'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:142:in `load'
+    vendor/rails/railties/lib/commands/servers/mongrel.rb:64
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:153:in `require'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:153:in `require'
+    vendor/rails/railties/lib/commands/server.rb:49
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+Rendered /home/rodrigo/projects/eleicoes2010/vendor/rails/actionpack/lib/action_controller/templates/rescues/_trace (33.9ms)
+Rendered /home/rodrigo/projects/eleicoes2010/vendor/rails/actionpack/lib/action_controller/templates/rescues/_request_and_response (0.9ms)
+Rendering /home/rodrigo/projects/eleicoes2010/vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing SecaosController#index (for 192.168.2.4 at 2010-11-21 14:19:04) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSecao Load (0.1ms)[0m   [0;1mSELECT * FROM `secaos` [0m
+Rendering template within layouts/secaos
+Rendering secaos/index
+  [4;35;1mSecao Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `secaos`[0m
+  [4;36;1mMunicipio Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `municipios`[0m
+  [4;35;1mMunicipio Load (0.1ms)[0m   [0mSELECT * FROM `municipios` WHERE (`municipios`.`id` = 1) [0m
+  [4;36;1mEstado Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `estados`[0m
+  [4;35;1mEstado Load (0.1ms)[0m   [0mSELECT * FROM `estados` WHERE (`estados`.`id` = 1) [0m
+  [4;36;1mMunicipio Load (0.1ms)[0m   [0;1mSELECT * FROM `municipios` WHERE (`municipios`.`id` = 4) [0m
+  [4;35;1mEstado Load (0.1ms)[0m   [0mSELECT * FROM `estados` WHERE (`estados`.`id` = 6) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `municipios` WHERE (`municipios`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `estados` WHERE (`estados`.`id` = 1) [0m
+Completed in 64ms (View: 54, DB: 2) | 200 OK [http://192.168.2.5/secaos]
+
+
+Processing SecaosController#index (for 192.168.2.4 at 2010-11-21 14:20:40) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSecao Load (0.1ms)[0m   [0;1mSELECT * FROM `secaos` [0m
+Rendering template within layouts/secaos
+Rendering secaos/index
+  [4;35;1mSecao Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `secaos`[0m
+  [4;36;1mZona Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `zonas`[0m
+  [4;35;1mZona Load (0.3ms)[0m   [0mSELECT * FROM `zonas` WHERE (`zonas`.`id` = 2) [0m
+  [4;36;1mMunicipio Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `municipios`[0m
+  [4;35;1mMunicipio Load (0.1ms)[0m   [0mSELECT * FROM `municipios` WHERE (`municipios`.`id` = 1) [0m
+  [4;36;1mEstado Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `estados`[0m
+  [4;35;1mEstado Load (0.1ms)[0m   [0mSELECT * FROM `estados` WHERE (`estados`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `zonas` WHERE (`zonas`.`id` = 2) [0m
+  [4;35;1mMunicipio Load (0.1ms)[0m   [0mSELECT * FROM `municipios` WHERE (`municipios`.`id` = 4) [0m
+  [4;36;1mEstado Load (0.1ms)[0m   [0;1mSELECT * FROM `estados` WHERE (`estados`.`id` = 6) [0m
+  [4;35;1mZona Load (0.3ms)[0m   [0mSELECT * FROM `zonas` WHERE (`zonas`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `municipios` WHERE (`municipios`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `estados` WHERE (`estados`.`id` = 1) [0m
+Completed in 144ms (View: 132, DB: 4) | 200 OK [http://192.168.2.5/secaos]
+
+
+Processing SecaosController#show (for 192.168.2.4 at 2010-11-21 14:21:25) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSecao Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `secaos`[0m
+  [4;35;1mSecao Load (0.3ms)[0m   [0mSELECT * FROM `secaos` WHERE (`secaos`.`id` = 1) [0m
+Rendering template within layouts/secaos
+Rendering secaos/show
+Completed in 33ms (View: 23, DB: 1) | 200 OK [http://192.168.2.5/secaos/1]
+
+
+Processing SecaosController#index (for 192.168.2.4 at 2010-11-21 14:21:36) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSecao Load (0.1ms)[0m   [0;1mSELECT * FROM `secaos` [0m
+Rendering template within layouts/secaos
+Rendering secaos/index
+  [4;35;1mSecao Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `secaos`[0m
+  [4;36;1mZona Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `zonas`[0m
+  [4;35;1mZona Load (0.2ms)[0m   [0mSELECT * FROM `zonas` WHERE (`zonas`.`id` = 2) [0m
+  [4;36;1mMunicipio Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `municipios`[0m
+  [4;35;1mMunicipio Load (0.1ms)[0m   [0mSELECT * FROM `municipios` WHERE (`municipios`.`id` = 1) [0m
+  [4;36;1mEstado Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `estados`[0m
+  [4;35;1mEstado Load (0.1ms)[0m   [0mSELECT * FROM `estados` WHERE (`estados`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `zonas` WHERE (`zonas`.`id` = 2) [0m
+  [4;35;1mMunicipio Load (0.1ms)[0m   [0mSELECT * FROM `municipios` WHERE (`municipios`.`id` = 4) [0m
+  [4;36;1mEstado Load (0.1ms)[0m   [0;1mSELECT * FROM `estados` WHERE (`estados`.`id` = 6) [0m
+  [4;35;1mZona Load (0.3ms)[0m   [0mSELECT * FROM `zonas` WHERE (`zonas`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `municipios` WHERE (`municipios`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `estados` WHERE (`estados`.`id` = 1) [0m
+Completed in 61ms (View: 50, DB: 4) | 200 OK [http://192.168.2.5/secaos]
+
+
+Processing SecaosController#edit (for 192.168.2.4 at 2010-11-21 14:21:37) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSecao Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `secaos`[0m
+  [4;35;1mSecao Load (0.1ms)[0m   [0mSELECT * FROM `secaos` WHERE (`secaos`.`id` = 1) [0m
+Rendering template within layouts/secaos
+Rendering secaos/edit
+  [4;36;1mZona Load (0.3ms)[0m   [0;1mSELECT * FROM `zonas` [0m
+  [4;35;1mZona Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `zonas`[0m
+  [4;36;1mMunicipio Load (0.1ms)[0m   [0;1mSELECT * FROM `municipios` [0m
+  [4;35;1mMunicipio Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `municipios`[0m
+  [4;36;1mEstado Load (0.1ms)[0m   [0;1mSELECT * FROM `estados` [0m
+  [4;35;1mEstado Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `estados`[0m
+  [4;36;1mUrna Load (0.3ms)[0m   [0;1mSELECT * FROM `urnas` [0m
+  [4;35;1mUrna Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `urnas`[0m
+Completed in 171ms (View: 162, DB: 1) | 200 OK [http://192.168.2.5/secaos/1/edit]
+
+
+Processing SecaosController#index (for 192.168.2.4 at 2010-11-21 14:21:56) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSecao Load (0.1ms)[0m   [0;1mSELECT * FROM `secaos` [0m
+Rendering template within layouts/secaos
+Rendering secaos/index
+  [4;35;1mSecao Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `secaos`[0m
+  [4;36;1mZona Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `zonas`[0m
+  [4;35;1mZona Load (0.1ms)[0m   [0mSELECT * FROM `zonas` WHERE (`zonas`.`id` = 2) [0m
+  [4;36;1mMunicipio Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `municipios`[0m
+  [4;35;1mMunicipio Load (0.1ms)[0m   [0mSELECT * FROM `municipios` WHERE (`municipios`.`id` = 1) [0m
+  [4;36;1mEstado Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `estados`[0m
+  [4;35;1mEstado Load (0.1ms)[0m   [0mSELECT * FROM `estados` WHERE (`estados`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `zonas` WHERE (`zonas`.`id` = 2) [0m
+  [4;35;1mMunicipio Load (0.1ms)[0m   [0mSELECT * FROM `municipios` WHERE (`municipios`.`id` = 4) [0m
+  [4;36;1mEstado Load (0.1ms)[0m   [0;1mSELECT * FROM `estados` WHERE (`estados`.`id` = 6) [0m
+  [4;35;1mZona Load (0.1ms)[0m   [0mSELECT * FROM `zonas` WHERE (`zonas`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `municipios` WHERE (`municipios`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `estados` WHERE (`estados`.`id` = 1) [0m
+Completed in 61ms (View: 49, DB: 3) | 200 OK [http://192.168.2.5/secaos]
+
+
+Processing SecaosController#new (for 192.168.2.4 at 2010-11-21 14:21:58) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSecao Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `secaos`[0m
+Rendering template within layouts/secaos
+Rendering secaos/new
+  [4;35;1mZona Load (0.1ms)[0m   [0mSELECT * FROM `zonas` [0m
+  [4;36;1mZona Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `zonas`[0m
+  [4;35;1mMunicipio Load (0.2ms)[0m   [0mSELECT * FROM `municipios` [0m
+  [4;36;1mMunicipio Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `municipios`[0m
+  [4;35;1mEstado Load (0.1ms)[0m   [0mSELECT * FROM `estados` [0m
+  [4;36;1mEstado Columns (0.5ms)[0m   [0;1mSHOW FIELDS FROM `estados`[0m
+  [4;35;1mUrna Load (0.1ms)[0m   [0mSELECT * FROM `urnas` [0m
+  [4;36;1mUrna Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `urnas`[0m
+Completed in 179ms (View: 167, DB: 4) | 200 OK [http://192.168.2.5/secaos/new/3]
+
+
+Processing SecaosController#index (for 192.168.2.4 at 2010-11-21 14:22:13) [GET]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSecao Load (0.1ms)[0m   [0mSELECT * FROM `secaos` [0m
+Rendering template within layouts/secaos
+Rendering secaos/index
+  [4;36;1mSecao Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `secaos`[0m
+  [4;35;1mZona Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `zonas`[0m
+  [4;36;1mZona Load (0.1ms)[0m   [0;1mSELECT * FROM `zonas` WHERE (`zonas`.`id` = 2) [0m
+  [4;35;1mMunicipio Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `municipios`[0m
+  [4;36;1mMunicipio Load (0.1ms)[0m   [0;1mSELECT * FROM `municipios` WHERE (`municipios`.`id` = 1) [0m
+  [4;35;1mEstado Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `estados`[0m
+  [4;36;1mEstado Load (0.1ms)[0m   [0;1mSELECT * FROM `estados` WHERE (`estados`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `zonas` WHERE (`zonas`.`id` = 2) [0m
+  [4;36;1mMunicipio Load (0.1ms)[0m   [0;1mSELECT * FROM `municipios` WHERE (`municipios`.`id` = 4) [0m
+  [4;35;1mEstado Load (0.1ms)[0m   [0mSELECT * FROM `estados` WHERE (`estados`.`id` = 6) [0m
+  [4;36;1mZona Load (0.1ms)[0m   [0;1mSELECT * FROM `zonas` WHERE (`zonas`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `municipios` WHERE (`municipios`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `estados` WHERE (`estados`.`id` = 1) [0m
+Completed in 63ms (View: 51, DB: 3) | 200 OK [http://192.168.2.5/secaos]
